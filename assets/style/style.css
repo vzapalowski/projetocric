@@ -121,23 +121,32 @@ nav ul li a.nav-link{
     }
 
     nav div ul.navbar-nav {
-        margin-left: 14.7rem;
+        /* margin-left: 14.7rem; */
+        max-height: 9rem;
         gap: 9rem;
+        padding-inline: 4.7rem;
+    }
+
+    nav div ul li:nth-child(1),
+    nav div ul li:nth-child(2),
+    nav div ul li:nth-child(4),
+    nav div ul li:nth-child(5) {
+        width: 13.7rem;
+        height: 3.8rem; 
+        border-radius: 2rem;
+        text-align: center;
     }
 
     nav ul li:nth-child(3) {
         display: block;
-    }
-
-    nav ul li:last-child{
-        margin-left: 6.7rem;
-        margin-right: 4.2rem;
+        color: white;
     }
 
     nav div ul li a.nav-link {
         font-size: 2rem;
         font-weight: 400;
-    }    
+        border-radius: 2rem
+    }
 
     /* NAVIGATION HOVER */
     nav div ul li a.nav-link:hover{
@@ -146,5 +155,9 @@ nav ul li a.nav-link{
         color: var(--color-hover);
         text-align: center;
         transition: .2s;
+    }  
+    
+    nav div ul li.nav-item:hover {
+        box-shadow: rgba(255, 255, 255, 0.712) 0px 2px 2px 0px;
     }
 }
