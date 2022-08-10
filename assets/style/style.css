@@ -14,6 +14,7 @@
     --text-color-black: #000;
     --color-hover: rgb(180, 173, 173);
     font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .bg-color-primary{
@@ -267,18 +268,32 @@ nav ul li a.nav-link{
 
  }
 
- .modal-content {
+/*  .modal-content {
     display: flex;
     align-items: center;
     justify-content: center;
  }
 
  .modal-expanded {
+    display: flex;
+
     width: 75%;
     height: 75%;
     background-color: yellow;
     position: fixed;
+ } */
+
+ .left {
+    width: 25vw;
+    height: 100%;
+    background-color: gray;
  }
+
+ .right {
+    width: 75vw;
+    height: 100%;
+ }
+
 
 
  /* .main-layout .city3 {
