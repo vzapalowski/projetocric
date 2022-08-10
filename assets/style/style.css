@@ -113,6 +113,213 @@ nav ul li a.nav-link{
     gap: 5.3rem;
 }
 
+.image-about {
+    height: 72rem;
+    max-width: auto;
+    background-color: var(--primary-color);
+ }
+
+ .background-text-main {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 7rem;
+  max-width: 100rem;
+  height: 54rem;
+
+  width: 90rem;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  border-radius: 25px;
+ }
+
+ .main-title {
+  padding: 7rem;
+  color: var(--text-color);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+ }
+
+ .main-description {
+  max-width: 100rem;
+  max-height: 90rem;
+  width: 90rem;
+  height: 25rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+ }
+
+ .main-description span {
+  text-align: left;
+  color: var(--text-color);
+ }
+
+ .main-layout {
+  display: flex;
+  flex-direction: row;
+  max-width: 110rem;
+  margin-top: 9rem;
+  margin: 0 auto;
+  width: 100rem;
+  height: 60rem;
+  background-color: var(--text-color);
+ }
+
+ .main {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+ }
+
+ /* .main-layout .first-city {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+ } */
+
+ /* LAYOUT COLUMNS */
+
+ .main-layout .cities {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.2rem;
+  max-width: 12rem;
+  color: var(--text-color);
+  font-family: 'Josefin Sans', sans-serif;
+ }
+
+ .cities span {
+    max-width: 12rem;
+    font-size: 3rem;
+    /* position: relative; */
+ }
+
+ .cities svg:last-child {
+    margin-top: 40rem;
+    margin-left: 5rem;
+ }
+
+ #img1 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 70%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/nik-owens-RKU4zSFitWM-unsplash.jpg);
+    /* background: linear-gradient(180deg, black); */
+    /* background-blend-mode: darken; */
+    /* opacity: 50%; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+ }
+
+ #img2 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 60%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/adrien-vajas-B0Ci76Ae_MQ-unsplash.jpg);
+
+ }
+
+ #img3 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 60%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/chris-henry-pnvOQ2YSEDc-unsplash.jpg);
+
+ }
+
+ #img4 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 40%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/chris-henry-tmTVxOjdV8I-unsplash.jpg);
+
+ }
+
+ #img5 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 55%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/jared-weiss-olwtEqktvzY-unsplash.jpg    );
+
+ }
+
+ #img6 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/nathanael-desmeules-Nvvmuwm5hUw-unsplash.jpg);
+
+ }
+
+ #img7 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/daniel-llorente-__nBeM-GqFo-unsplash.jpg);
+
+ }
+
+ #img8 {
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-image: url(../cicloturismo_png/imgs/section_menu/fernando-munoz-OCTeop9Idp4-unsplash.jpg);
+
+ }
+
+ .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .modal-expanded {
+    width: 75%;
+    height: 75%;
+    background-color: yellow;
+    position: fixed;
+ }
+
+
+ /* .main-layout .city3 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ }
+ .main-layout .city4 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ }
+ .main-layout .city5 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ }
+  .main-layout .city6 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ }
+ .main-layout .city7 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ }
+ .main-layout .city8 {
+  width: 12.9rem;
+  height: 60rem;
+  background-color: #000;
+  margin-left: 0.5rem;
+ } */
+
+
+
 @media (min-width: 992px){
         /* RESET */
     .navbar{
@@ -190,4 +397,9 @@ nav ul li a.nav-link{
     .image-main {
         height: 72vh;
     }
+}
+
+footer {
+    width: 100rem;
+    margin: 0 auto;
 }
