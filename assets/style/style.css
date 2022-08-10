@@ -124,6 +124,10 @@ nav ul li a.nav-link{
   color: var(--text-color);
  }
 
+ .main {
+    margin-top: 5rem;
+ }
+
  .main-layout {
   display: flex;
   flex-direction: row;
@@ -155,13 +159,26 @@ nav ul li a.nav-link{
 
  .cities span {
     max-width: 12rem;
-    font-size: 3rem;
-    /* position: relative; */
+    font-size: 2rem;
  }
 
- .cities svg:last-child {
-    margin-top: 40rem;
-    margin-left: 5rem;
+ /********CIDADES********/
+
+ /********ARROIO DOS RATOS********/
+ .div-ratos {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    height: 60rem;
+ }
+
+ .cities svg:nth-child(1) {
+    margin-top: 1.5rem;   
+    margin-right: 4rem;
+    margin-bottom: 1rem;
  }
 
  #img1 {
@@ -169,10 +186,37 @@ nav ul li a.nav-link{
     background-position: center;
     background-position-x: 70%;
     background-image: url(../cicloturismo_png/imgs/section_menu/nik-owens-RKU4zSFitWM-unsplash.jpg);
-    /* background: linear-gradient(180deg, black); */
-    /* background-blend-mode: darken; */
-    /* opacity: 50%; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
+ }
+
+ #img1 svg {
+    z-index: 1;
+    color: white;
+    margin-left: 35%;
+ }
+ 
+ /********BARÃO DO TRIUNFO********/
+
+ .div-barao {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    height: 60rem;
+ }
+
+ /* .cities svg:nth-child(3) {
+    margin-top: 1.5rem;   
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+    color: #000;
+ } */
+
+ #img2 svg {
+    z-index: 1;
+    color: white;
+    margin-left: 35%;
  }
 
  #img2 {
@@ -183,6 +227,22 @@ nav ul li a.nav-link{
 
  }
 
+ /********BUTIÁ********/
+
+ .div-butia {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  height: 60rem;
+}
+
+/* .div-butia svg:nth-child(2) {
+  color: #000;
+} */
+
  #img3 {
     background-size: cover;
     background-position: center;
@@ -190,6 +250,28 @@ nav ul li a.nav-link{
     background-image: url(../cicloturismo_png/imgs/section_menu/chris-henry-pnvOQ2YSEDc-unsplash.jpg);
 
  }
+
+ #img3 svg {
+  /* z-index: 1; */
+  color: white;
+  margin-left: 35%;
+}
+
+.cities svg:nth-child(6) {
+  margin-top: 100rem;   
+  /* margin-right: 4rem; */
+  /* margin-bottom: 1rem; */
+  /* color: #000; */
+}
+
+/* #img3 a {
+  margin-top: 2rem;
+} */
+
+
+
+
+ /********CHARQUEADAS********/
 
  #img4 {
     background-size: cover;
@@ -199,6 +281,8 @@ nav ul li a.nav-link{
 
  }
 
+ /********GENERAL CÂMARA********/
+
  #img5 {
     background-size: cover;
     background-position: center;
@@ -206,6 +290,8 @@ nav ul li a.nav-link{
     background-image: url(../cicloturismo_png/imgs/section_menu/jared-weiss-olwtEqktvzY-unsplash.jpg    );
 
  }
+
+ /********MINAS DO LEÃO********/
 
  #img6 {
     background-size: cover;
@@ -215,6 +301,8 @@ nav ul li a.nav-link{
 
  }
 
+ /********SÃO JERÔNIMO********/
+
  #img7 {
     background-size: cover;
     background-position: center;
@@ -222,6 +310,8 @@ nav ul li a.nav-link{
     background-image: url(../cicloturismo_png/imgs/section_menu/daniel-llorente-__nBeM-GqFo-unsplash.jpg);
 
  }
+
+ /********TRIUNFO********/
 
  #img8 {
     background-size: cover;
