@@ -28,6 +28,7 @@
 
  .navbar {
     height: 5rem;
+    width: 100vw;
  }
 
   nav div ul.navbar-nav {
@@ -82,11 +83,35 @@ nav ul li a.nav-link{
     background-color: var(--secundary-color);
 }
 
-/* .teste {
-    height: 100rem;
+    /* MAIN IMAGE */
+
+.image-main {
     width: 100vw;
-    background-color: var(--primary-color);
- } */
+    height: 27rem;
+    background-color: gray;
+}
+
+    /* CITIES */
+.cities-menu {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+    margin-block: 3rem;
+}
+.group {
+    width: 50vw;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.3rem;
+}
 
 @media (min-width: 992px){
         /* RESET */
@@ -159,5 +184,10 @@ nav ul li a.nav-link{
     
     nav div ul li.nav-item:hover {
         box-shadow: rgba(255, 255, 255, 0.712) 0px 2px 2px 0px;
+    }
+
+    /* IMAGE MAIN */
+    .image-main {
+        height: 72vh;
     }
 }
