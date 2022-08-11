@@ -252,36 +252,57 @@ nav ul li a.nav-link{
  }
 
  #img3 svg {
-  /* z-index: 1; */
   color: white;
   margin-left: 35%;
 }
 
-.cities svg:nth-child(6) {
-  margin-top: 100rem;   
-  /* margin-right: 4rem; */
-  /* margin-bottom: 1rem; */
-  /* color: #000; */
+.icon-plus-butia {
+    margin-top: 33rem;
 }
-
-/* #img3 a {
-  margin-top: 2rem;
-} */
 
 
 
 
  /********CHARQUEADAS********/
 
- #img4 {
-    background-size: cover;
-    background-position: center;
-    background-position-x: 40%;
-    background-image: url(../cicloturismo_png/imgs/section_menu/chris-henry-tmTVxOjdV8I-unsplash.jpg);
+.div-charqueadas {
+   font-family: 'Josefin Sans', sans-serif;
+   background-color: rgba(0, 0, 0, 0.5);
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: var(--text-color);
+   height: 60rem;
+}
 
- }
+#img4 {
+   background-size: cover;
+   background-position: center;
+   background-position-x: 40%;
+   background-image: url(../cicloturismo_png/imgs/section_menu/chris-henry-tmTVxOjdV8I-unsplash.jpg);
+}
+
+#img4 svg {
+   color: white;
+   margin-left: 35%;
+}
+ 
+.icon-plus-charqueadas {
+  margin-top: 15rem;
+}
+
 
  /********GENERAL CÂMARA********/
+
+ .div-general-camara {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  height: 60rem;
+}
 
  #img5 {
     background-size: cover;
@@ -291,7 +312,27 @@ nav ul li a.nav-link{
 
  }
 
+ #img5 svg {
+  color: white;
+  margin-left: 35%;
+}
+
+.icon-plus-gc {
+  margin-top: 6rem;
+}
+
  /********MINAS DO LEÃO********/
+
+ .div-minas {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  height: 60rem;
+}
+
 
  #img6 {
     background-size: cover;
@@ -301,25 +342,71 @@ nav ul li a.nav-link{
 
  }
 
+ #img6 svg {
+  color: white;
+  margin-left: 35%;
+}
+
+
+.icon-plus-minas {
+  margin-top: 12rem;
+}
+
  /********SÃO JERÔNIMO********/
+ 
+ .div-sj {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  height: 60rem;
+}
 
  #img7 {
     background-size: cover;
     background-position: center;
     background-position-x: 50%;
     background-image: url(../cicloturismo_png/imgs/section_menu/daniel-llorente-__nBeM-GqFo-unsplash.jpg);
-
  }
 
+ #img7 svg {
+  color: white;
+  margin-left: 35%;
+}
+
+.icon-plus-sj {
+  margin-top: 12rem;
+}
+
  /********TRIUNFO********/
+
+ .div-triunfo {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  height: 60rem;
+}
 
  #img8 {
     background-size: cover;
     background-position: center;
     background-position-x: 50%;
     background-image: url(../cicloturismo_png/imgs/section_menu/fernando-munoz-OCTeop9Idp4-unsplash.jpg);
-
  }
+
+ #img8 svg {
+  color: white;
+  margin-left: 35%;
+}
+
+.icon-plus-triunfo {
+  margin-top: 27rem;
+}
 
 
 
