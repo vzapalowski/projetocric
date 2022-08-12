@@ -116,8 +116,8 @@ nav ul li a.nav-link{
 .back-img > p {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     padding-bottom: 1.5rem;
 }
     /* CITIES */
@@ -522,6 +522,22 @@ nav ul li a.nav-link{
   background-color: #000;
   margin-left: 0.5rem;
  } */
+
+/*  @media (min-width: 300px) {
+    .back-img > p {
+        font-size: 1.6rem;
+    }
+ } */
+ @media (min-width: 600px) {
+    .back-img > h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .back-img > p {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+ }
 
 @media (min-width: 992px){
         /* RESET */
