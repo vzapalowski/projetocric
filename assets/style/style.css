@@ -88,10 +88,61 @@ nav ul li a.nav-link{
 
 .image-main {
     width: 100vw;
-    height: 27rem;
-    background-color: gray;
+    height: 50vh;
+    background: url(../cicloturismo_png/imgs/Image\ Bike\ Main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.back-img {
+    background-color: rgba(0, 0, 0, .3);
+    width: 75%;
+    height: 75%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back-img > h1,
+.back-img > p {
+    color: var(--text-color);
+    padding-inline: 2rem;
+}
+
+.back-img > h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    padding-top: 1.5rem;
+}
+
+.back-img > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+
+/*.back-img > h1 {
+    font-style: normal;
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+    padding-top: 3rem;
+}
+
+.back-img > p {
+    font-style: normal;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    padding-bottom: 3rem;
+}
+ */
     /* CITIES */
 .cities-menu {
     width: 100vw;
@@ -419,7 +470,6 @@ nav ul li a.nav-link{
     background-image: url(../cicloturismo_png/imgs/section_menu/fernando-munoz-OCTeop9Idp4-unsplash.jpg);
  }
 
-<<<<<<< HEAD
 /*  .modal-content {
     display: flex;
     align-items: center;
@@ -496,8 +546,6 @@ nav ul li a.nav-link{
   margin-left: 0.5rem;
  } */
 
-
-
 @media (min-width: 992px){
         /* RESET */
     .navbar{
@@ -573,11 +621,18 @@ nav ul li a.nav-link{
 
     /* IMAGE MAIN */
     .image-main {
-        height: 72vh;
+        height: 75vh;
     }
-}
 
-footer {
-    width: 100rem;
-    margin: 0 auto;
+    .back-img > h1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        padding-top: 3rem;
+    }
+
+    .back-img > p {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        padding-bottom: 3rem;
+    }
 }
