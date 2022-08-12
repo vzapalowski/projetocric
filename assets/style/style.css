@@ -9,7 +9,6 @@
 :root{
     --primary-color: #540000;
     --secundary-color: #660D0C;
-    --tercery-color: #4de66e;
     --text-color: #fff;
     --text-color-black: #000;
     --color-hover: rgb(180, 173, 173);
@@ -17,17 +16,10 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.bg-color-primary{
-    background-color: var(--secundary-color);
-}
-
-.bg-color-secundary{
-    background-color: var(--primary-color);
-}
-
  /* NAVIGATION */
 
  .navbar {
+    background-color: var(--secundary-color);
     height: 5rem;
     width: 100vw;
  }
@@ -128,21 +120,6 @@ nav ul li a.nav-link{
     line-height: 1.6rem;
     padding-bottom: 1.5rem;
 }
-
-/*.back-img > h1 {
-    font-style: normal;
-    font-size: 9.6rem;
-    line-height: 9.6rem;
-    padding-top: 3rem;
-}
-
-.back-img > p {
-    font-style: normal;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-    padding-bottom: 3rem;
-}
- */
     /* CITIES */
 .cities-menu {
     width: 100vw;
@@ -597,7 +574,11 @@ nav ul li a.nav-link{
 
     nav ul li:nth-child(3) {
         display: block;
-        color: white;
+    }
+
+    nav ul li a img {
+        width: 6rem;
+        height: 6rem;
     }
 
     nav div ul li a.nav-link {
@@ -607,17 +588,20 @@ nav ul li a.nav-link{
     }
 
     /* NAVIGATION HOVER */
-    nav div ul li a.nav-link:hover{
+    nav div ul li:nth-child(1) a.nav-link:hover,
+    nav div ul li:nth-child(2) a.nav-link:hover,
+    nav div ul li:nth-child(4) a.nav-link:hover,
+    nav div ul li:nth-child(5) a.nav-link:hover{
         border-radius: 2rem;
         background-color: var(--primary-color);
         color: var(--color-hover);
         text-align: center;
-        transition: .2s;
-    }  
+        transition: .4s;
+    } 
     
-    nav div ul li.nav-item:hover {
+   /*  nav div ul li.nav-item:hover {
         box-shadow: rgba(255, 255, 255, 0.712) 0px 2px 2px 0px;
-    }
+    } */
 
     /* IMAGE MAIN */
     .image-main {
