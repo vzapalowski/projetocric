@@ -548,31 +548,83 @@ nav ul li a.nav-link{
     background-color: blue; 
  } */
 
-
-
 .group-cities {
     max-width: 100vw;
     height: auto;
     display: flex;
     justify-content: center;
     gap: .5rem;
-    margin: 5rem;
+    margin-block: 5rem;
+    margin-inline: 1rem;
     position: relative;
 }
 
 .group {
     min-width: 12.9rem;
-    min-height: 60rem;
-    background: url(../cicloturismo_png/imgs/Image\ Bike\ Main.png);
+    min-height: 60rem;    
+    background-color: gray;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s linear;    
+}
+
+#a-dos-ratos {
+    background: url(../cicloturismo_png/imgs/section_menu/arroio-dos-ratos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    z-index: 1;
-    transition: 0.4s linear;
 }
 
-.teste {
+#barao-do-triunfo{
+    background: url(../cicloturismo_png/imgs/section_menu/barao-do-triunfo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+#butia{
+    background: url(../cicloturismo_png/imgs/section_menu/butia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+#charqueadas{
+    background: url(../cicloturismo_png/imgs/section_menu/charqueadas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#general-camara{
+    background: url(../cicloturismo_png/imgs/section_menu/general-camara.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#minas-do-leao{
+    background: url(../cicloturismo_png/imgs/section_menu/minas-do-leao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sao-jeronimo{
+    background: url(../cicloturismo_png/imgs/section_menu/sao-jeronimo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#triunfo{
+    background: url(../cicloturismo_png/imgs/section_menu/triunfo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-city {
     max-width: 12.9rem;
     max-height: 60rem;
     display: flex;
@@ -583,13 +635,12 @@ nav ul li a.nav-link{
     color: var(--text-color);
 }
 
-.teste > span {
+.text-city > span {
     font-size: 2rem;
 }
 
 .group:hover {
     transition: 0.4s linear;
-    background-color: blue;
     position: absolute;
     width: calc(12.9rem * 8 + (.5rem * 7)); 
     height: 60rem;
@@ -599,19 +650,100 @@ nav ul li a.nav-link{
     align-items: center;
 }
 
-.group:hover .teste {
+.inside {
+    display: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.group:hover .text-city {
     display: none;
 }
 
 .group:hover .inside {
-    display: block;
+    display: flex;
 }
 
-.inside {
-    display: none;
-    width: 75%;
-    height: 75%;
-    background-color: gray;
+.inside-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inside-left nav {
+    margin-block: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inside-left nav .group-itens > span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.inside-left .main-text > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-inline: 2rem;
+    color: var(--text-color);
+}
+
+.inside-left .main-text-bottom {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-inline: 1rem;
+} 
+
+.inside-left .main-text-bottom h1 {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    padding-block: .8rem;
+}
+
+.inside-left .main-text-bottom p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    padding-block: .8rem;
+    padding-inline: 1.5rem;
+    text-align: left;
+} 
+
+.inside-left .buttom-bottom{
+    margin-bottom: 1.5rem;
+}
+
+.inside-left .buttom-bottom a svg {
+    width: 3.5rem;
+    height: 3.6rem;
+}
+
+.inside-right {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .inside > h1 {
