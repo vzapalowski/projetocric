@@ -1,4 +1,4 @@
-let count = 0;
+/* let count = 0;
 let iconOpen = document.getElementById("icon-open");
 let iconClose = document.getElementById("icon-close");
 
@@ -20,5 +20,15 @@ function openAndCloseMenu() {
         iconClose.classList.add("icon-hidden");
     }
     count++;
-}
+} */
+/* 
+let ratos = document.querySelector(".ratos").addEventListener("mouseenter", () => {
+    let hover = document.querySelector(".hover");
+    hover.style.display = "block";
+});
+
+let ratos1 = document.querySelector(".ratos").addEventListener("mouseout", () => {
+    let hover = document.querySelector(".hover");
+    hover.style.display = "none";
+}); */
 
