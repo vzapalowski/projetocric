@@ -22,8 +22,8 @@
  .navbar {
     background-color: var(--secundary-color);
     height: 5rem;
-    width: 100vw;
- }
+    max-width: 100vw;
+}
 
   nav div ul.navbar-nav {
     margin-top: 4rem;
@@ -68,8 +68,9 @@ nav ul li a.nav-link{
 #offcanvasScrolling{
     max-width: 60vw;
     background-color: var(--primary-color);
-    opacity: 1;
+    opacity: 1; 
     overflow: scroll;
+    /* transition: .5s ease; */
 }
 
 .offcanvas-header {
@@ -80,20 +81,20 @@ nav ul li a.nav-link{
     /* MAIN IMAGE */
 
 .image-main {
-    max-width: 100vw;
+    width: 100%;
     height: 50vh;
-    background: url(../cicloturismo_png/imgs/Image\ Bike\ Main.png);
+    background: url(../images/section-image/main-section-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; 
+} 
 
 .back-img {
     background-color: rgba(0, 0, 0, .4);
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -103,7 +104,7 @@ nav ul li a.nav-link{
 .back-img > h1,
 .back-img > p {
     color: var(--text-color);
-    padding-inline: 2rem;
+    padding-inline: 3rem;
 }
 
 .back-img > h1 {
@@ -111,16 +112,20 @@ nav ul li a.nav-link{
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 3.2rem;
-    padding-top: 1.5rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .back-img > p {
     font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2rem;
-    padding-bottom: 1.5rem;
-}
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}  
+
+
     /* CITIES */
 /* .cities-menu {
     width: 100vw;
@@ -510,9 +515,9 @@ nav ul li a.nav-link{
 
 
 
-/* 
+ 
 
- .group-cities {
+ /*.group-cities {
     max-width: 100vw;
     height: auto;
     display: flex;
@@ -548,85 +553,123 @@ nav ul li a.nav-link{
     background-color: blue; 
  } */
 
-.group-cities {
-    max-width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    margin-block: 5rem;
-    margin-inline: 1rem;
-    position: relative;
-}
 
-.group {
-    min-width: 12.9rem;
-    min-height: 60rem;    
-    background-color: gray;
-    position: relative;
-    z-index: 1;
-    transition: 0.4s linear;    
-}
 
-#a-dos-ratos {
-    background: url(../cicloturismo_png/imgs/section_menu/arroio-dos-ratos.png);
+/* #a-dos-ratos {
+    background: url(../images/section-cities-modile/arroio-dos-ratos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #barao-do-triunfo{
-    background: url(../cicloturismo_png/imgs/section_menu/barao-do-triunfo.png);
+    background: url(../images/section-cities-modile/barao-do-triunfo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;   
+    background-position: center;
 }
 
 #butia{
-    background: url(../cicloturismo_png/imgs/section_menu/butia.png);
+    background: url(../images/section-cities-modile/butia.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;   
+    background-position: center;
 }
 
 #charqueadas{
-    background: url(../cicloturismo_png/imgs/section_menu/charqueadas.png);
+    background: url(../images/section-cities-modile/charqueadas.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #general-camara{
-    background: url(../cicloturismo_png/imgs/section_menu/general-camara.png);
+    background: url(../images/section-cities-modile/general-camara.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #minas-do-leao{
-    background: url(../cicloturismo_png/imgs/section_menu/minas-do-leao.png);
+    background: url(../images/section-cities-modile/minas-do-leao.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #sao-jeronimo{
-    background: url(../cicloturismo_png/imgs/section_menu/sao-jeronimo.png);
+    background: url(../images/section-cities-modile/sao-jeronimo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #triunfo{
-    background: url(../cicloturismo_png/imgs/section_menu/triunfo.png);
+    background: url(../images/section-cities-modile/triunfo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+ */
+ .group-cities {
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    justify-content: center;
+    margin-block: 5rem;
+    margin-inline: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 
-.text-city {
-    max-width: 12.9rem;
-    max-height: 60rem;
+.group-cities .group {
+    /* min-width: 33.3rem; */
+    min-width: 33.3vw;
+    min-height: 5rem; 
+    /* max-height: 7rem;    */    
+    position: relative;
+    z-index: 1;
+    transition: 0.4s linear;
+    border-radius: 1rem;
+    background-color: gray;
+}
+
+.group-cities .group .content-city {
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 1rem;
+}
+
+.group-cities .group .content-city > img {
+    padding-left: 1rem;
+}
+
+.group-cities .group .content-city > a {
+    padding-right: 1rem;
+}
+
+.group-cities .group .content-city .name-city {
+    padding-inline: 1rem;
+}
+
+.group-cities .group .content-city .name-city > span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: var(--text-color);
+}
+
+/* .content-city {
+    max-width: 33.3rem;
+    max-height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -635,11 +678,11 @@ nav ul li a.nav-link{
     color: var(--text-color);
 }
 
-.text-city > span {
+.content-city > span {
     font-size: 2rem;
-}
+} */
 
-.group:hover {
+/* .group:hover {
     transition: 0.4s linear;
     position: absolute;
     width: calc(12.9rem * 8 + (.5rem * 7)); 
@@ -648,7 +691,7 @@ nav ul li a.nav-link{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .inside {
     display: none;
@@ -657,7 +700,7 @@ nav ul li a.nav-link{
     outline: none;
     border: none;
 }
-
+/* 
 .group:hover .text-city {
     display: none;
 }
@@ -752,21 +795,7 @@ iframe {
 
 .inside > p {
     font-size: 4rem;
-}
-
- 
-
- @media (min-width: 600px) {
-    .back-img > h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-    
-    .back-img > p {
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-    }
- }
+} */
 
 @media (min-width: 992px){
         /* RESET */
@@ -791,7 +820,54 @@ iframe {
 
     #offcanvasScrolling{
         max-width: 100vw;
-        overflow: initial;
+        overflow: hidden;
+        transition: initial;
+    }
+
+    .group-cities {
+        max-width: initial;
+        height: initial;
+        display: initial;
+        flex-direction: initial;
+        gap: initial;
+        justify-content: initial;
+        margin: initial;
+    }
+
+    .group-cities .group {
+        min-width: initial;
+        min-height: initial; 
+        border-radius: initial;
+    }
+
+    .group-cities .group .content-city {
+        width: initial;
+        height: initial;
+        display: initial;
+        justify-content: initial;
+        align-items: initial;
+        padding: initial;
+        margin: initial;
+        border-radius: initial;
+    }
+
+    .group-cities .group .content-city > img {
+        padding: initial;
+    }
+
+    .group-cities .group .content-city > a {
+        padding: initial;
+    }
+    
+    .group-cities .group .content-city .name-city {
+        padding: initial;
+    }
+
+    .group-cities .group .content-city .name-city > span {
+        font-style: initial;
+        font-weight: initial;
+        font-size: initial;
+        line-height: initial;
     }
 
     /* NAVIGATION */
@@ -801,7 +877,6 @@ iframe {
     }
 
     nav div ul.navbar-nav {
-        /* margin-left: 14.7rem; */
         max-height: 9rem;
         gap: 9rem;
         padding-inline: 4.7rem;
@@ -854,14 +929,65 @@ iframe {
     } 
 
      .back-img > h1 {
-        font-size: 6.4rem;
-        line-height: 6.4rem;
-        padding-top: 3rem;
+        font-size: 9.6rem;
+        line-height: 9.6rem;
+        padding-top: 6rem;
+        padding-bottom: 1.5rem;
     }
 
     .back-img > p {
         font-size: 3.2rem;
         line-height: 3.2rem;
-        padding-bottom: 3rem;
+        padding-bottom: 8.5rem
+    }
+
+    /* CITIES */
+    .group-cities {
+        max-width: 100vw;
+        height: auto;
+        display: flex;
+        gap: .3rem;
+        justify-content: center;
+        margin-block: 9rem;
+        margin-inline: 1.5rem;
+    }
+
+    .group-cities .group {
+        width: 12.9rem;
+        height: 60rem;
+    }
+
+    .group-cities .group .content-city {
+        width: 100%;
+        height: 100%;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   /*  AJUSTAR ISSO AQUI
+   .group-cities .group .content-city > a{
+      justify-content: flex-end;
+    } */
+
+    .group-cities .group .content-city > img {
+        padding-top: 1rem;
+    }
+
+    .group-cities .group .content-city > a {
+        padding-bottom: 1rem;
+    }
+
+    .group-cities .group .content-city .name-city {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .group-cities .group .content-city .name-city > span {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
     }
 }
