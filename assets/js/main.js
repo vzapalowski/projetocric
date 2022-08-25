@@ -32,3 +32,7 @@ let ratos1 = document.querySelector(".ratos").addEventListener("mouseout", () =>
     hover.style.display = "none";
 }); */
 
+let ratos = document.getElementById("a-dos-ratos").addEventListener("click", () => {
+    let ratos1 = document.getElementById("barao-do-triunfo  ").classList.add("teste");
+}); 
+
