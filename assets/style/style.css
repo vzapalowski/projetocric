@@ -200,7 +200,6 @@ nav ul li a.nav-link{
     min-height: 5rem; 
     /* max-height: 7rem;    */    
     border-radius: 1rem;
-    background-color: gray;
 }
 
 .group-cities .group .content-city {
@@ -402,15 +401,13 @@ nav ul li a.nav-link{
     .group-cities .group {
         min-width: 12.9rem;
         height: 60rem;
-        z-index: 1;
+        z-index: 10;
+        transition: 1s linear;
     } 
 
     .group:hover {    
-        transition: .5s ease;
         position: absolute;                
-        z-index: 200;
-        width: calc(12.9rem * 8 + (.3rem * 7));  
-        height: 60rem;
+        z-index: 200;        
         display: flex;
         justify-content: center;
         align-items: center;  
@@ -435,14 +432,11 @@ nav ul li a.nav-link{
    .group-cities .group .content-city > a{
         position: absolute;
         bottom: 2%;
+        padding-bottom: 1rem;
     }
 
     .group-cities .group .content-city > img {
         padding-top: 1rem;
-    }
-
-    .group-cities .group .content-city > a {
-        padding-bottom: 1rem;
     }
 
     .group-cities .group .content-city .name-city {
@@ -603,4 +597,13 @@ nav ul li a.nav-link{
         background-size: cover;
         background-position: center;
     }   
+}
+
+
+
+.baixo {
+    max-width: 50vw;
+    height: 50vh;
+    background-color: blue;
+    margin-top: 100rem;
 }
