@@ -83,7 +83,7 @@ nav ul li a.nav-link{
 .image-main {
     width: 100%;
     height: 50vh;
-    background: url(../images/section-image/main-section-image.png);
+    background: url(./../images/section-image/main-section-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -127,56 +127,56 @@ nav ul li a.nav-link{
 
     /* CITIES */
 #a-dos-ratos {
-    background: url(../images/section-cities-modile/arroio-dos-ratos.png);
+    background: url(./../images/section-cities-modile/arroio-dos-ratos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #barao-do-triunfo{
-    background: url(../images/section-cities-modile/barao-do-triunfo.png);
+    background: url(./../images/section-cities-modile/barao-do-triunfo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #butia{
-    background: url(../images/section-cities-modile/butia.png);
+    background: url(./../images/section-cities-modile/butia.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #charqueadas{
-    background: url(../images/section-cities-modile/charqueadas.png);
+    background: url(./../images/section-cities-modile/charqueadas.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #general-camara{
-    background: url(../images/section-cities-modile/general-camara.png);
+    background: url(./../images/section-cities-modile/general-camara.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #minas-do-leao{
-    background: url(../images/section-cities-modile/minas-do-leao.png);
+    background: url(./../images/section-cities-modile/minas-do-leao.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #sao-jeronimo{
-    background: url(../images/section-cities-modile/sao-jeronimo.png);
+    background: url(./../images/section-cities-modile/sao-jeronimo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #triunfo{
-    background: url(../images/section-cities-modile/triunfo.png);
+    background: url(./../images/section-cities-modile/triunfo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -235,7 +235,7 @@ nav ul li a.nav-link{
 
 .inside {
     display: none;
-    width: calc(12.9rem * 8 + (.5rem * 7));  
+    width: calc(12.9rem * 8 + (.3rem * 7));  
     height: 60rem;    
     background-color: gray;
     outline: none;
@@ -387,6 +387,63 @@ nav ul li a.nav-link{
     }
 
     /* CITIES */
+
+    #a-dos-ratos {
+        background: url(./../images/section-cities-desktop/arroio-dos-ratos.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #barao-do-triunfo{
+        background: url(./../images/section-cities-desktop/barao-do-triunfo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #butia{
+        background: url(./../images/section-cities-desktop/butia.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #charqueadas{
+        background: url(./../images/section-cities-desktop/charqueadas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #general-camara{
+        background: url(./../images/section-cities-desktop/gereral-camara.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #minas-do-leao{
+        background: url(./../images/section-cities-desktop/minas-do-leao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #sao-jeronimo{
+        background: url(./../images/section-cities-desktop/sao-jeronimo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #triunfo{
+        background: url(./../images/section-cities-desktop/triunfo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+
     .group-cities {
         max-width: 100vw;
         height: auto;
@@ -410,7 +467,8 @@ nav ul li a.nav-link{
         z-index: 200;        
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center; 
+        transition: .5s ease;
     } 
 
     .group-cities .group:hover .content-city {
@@ -540,66 +598,7 @@ nav ul li a.nav-link{
     .inside > p {
         font-size: 4rem;
     } 
-
-
-    #a-dos-ratos {
-        background: url(../images/section-cities-desktop/arroio-dos-ratos.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #barao-do-triunfo{
-        background: url(../images/section-cities-desktop/barao-do-triunfo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #butia{
-        background: url(../images/section-cities-desktop/butia.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #charqueadas{
-        background: url(../images/section-cities-desktop/charqueadas.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #general-camara{
-        background: url(../images/section-cities-desktop/gereral-camara.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #minas-do-leao{
-        background: url(../images/section-cities-desktop/minas-do-leao.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #sao-jeronimo{
-        background: url(../images/section-cities-desktop/sao-jeronimo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #triunfo{
-        background: url(../images/section-cities-desktop/triunfo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }   
 }
-
-
 
 .baixo {
     max-width: 50vw;
