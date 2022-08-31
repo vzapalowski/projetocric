@@ -226,7 +226,6 @@ nav ul li a.nav-link{
 }
 
 .group-cities .group .content-city .name-city > span {
-    font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -528,7 +527,7 @@ nav ul li a.nav-link{
 
     .inside-left nav .group-itens > span{
         font-style: normal;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 1.6rem;
         line-height: 1.6rem;
         text-transform: uppercase;
