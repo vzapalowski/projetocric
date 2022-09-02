@@ -243,11 +243,11 @@ nav ul li a.nav-link{
 
 /* FOOTER */
 footer {
-    width: 100vw;
+    max-width: 100vw;
     height: auto;
     background-color: rgb(170, 7, 7);
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     overflow: hidden;
 }
 
