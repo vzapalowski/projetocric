@@ -262,84 +262,75 @@ footer section {
     flex-direction: column;
 }
 
-footer section .container .container-inside {
-    margin-inline: 2rem;
-    padding-bottom: 1.5rem;
-    padding-inline: 2rem;
+footer section .container-inside {
+    max-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
+    margin-inline: 1rem;
 }
 
-footer section .container:nth-child(2) .container-inside{
-    padding-top: 1.5rem;
-}
-
-footer section .container-inside > h1 {
-    font-size: 2rem;
-    color: white;
-    padding-block: 1rem;
-}
-
-footer section .container-inside > p {
-    text-align: justify;
-    color: white;
-    font-size: 1.6rem;
-}
-
-footer section .container-inside > img {
-    width: 12rem;
-    height: 12rem;
-}
-
-footer .container .container-inside .container-list {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .container .container-inside .container-list ul {
-    padding-inline: .5rem;
-    display: flex;
-    gap: 1rem;
-}
-
-footer .container .container-inside .container-list li {
-    list-style: none;
-}
-
-footer .container .container-inside .container-list ul li i {
-    color: white;
-    font-size: 4rem;
-}
-
-footer .container:first-child .container-inside {
+footer section .container-inside:not(:last-child) {
     border-bottom: 2px solid white;
 }
 
-footer .container:last-child .container-inside {
-    border-top: 2px solid white;
+footer section .container-inside > h1 {
+    padding-block: 1rem;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-footer .container-bottom {
+footer section .container-inside > p {
+    font-size: 2rem;
+    text-align: justify;
+    color: var(--text-color);
+    padding-inline: 1rem;
+}
+
+footer section .container-inside > img {
+    width: 15rem;
+    height: 15rem;
+    padding-block: 1rem;
+}
+
+footer section .container-inside ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer section .container-inside ul li {
+    list-style: none;
+}
+
+footer section .container-inside ul li i {
+    color: var(--text-color);
+    font-size: 3.5rem;
+}
+
+footer section .container-inside ul li span {
+    display: none;
+}
+
+footer section .container-bottom {
+    background-color: red;
     width: 100vw;
     height: auto;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer .container-bottom > p {
-    padding-inline: 1rem;
-    padding-block: .5rem;
+footer section .container-bottom > p {
+    padding-block: 1rem;
+    padding-inline: .5rem;
+    text-align: justify;
     font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
-}
-
+}                                                                      
 
 @media (min-width: 992px){
         /* RESET */
@@ -414,18 +405,18 @@ footer .container-bottom > p {
         line-height: initial;
     }
 
-    /* RESET */
-    footer .container:first-child .container-inside {
-        border: initial;
-    }
-    
-    footer .container:last-child .container-inside {
-        border: initial;
+    footer section .container-inside {
+        margin: initial;
     }
 
-    footer section .container-inside > img {
-        width: initial;
-        height: initial;
+    footer section .container-inside:last-child {
+        display: initial;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    footer section .container-inside:not(:last-child) {
+        border: initial;
     }
 
     /* NAVIGATION */
@@ -476,10 +467,6 @@ footer .container-bottom > p {
         text-align: center;
         transition: .4s;
     } 
-    
-   /*  nav div ul li.nav-item:hover {
-        box-shadow: rgba(255, 255, 255, 0.712) 0px 2px 2px 0px;
-    } */
 
     /* IMAGE MAIN */
     .image-main {
@@ -726,11 +713,7 @@ footer .container-bottom > p {
     footer section .container-inside > h1 {
         display: none;
     }
-
-    footer section .container-inside > p {
-        font-size: 2rem;
-    }
-
+    
     footer nav .nav-item{
     max-width: 100%;
     width: 33.3%;
@@ -747,39 +730,65 @@ footer .container-bottom > p {
         text-transform: uppercase;
     }
 
-    footer section {
+    footer nav .nav-item > span {
+        font-weight: 700;
+    }
+
+    footer > section {
         flex-direction: row;
     }
 
-    section > .container {
+    footer section .container-inside {
         width: 33.3%;
-        height: 100%;
+        height: auto;
+        justify-content: center;
+        margin-block: 2rem;
     }
 
-    section .container .container-inside {
-        min-height: 30vh;
-        margin-block: 2rem;
+    footer section .container-inside > p {
+        font-weight: 500;    
+        padding-top: 1rem;
+    }
+
+    footer section .container-inside > img {
+        width: initial;
+        height: initial;
+    }
+    
+    footer section .container-inside:not(:first-child) {
+        border-left: 2px solid white;
+    }
+
+    footer section .container-inside:last-child {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-inline: 7.1rem;
-    }
-    
-    footer .container .container-inside .container-list ul {
-        padding-inline: .5rem;
-        display: flex;
-        gap: 2rem;
-    }
-    
-    footer .container .container-inside .container-list li {
-        list-style: none;
     }
 
-    footer .container:first-child .container-inside {
-        border-right: 2px solid white;
+    footer section .container-inside ul {
+        flex-direction: column;
+        gap: 2rem;
     }
-    
-    footer .container:last-child .container-inside {
-        border-left: 2px solid white;
+
+    footer section .container-inside ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    footer section .container-inside ul li i {
+        font-size: 4rem;
+    }
+
+    footer section .container-inside ul li a {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-color);
+        padding-left: 2rem;
+        text-decoration: none;
+    }
+
+    footer section .container-inside ul li a:hover {
+        transition: .3s ease;
+        cursor: pointer;
+        color: rgb(160, 28, 28);
     }
 }
