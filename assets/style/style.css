@@ -310,12 +310,34 @@ footer .container .container-inside .container-list li {
     list-style: none;
 }
 
+footer .container .container-inside .container-list ul li i {
+    color: white;
+    font-size: 4rem;
+}
+
 footer .container:first-child .container-inside {
     border-bottom: 2px solid white;
 }
 
 footer .container:last-child .container-inside {
     border-top: 2px solid white;
+}
+
+footer .container-bottom {
+    width: 100vw;
+    height: auto;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container-bottom > p {
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 
@@ -716,7 +738,8 @@ footer .container:last-child .container-inside {
     justify-content: center;
     }
 
-    footer nav .nav-item > span {
+    footer nav .nav-item > span,
+    footer .container-bottom > p {
         padding-inline: 1rem;
         padding-block: 2rem;
         font-size: 2rem;
