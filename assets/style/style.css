@@ -82,7 +82,7 @@ nav ul li a.nav-link{
 
 .image-main {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     background: url(./../images/section-image/main-section-image.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,11 +94,11 @@ nav ul li a.nav-link{
 .back-img {
     background-color: rgba(0, 0, 0, .4);
     width: 80%;
-    height: 80%;
+    min-height: 40vh;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin: 2rem;
 }
 
 .back-img > h1,
@@ -118,6 +118,7 @@ nav ul li a.nav-link{
 }
 
 .back-img > p {
+    padding-top: 2rem;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
@@ -287,7 +288,7 @@ footer section .container-inside > p {
     font-size: 2rem;
     text-align: justify;
     color: var(--text-color);
-    padding-inline: 1rem;
+    padding-inline: 2rem;
 }
 
 footer section .container-inside > img {
@@ -298,11 +299,16 @@ footer section .container-inside > img {
 
 footer section .container-inside ul {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
 footer section .container-inside ul li {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 footer section .container-inside ul li i {
@@ -310,8 +316,10 @@ footer section .container-inside ul li i {
     font-size: 3.5rem;
 }
 
-footer section .container-inside ul li span {
-    display: none;
+footer section .container-inside ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 footer section .container-bottom {
@@ -325,12 +333,12 @@ footer section .container-bottom {
 
 footer section .container-bottom > p {
     padding-block: 1rem;
-    padding-inline: .5rem;
+    padding-inline: 1.3rem;
     text-align: justify;
     font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
-}                                                                      
+}                                                              
 
 @media (min-width: 992px){
         /* RESET */
@@ -743,11 +751,11 @@ footer section .container-bottom > p {
         height: auto;
         justify-content: center;
         margin-block: 2rem;
+        margin-inline: 1.3rem
     }
 
     footer section .container-inside > p {
         font-weight: 500;    
-        padding-top: 1rem;
     }
 
     footer section .container-inside > img {
@@ -766,12 +774,13 @@ footer section .container-bottom > p {
 
     footer section .container-inside ul {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.4rem;
     }
 
     footer section .container-inside ul li {
         display: flex;
         align-items: center;
+        gap: 1.5rem;
     }
 
     footer section .container-inside ul li i {
@@ -782,7 +791,6 @@ footer section .container-bottom > p {
         display: block;
         font-size: 2rem;
         color: var(--text-color);
-        padding-left: 2rem;
         text-decoration: none;
     }
 
