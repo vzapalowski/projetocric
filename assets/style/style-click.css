@@ -28,6 +28,7 @@ body {
   background-size: cover;
   /* backdrop-filter: blur(5px) brightness(60%); */
   /* backdrop-filter: brightness(60%); */
+  color: var(--text-color);
 }
 
 
@@ -250,132 +251,797 @@ nav ul li a.nav-link{
   /* NAVIGATION */
 }
 
-section {
-  max-width: 100vw;
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/******************/
 
-section .banner {
-  width: 100%;
-  height: 25rem;
-  background-image: url(../images/section-image/main-section-image.png);
-  background-size: cover;
-  background-position-x: center;
-  /* backdrop-filter: grayscale(60%); */
-}
+@media(max-width: 2560px) {
+  section {
+    max-width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.banner .filter-banner {
-  margin: 0 auto;
-  margin-block: 1rem;
-  width: 90%;
-  height: 90%;
-  background-color: var(--medium-black);
-  border-radius: 0.5rem;
-}
+  section .banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/section-image/main-section-image.png);
+    background-size: cover;
+    background-position-x: center;
+    /* backdrop-filter: grayscale(60%); */
+  }
+  
+  .banner .filter-banner {
+    margin: 0 auto;
+    margin-block: 1rem;
+    width: 90%;
+    height: 95%;
+    background-color: var(--medium-black);
+    border-radius: 0.5rem;
+  }
+  
+  .filter-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0.5rem;
+    width: 90%;
+    height: 18rem;
+  }
+  
+  
+  .banner-text:nth-child(1) span {
+    padding-block: 3rem;
+    color: var(--text-color);
+    font-size: 6rem;
+  }
 
-.filter-banner .banner-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-block: 0.5rem;
-  width: 90%;
-}
+  .banner-text:nth-child(2) {
+    padding-block: 2rem;
+    margin: 0 auto;
+  }
 
+  .banner-text:nth-child(2) span {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    /* padding-inline: 2.5rem; */
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .img-section {
+    margin-block: 1rem;
+    width: 100%;
+    height: 60rem;
+  }
+  
+  #img-banner-ratos {
+    background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .img-section .filter-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-black);
+    backdrop-filter: blur(0.2rem);
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-text span {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .container .text-section {
+    width: 100%;
+    height: 25rem;
+    background-color: var(--primary-color);
+  }
+  
+  .text-section .text-main {
+    margin-block: 5rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
 
-.banner-text:nth-child(1) span {
-  color: var(--text-color);
-  font-size: 3rem;
-}
+  .text-section h1 {
+    margin-inline: 1rem;
+    margin-block: 1.5rem;
+    font-size: 3.5rem;
+  }
 
-.banner-text:nth-child(2) span {
-  color: var(--text-color);
-  font-size: 1.2rem;
-  padding-inline: 2rem;
-}
+  .text-section span {
+    font-size: 2rem;
+  }
+  
+  .text-section li {
+    /* margin-inline: 1rem;
+    margin-block: 1rem;
+    font-size: 1.5rem; */
+    margin-block: 1.5rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+  
+  #img-ratos {
+    background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  
+  /* API */
+  
+  .api-section {
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    width: 100%;
+    height: 70rem;
+    background-color: #000;
+  }
+  
+  /* SLIDER SECTION */
+  
+  .slider-section {
+    margin-bottom: 1rem; 
+    margin-inline: 1rem;
+    width: 100%;
+    height: 60rem;
+    background-color: var(--tercery-color);
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .img-section {
-  margin-block: 1rem;
-  width: 98%;
-  height: 20rem;
-}
-
-#img-banner-ratos {
-  background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-}
-
-.img-section .filter-image {
-  width: 100%;
-  height: 100%;
-  background-color: var(--medium-black);
-  backdrop-filter: blur(0.2rem);
-}
-
-.image-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.image-text span {
-  color: var(--text-color);
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-.container .text-section {
-  width: 98%;
-  height: 15rem;
-  background-color: var(--primary-color);
-}
-
-.text-section .text-main {
-  margin-block: 2rem;
-  margin-inline: 1rem;
-  color: var(--text-color);
-  font-size: 1.5rem;
-}
-
-#img-ratos {
-  background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
-  background-position-x: center;
-  background-position-y: center;
-  background-size: cover;
-}
-
-/* API */
-
-.api-section {
-  margin-block: 1rem;
-  margin-inline: 1rem;
-  width: 98%;
-  height: 20rem;
-  background-color: #000;
-}
-
-/* SLIDER SECTION */
-
-.slider-section {
-  margin-bottom: 1rem; 
-  margin-inline: 1rem;
-  width: 98%;
-  height: 15rem;
-  background-color: var(--tercery-color);
+  footer {
+    margin-top: 1rem;
+  }
 }
 
 /******************/
+
+@media(max-width: 1440px) {
+  section {
+    max-width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/section-image/main-section-image.png);
+    background-size: cover;
+    background-position-x: center;
+    /* backdrop-filter: grayscale(60%); */
+  }
+  
+  .banner .filter-banner {
+    margin: 0 auto;
+    margin-block: 1rem;
+    width: 90%;
+    height: 95%;
+    background-color: var(--medium-black);
+    border-radius: 0.5rem;
+  }
+  
+  .filter-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0.5rem;
+    width: 90%;
+    height: 18rem;
+  }
+  
+  
+  .banner-text:nth-child(1) span {
+    padding-block: 3rem;
+    color: var(--text-color);
+    font-size: 6rem;
+  }
+
+  .banner-text:nth-child(2) {
+    padding-block: 2rem;
+    margin: 0 auto;
+  }
+
+  .banner-text:nth-child(2) span {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    /* padding-inline: 2.5rem; */
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .img-section {
+    margin-block: 1rem;
+    width: 98%;
+    height: 60rem;
+  }
+  
+  #img-banner-ratos {
+    background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .img-section .filter-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-black);
+    backdrop-filter: blur(0.2rem);
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-text span {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .container .text-section {
+    width: 98%;
+    height: 25rem;
+    background-color: var(--primary-color);
+  }
+  
+  .text-section .text-main {
+    margin-block: 5rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+
+  .text-section h1 {
+    margin-inline: 1rem;
+    margin-block: 1.5rem;
+    font-size: 3.5rem;
+  }
+
+  .text-section span {
+    font-size: 2rem;
+  }
+  
+  .text-section li {
+    /* margin-inline: 1rem;
+    margin-block: 1rem;
+    font-size: 1.5rem; */
+    margin-block: 1.5rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+  
+  #img-ratos {
+    background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  
+  /* API */
+  
+  .api-section {
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    width: 98%;
+    height: 70rem;
+    background-color: #000;
+  }
+  
+  /* SLIDER SECTION */
+  
+  .slider-section {
+    margin-bottom: 1rem; 
+    margin-inline: 1rem;
+    width: 98%;
+    height: 60rem;
+    background-color: var(--tercery-color);
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+}
+
+/********************/
+
+@media(max-width: 1024px) {
+  section {
+    max-width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/section-image/main-section-image.png);
+    background-size: cover;
+    background-position-x: center;
+    /* backdrop-filter: grayscale(60%); */
+  }
+  
+  .banner .filter-banner {
+    margin: 0 auto;
+    margin-block: 1rem;
+    width: 90%;
+    height: 95%;
+    background-color: var(--medium-black);
+    border-radius: 0.5rem;
+  }
+  
+  .filter-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0.5rem;
+    width: 90%;
+    height: 18rem;
+  }
+  
+  
+  .banner-text:nth-child(1) span {
+    padding-block: 3rem;
+    color: var(--text-color);
+    font-size: 6rem;
+  }
+
+  .banner-text:nth-child(2) {
+    padding-block: 2rem;
+    margin: 0 auto;
+  }
+
+  .banner-text:nth-child(2) span {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    /* padding-inline: 2.5rem; */
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .img-section {
+    margin-block: 1rem;
+    width: 98%;
+    height: 60rem;
+  }
+  
+  #img-banner-ratos {
+    background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .img-section .filter-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-black);
+    backdrop-filter: blur(0.2rem);
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-text span {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .container .text-section {
+    width: 98%;
+    height: 25rem;
+    background-color: var(--primary-color);
+  }
+  
+  .text-section .text-main {
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+
+  .text-section h1 {
+    margin-inline: 1rem;
+    margin-block: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .text-section span {
+    font-size: 2rem;
+  }
+  
+  .text-section li {
+    /* margin-inline: 1rem;
+    margin-block: 1rem;
+    font-size: 1.5rem; */
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+  
+  #img-ratos {
+    background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  
+  /* API */
+  
+  .api-section {
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    width: 98%;
+    height: 60rem;
+    background-color: #000;
+  }
+  
+  /* SLIDER SECTION */
+  
+  .slider-section {
+    margin-bottom: 1rem; 
+    margin-inline: 1rem;
+    width: 98%;
+    height: 40rem;
+    background-color: var(--tercery-color);
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width:768px) {
+  section {
+    max-width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../images/section-image/main-section-image.png);
+    background-size: cover;
+    background-position-x: center;
+    /* backdrop-filter: grayscale(60%); */
+  }
+  
+  .banner .filter-banner {
+    margin: 0 auto;
+    margin-block: 1rem;
+    width: 90%;
+    height: 95%;
+    background-color: var(--medium-black);
+    border-radius: 0.5rem;
+  }
+  
+  .filter-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0.5rem;
+    width: 90%;
+  }
+  
+  
+  .banner-text:nth-child(1) span {
+    padding-block: 3rem;
+    color: var(--text-color);
+    font-size: 6rem;
+  }
+
+  .banner-text:nth-child(2) {
+    padding-block: 2rem;
+    margin: 0 auto;
+  }
+
+  .banner-text:nth-child(2) span {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    /* padding-inline: 2.5rem; */
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .img-section {
+    margin-block: 1rem;
+    width: 98%;
+    height: 50rem;
+  }
+  
+  #img-banner-ratos {
+    background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .img-section .filter-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-black);
+    backdrop-filter: blur(0.2rem);
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-text span {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .container .text-section {
+    width: 98%;
+    height: 25rem;
+    background-color: var(--primary-color);
+  }
+  
+  .text-section .text-main {
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+
+  .text-section h1 {
+    margin-inline: 1rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  
+  .text-section li {
+    /* margin-inline: 1rem;
+    margin-block: 1rem;
+    font-size: 1.5rem; */
+    margin-block: 2rem;
+    margin-inline: 2rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+  }
+  
+  #img-ratos {
+    background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  
+  /* API */
+  
+  .api-section {
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    width: 98%;
+    height: 50rem;
+    background-color: #000;
+  }
+  
+  /* SLIDER SECTION */
+  
+  .slider-section {
+    margin-bottom: 1rem; 
+    margin-inline: 1rem;
+    width: 98%;
+    height: 30rem;
+    background-color: var(--tercery-color);
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+}
+
+@media(max-width:320px) {
+  
+  section {
+    max-width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  section .banner {
+    width: 100%;
+    height: 25rem;
+    background-image: url(../images/section-image/main-section-image.png);
+    background-size: cover;
+    background-position-x: center;
+    /* backdrop-filter: grayscale(60%); */
+  }
+  
+  .banner .filter-banner {
+    margin: 0 auto;
+    margin-block: 1rem;
+    width: 90%;
+    height: 90%;
+    background-color: var(--medium-black);
+    border-radius: 0.5rem;
+  }
+  
+  .filter-banner .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-block: 0.5rem; */
+    width: 100%;
+    height: 9rem;
+  }
+  
+  .banner-text:nth-child(1) span {
+    color: var(--text-color);
+    font-size: 2rem;
+    
+  }
+  
+  .banner-text:nth-child(2) span {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding-inline: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .img-section {
+    margin-block: 1rem;
+    width: 98%;
+    height: 20rem;
+  }
+  
+  #img-banner-ratos {
+    background-image: url(../images/imgs-antigas/arroio-dos-ratos.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .img-section .filter-image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-black);
+    backdrop-filter: blur(0.2rem);
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .image-text span {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  
+  .container .text-section {
+    width: 98%;
+    height: 15rem;
+    background-color: var(--primary-color);
+  }
+  
+  .text-section .text-main {
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+  
+  .text-section h1 {
+    margin-inline: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .text-section li {
+    margin-inline: 1rem;
+    margin-block: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  #img-ratos {
+    background-image: url(../images/imgs-antigas/butia.jpg); /* TESTE */
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  
+  /* API */
+  
+  .api-section {
+    margin-block: 1rem;
+    margin-inline: 1rem;
+    width: 98%;
+    height: 20rem;
+    background-color: #000;
+  }
+  
+  /* SLIDER SECTION */
+  
+  .slider-section {
+    margin-bottom: 1rem; 
+    margin-inline: 1rem;
+    width: 98%;
+    height: 15rem;
+    background-color: var(--tercery-color);
+  }
+}
+
