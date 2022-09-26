@@ -1,10 +1,12 @@
 const auth_link = "https://www.strava.com/oauth/token"
-let map = L.map('map').setView([-29.9320, -51.7100], 12);
 let vetor = [];
 
+
+
 class Rota {
-    constructor(link){
+    constructor(link, map){
         this.link = link;
+        this.map = map;
     }
 
     getRoute(res) {
@@ -14,23 +16,20 @@ class Rota {
         return vetor;
     }
 
-    /* getMap() {
-        const map = L.map('map').setView([-29.9320, -51.7100], 12);
-        return map;
-    } */
-
     getActivites(res) {
+    let map = L.map(this.map).setView([-29.9320, -51.7100], 12);
+
        let links = this.getRoute(res)
        console.log(links)
-       for(var i = 0; i < links.length; i++) {
+        for(var i = 0; i < links.length; i++) {
         console.log(links[i])
+        
       fetch(links[i])
          .then((res) => res.json())
          .then(function (data){
             console.log(data)
-            console.log(`${res.access_token}`)                    
             
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
             console.log(data.map.summary_polyline)
@@ -45,11 +44,12 @@ class Rota {
                     opacity: .7,
                     lineJoin: 'round'
                 }
-            ).addTo(map);
-        }
-            )  
+            ).addTo(map);    
+             }
+            )    
         } 
-    }
+        vetor.length = 0; 
+    } 
 
 
     reAuthorize() {
@@ -68,7 +68,7 @@ class Rota {
                 client_id: '93689',
                 client_secret: '05d5dd63dabb33ba2514308b74256983c3edb146',
                 refresh_token: 'e162d2a39fe9b35a1c4f1df5bda5157bcfbfd6ea',
-                grant_type: 'refresh_token'
+                grant_type: 'refresh_token'         
             })
     
         }).then(res => res.json())

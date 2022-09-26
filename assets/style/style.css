@@ -698,6 +698,16 @@ footer section .container-bottom > p {
         width: 100%;
         height: 100%;
     }
+ 
+    .div-mapa {
+        max-width: 100vw;
+        height: 100vh;
+    } 
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
 
     .inside > h1 {
         font-size: 5rem;
