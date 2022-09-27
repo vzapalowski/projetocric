@@ -21,7 +21,7 @@
     <section>
         <div id="map"></div>
         <div id="map02"></div>
-        <!-- <div id="map03"></div> -->
+        <div id="map03"></div>
     </section>
 
     <!-- <div id="map"></div> -->
@@ -31,7 +31,6 @@
          var rota1 = new Rota(
             [
             "https://www.strava.com/api/v3/routes/3004404626219827088?access_token=",
-            "https://www.strava.com/api/v3/routes/3007668662019916668?access_token=",
             "https://www.strava.com/api/v3/routes/3007668506003092348?access_token="
         ],
         "map"
@@ -40,22 +39,21 @@
 
          var rota2 = new Rota(
             [
-            "https://www.strava.com/api/v3/routes/3007668506003092348?access_token=",
             "https://www.strava.com/api/v3/routes/3007667833274213244?access_token=",
             "https://www.strava.com/api/v3/routes/3007667420057044860?access_token="
             ],        
             "map02"
         );
-        rota2.reAuthorize(); 
+        rota2.reAuthorize();  
 
-       /*  var rota3 = new Rota(
+        var rota3 = new Rota(
             [
-            "https://www.strava.com/api/v3/routes/3007668224216829820?access_token="
-            "https://www.strava.com/api/v3/routes/3007667005175419772?access_token=",
+            "https://www.strava.com/api/v3/routes/3007668224216829820?access_token=",
+            "https://www.strava.com/api/v3/routes/3007667005175419772?access_token="
             ],
             "map03"
         )
-        rota3.reAuthorize(); */
+        rota3.reAuthorize();
     </script>
 </body>
 </html>
