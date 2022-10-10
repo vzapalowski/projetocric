@@ -812,15 +812,14 @@ footer section .container-bottom > p {
 
 section.container-cities {
     max-width: 100vw;
-    height: auto;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 2rem;
 }
 
 section.container-cities div.container-inside {
-    width: 90%;
+    min-width: 75%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -874,10 +873,7 @@ section.container-cities div.container-inside div.container-city div.content div
 
 @media(min-width: 992px) {
     section.container-cities {
-        min-height: 90vh;
-        margin-block: 2rem;
-        margin-inline: 1rem;
-
+        min-height: 90vh;  
     }
     
     section.container-cities div.container-inside {
@@ -914,7 +910,8 @@ section.container-cities div.container-inside div.container-city div.content div
     
     section.container-cities div.container-inside div.container-city div.content div.city-name > span{
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 500;
+        transition: .3s ease;
     }
 
     section.container-cities div.container-inside div.container-city div.content > a {
@@ -948,6 +945,16 @@ section.container-cities div.container-inside div.container-city div.content div
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
         transform-origin: left;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
 }
