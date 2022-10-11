@@ -182,7 +182,6 @@ section.container-cities div.container-inside div.container-city {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
