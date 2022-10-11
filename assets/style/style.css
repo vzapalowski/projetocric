@@ -478,8 +478,8 @@ footer section .container-bottom > p {
     }
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     section.container-cities div.container-inside div.container-city::before {
