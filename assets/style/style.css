@@ -432,11 +432,11 @@ footer section .container-bottom > p {
 
     /* CITIES */
     section.container-cities {
-        min-height: 90vh;  
+        min-height: 100vh;  
     }
     
     section.container-cities div.container-inside {
-        width: 70%;
+        width: 85%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -611,3 +611,12 @@ footer section .container-bottom > p {
     }
 }
 
+@media(min-width: 1440px) {
+    section.container-cities {
+        min-height: 90vh;  
+    }
+    
+    section.container-cities div.container-inside {
+        width: 70%;
+    }
+}
