@@ -432,11 +432,11 @@ footer section .container-bottom > p {
 
     /* CITIES */
     section.container-cities {
-        min-height: 100vh;  
+        min-height: 95vh;  
     }
     
     section.container-cities div.container-inside {
-        width: 85%;
+        min-width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -445,8 +445,8 @@ footer section .container-bottom > p {
     }
     
     section.container-cities div.container-inside div.container-city {
-        flex-basis: 12.9rem;
-        height: 60rem;
+        flex-basis: 10.9rem;
+        height: 55rem;
         transition: .5s ease;
         background-size: auto 100%;
         position: relative;
@@ -467,7 +467,7 @@ footer section .container-bottom > p {
     }  
     
     section.container-cities div.container-inside div.container-city div.content div.city-name > span{
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 500;
         transition: .3s ease;
     }
@@ -478,8 +478,8 @@ footer section .container-bottom > p {
     }
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     section.container-cities div.container-inside div.container-city::before {
@@ -496,25 +496,25 @@ footer section .container-bottom > p {
 
     section.container-cities div.container-inside div.container-city:hover {
         flex-grow: 1;
-        height: 65rem;
+        height: 60rem;
         z-index: 2;
         -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
         box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
     }
-
+    
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
         transform-origin: left;
     }
 
     section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 600;
     }
 
     section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4rem;
+        height: 4rem;
     }
 
      /* FOOTER */
@@ -610,6 +610,35 @@ footer section .container-bottom > p {
         color: rgb(160, 28, 28);
     }
 }
+@media(min-width: 1280px) {
+    section.container-cities {
+        min-height: 90vh;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 80%;
+    }
+
+    section.container-cities div.container-inside div.container-city {
+        flex-basis: 12.9rem;
+        height: 50rem;
+    }
+
+
+    section.container-cities div.container-inside div.container-city div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover {
+        flex-grow: 1;
+        height: 55rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 1.8rem;
+    }
+}
 
 @media(min-width: 1440px) {
     section.container-cities {
@@ -617,6 +646,25 @@ footer section .container-bottom > p {
     }
     
     section.container-cities div.container-inside {
-        width: 70%;
+        min-width: 80%;
     }
+
+    section.container-cities div.container-inside div.container-city {
+        height: 60rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover {
+        flex-grow: 1;
+        height: 65rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+        font-size: 2rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 2.2rem;
+    }
+
+    
 }
