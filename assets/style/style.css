@@ -196,12 +196,16 @@ section.container-cities div.container-inside div.container-city div.content {
     flex-direction: column;
     gap: .3rem;
 
-    padding: .5rem;
+    padding: .8rem;
+}
+
+section.container-cities div.container-inside div.container-city div.content > img{
+    display: none;
 }
 
 section.container-cities div.container-inside div.container-city div.content img.img-logo {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 section.container-cities div.container-inside div.container-city div.content div.city-name > span {
@@ -315,6 +319,15 @@ footer section .container-bottom > p {
         justify-content: space-between;
 
         padding: 1rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content > img{
+        display: flex;
+    }
+    
+    section.container-cities div.container-inside div.container-city div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
     }
     
     section.container-cities div.container-inside div.container-city div.content div.city-name > span {
@@ -664,7 +677,5 @@ footer section .container-bottom > p {
 
     section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
         font-size: 2.2rem;
-    }
-
-    
+    }      
 }
