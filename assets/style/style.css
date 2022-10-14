@@ -124,122 +124,94 @@ nav ul li a.nav-link{
     font-size: 1.6rem;
     line-height: 1.6rem;
     text-align: justify;
-}  
+} 
 
-    /* CITIES */
-#a-dos-ratos {
-    background: url(./../images/section-cities-modile/arroio-dos-ratos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* CITIES */
+#arroio-dos-ratos {
+    background-image: url(../images/images-cities/01.jpg);
 }
 
-#barao-do-triunfo{
-    background: url(./../images/section-cities-modile/barao-do-triunfo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#barao-do-triunfo {
+    background-image: url(../images/images-cities/02.jpg);
 }
 
-#butia{
-    background: url(./../images/section-cities-modile/butia.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#butia {
+    background-image: url(../images/images-cities/03.jpg);
 }
 
-#charqueadas{
-    background: url(./../images/section-cities-modile/charqueadas.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#charqueadas {
+    background-image: url(../images/images-cities/04.jpg);
 }
 
-#general-camara{
-    background: url(./../images/section-cities-modile/general-camara.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#general-camara {
+    background-image: url(../images/images-cities/05.jpg);
 }
 
-#minas-do-leao{
-    background: url(./../images/section-cities-modile/minas-do-leao.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#minas-do-leao {
+    background-image: url(../images/images-cities/06.jpg);
 }
 
-#sao-jeronimo{
-    background: url(./../images/section-cities-modile/sao-jeronimo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#sao-jeronimo {
+    background-image: url(../images/images-cities/07.jpg);
 }
 
-#triunfo{
-    background: url(./../images/section-cities-modile/triunfo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#triunfo {
+    background-image: url(../images/images-cities/08.jpg);
 }
- 
- .group-cities {
+
+section.container-cities {
     max-width: 100vw;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+section.container-cities div.container-inside {
+    min-width: 75%;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: .3rem;
-    justify-content: center;
-    margin-block: 5rem;
-    margin-inline: 1rem;
-    overflow: hidden;
-    z-index: 1;
+    gap: .5rem;
 }
 
-.group-cities .group {
-    min-width: 33.3vw;
-    min-height: 5rem; 
-    /* max-height: 7rem;    */    
-    border-radius: 1rem;
-}
-
-.group-cities .group .content-city {
+section.container-cities div.container-inside div.container-city {
     width: 100%;
-    height: 100%;    
+    flex-basis: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-block: 1rem;
-    background-color: rgba(0, 0, 0, .4);
-    border-radius: 1rem;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.group-cities .group .content-city > img {
-    padding-left: 1rem;
+section.container-cities div.container-inside div.container-city div.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .3rem;
+
+    padding: .8rem;
 }
 
-.group-cities .group .content-city > a {
-    padding-right: 1rem;
-}
-
-.group-cities .group .content-city .name-city {
-    padding-inline: 1rem;
-}
-
-.group-cities .group .content-city .name-city > span {
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    color: var(--text-color);
-}
-
-.inside {
+section.container-cities div.container-inside div.container-city div.content > img{
     display: none;
-    width: calc(12.9rem * 8 + (.3rem * 7));  
-    height: 60rem;    
-    background-color: gray;
-    outline: none;
-    border: none;
+}
+
+section.container-cities div.container-inside div.container-city div.content img.img-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
 }
 
 /* FOOTER */
@@ -338,7 +310,30 @@ footer section .container-bottom > p {
     font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
-}                                                              
+}    
+
+@media(min-width: 500px) {
+    /* CITIES */
+    section.container-cities div.container-inside div.container-city div.content {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 1rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content > img{
+        display: flex;
+    }
+    
+    section.container-cities div.container-inside div.container-city div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+        font-size: 1.8rem;
+    }
+}
 
 @media (min-width: 992px){
         /* RESET */
@@ -365,52 +360,6 @@ footer section .container-bottom > p {
         max-width: 100vw;
         overflow: hidden;
         transition: initial;
-    }
-
-    .group-cities {
-        max-width: initial;
-        height: initial;
-        display: initial;
-        flex-direction: initial;
-        gap: initial;
-        justify-content: initial;
-        margin: initial;
-    }
-
-    .group-cities .group {
-        min-width: initial;
-        min-height: initial; 
-        border-radius: initial;
-    }
-
-    .group-cities .group .content-city {
-        width: initial;
-        height: initial;
-        display: initial;
-        justify-content: initial;
-        align-items: initial;
-        padding: initial;
-        margin: initial;
-        border-radius: initial;
-    }
-
-    .group-cities .group .content-city > img {
-        padding: initial;
-    }
-
-    .group-cities .group .content-city > a {
-        padding: initial;
-    }
-    
-    .group-cities .group .content-city .name-city {
-        padding: initial;
-    }
-
-    .group-cities .group .content-city .name-city > span {
-        font-style: initial;
-        font-weight: initial;
-        font-size: initial;
-        line-height: initial;
     }
 
     footer section .container-inside {
@@ -495,217 +444,91 @@ footer section .container-bottom > p {
     }
 
     /* CITIES */
-
-    #a-dos-ratos {
-        background: url(./../images/section-cities-desktop/arroio-dos-ratos.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    section.container-cities {
+        min-height: 95vh;  
     }
     
-    #barao-do-triunfo{
-        background: url(./../images/section-cities-desktop/barao-do-triunfo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #butia{
-        background: url(./../images/section-cities-desktop/butia.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #charqueadas{
-        background: url(./../images/section-cities-desktop/charqueadas.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #general-camara{
-        background: url(./../images/section-cities-desktop/gereral-camara.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #minas-do-leao{
-        background: url(./../images/section-cities-desktop/minas-do-leao.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #sao-jeronimo{
-        background: url(./../images/section-cities-desktop/sao-jeronimo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    #triunfo{
-        background: url(./../images/section-cities-desktop/triunfo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }   
-
-    .group-cities {
-        max-width: 100vw;
-        height: auto;
+    section.container-cities div.container-inside {
+        min-width: 80%;
         display: flex;
-        gap: .3rem;
         justify-content: center;
-        margin-block: 9rem;
-        margin-inline: 1.5rem;
+        align-items: center;
+        flex-direction: row;
+        gap: .3rem;
+    }
+    
+    section.container-cities div.container-inside div.container-city {
+        flex-basis: 10.9rem;
+        height: 55rem;
+        transition: .5s ease;
+        background-size: auto 100%;
         position: relative;
     }
 
-    .group-cities .group {
-        min-width: 12.9rem;
-        height: 60rem;
-        z-index: 10;
-        transition: 1s linear;
-    } 
+    section.container-cities div.container-inside div.container-city div.content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-    .group:hover {    
-        position: absolute;                
-        z-index: 200;        
+    section.container-cities div.container-inside div.container-city div.content div.city-name {
         display: flex;
         justify-content: center;
-        align-items: center; 
-        transition: .5s ease;
-    } 
-
-    .group-cities .group:hover .content-city {
-        display: none;
-    }
-
-    .group:hover .inside {
-        display: flex;
-    }
-
-    .group-cities .group .content-city {
-        width: 100%;
-        height: 100%;        
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        padding-block: .5rem;
+        padding-inline: 1rem;
+    }  
+    
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: .3s ease;
     }
 
-   .group-cities .group .content-city > a{
+    section.container-cities div.container-inside div.container-city div.content > a {
         position: absolute;
         bottom: 2%;
-        padding-bottom: 1rem;
     }
 
-    .group-cities .group .content-city > img {
-        padding-top: 1rem;
-    }
-
-    .group-cities .group .content-city .name-city {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding-top: .6rem;
-    }
-
-    .group-cities .group .content-city .name-city > span {
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 1.8rem;
-    }
-
-    .inside-left {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .inside-left nav {
-        margin-block: 1.5rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .inside-left nav .group-itens > span{
-        font-style: normal;
-        font-weight: 800;
-        font-size: 1.6rem;
-        line-height: 1.6rem;
-        text-transform: uppercase;
-        color: var(--text-color);
-    }
-
-    .inside-left .main-text > p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2rem;
-        padding-inline: 2rem;
-        color: var(--text-color);
-    }
-
-    .inside-left .main-text-bottom {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        padding-inline: 1rem;
-    } 
-
-    .inside-left .main-text-bottom h1 {
-        color: var(--text-color);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 2.3rem;
-        line-height: 2.3rem;
-        text-align: center;
-        padding-block: .8rem;
-    }
-
-    .inside-left .main-text-bottom p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2rem;
-        color: var(--text-color);
-        padding-block: .8rem;
-        padding-inline: 1.5rem;
-        text-align: left;
-    } 
-
-    .inside-left .buttom-bottom{
-        margin-bottom: 1.5rem;
-    }
-
-    .inside-left .buttom-bottom a svg {
+    section.container-cities div.container-inside div.container-city div.content img.img-logo {
         width: 3.5rem;
-        height: 3.6rem;
+        height: 3.5rem;
     }
 
-    .inside-right {
-        width: 100%;
-        height: 100%;
+    section.container-cities div.container-inside div.container-city::before {
+        content: "";
+        background-color: rgb(0, 0, 0, 50%);
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: transform 300ms ease;
+        transform-origin: right;
+        transform: scaleX(0);
     }
 
-    iframe {
-        width: 100%;
-        height: 100%;
+    section.container-cities div.container-inside div.container-city:hover {
+        flex-grow: 1;
+        height: 60rem;
+        z-index: 2;
+        -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
+        box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
+    }
+    
+    section.container-cities div.container-inside div.container-city:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 
-    .inside > h1 {
-        font-size: 5rem;
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 2rem;
+        font-weight: 600;
     }
 
-    .inside > p {
-        font-size: 4rem;
-    } 
+    section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
+    }
 
      /* FOOTER */
      footer nav {
@@ -799,4 +622,60 @@ footer section .container-bottom > p {
         cursor: pointer;
         color: rgb(160, 28, 28);
     }
+}
+@media(min-width: 1280px) {
+    section.container-cities {
+        min-height: 90vh;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 80%;
+    }
+
+    section.container-cities div.container-inside div.container-city {
+        flex-basis: 12.9rem;
+        height: 50rem;
+    }
+
+
+    section.container-cities div.container-inside div.container-city div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover {
+        flex-grow: 1;
+        height: 55rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    section.container-cities {
+        min-height: 90vh;  
+    }
+    
+    section.container-cities div.container-inside {
+        min-width: 80%;
+    }
+
+    section.container-cities div.container-inside div.container-city {
+        height: 60rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover {
+        flex-grow: 1;
+        height: 65rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+        font-size: 2rem;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+        font-size: 2.2rem;
+    }      
 }
