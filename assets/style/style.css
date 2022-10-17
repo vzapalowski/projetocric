@@ -215,102 +215,93 @@ section.container-cities div.container-inside div.container-city div.content div
 }
 
 /* FOOTER */
+
 footer {
     max-width: 100vw;
     height: auto;
-    background-color: rgb(170, 7, 7);
-    /* position: absolute;
-    bottom: 0; */
-    overflow: hidden;
+    background-color: red;
+
+    color: white;
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-areas: 
+    "box01"
+    "box02"
+    "box03";
 }
 
-footer nav {
-    display: none;
-}
-
-footer section {
-    max-width: 100%;
-    height: auto;
+footer .box {
+    min-height: 20rem;
     display: flex;
-    flex-direction: column;
-}
-
-footer section .container-inside {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-    margin-inline: 1rem;
 }
 
-footer section .container-inside:not(:last-child) {
+footer .box01 {
+    grid-area: box01;
+}
+
+footer .box02 {
+    grid-area: box02;
+}
+
+footer .box03 {
+    grid-area: box03;
+}
+
+footer .box .content {
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem .5rem;
+}
+
+footer .box .content > span {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+footer .box .content > img {
+    padding: 1rem;
+}
+
+footer .box .content > ul {
+    display: flex;
+    gap: 1.6rem;
+}
+
+footer .box .content ul li {
+    list-style: none;
+    transition: .5s;
+}
+
+footer .box .content ul li svg {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+footer .box .content ul li path[stroke*="black"] {
+    stroke: white;
+}
+
+footer .box .content ul li path[fill*="black"] {
+    fill: white;
+}
+
+footer .box .lineBox01 {
     border-bottom: 2px solid white;
 }
 
-footer section .container-inside > h1 {
-    padding-block: 1rem;
-    color: var(--text-color);
-    font-size: 2.5rem;
-    font-weight: 700;
+footer .box .lineBox03 {
+    border-top: 2px solid white;
 }
-
-footer section .container-inside > p {
-    font-size: 2rem;
-    text-align: justify;
-    color: var(--text-color);
-    padding-inline: 2rem;
-}
-
-footer section .container-inside > img {
-    width: 15rem;
-    height: 15rem;
-    padding-block: 1rem;
-}
-
-footer section .container-inside ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-footer section .container-inside ul li {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-footer section .container-inside ul li i {
-    color: var(--text-color);
-    font-size: 3.5rem;
-}
-
-footer section .container-inside ul li a {
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: var(--text-color);
-}
-
-footer section .container-bottom {
-    background-color: red;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer section .container-bottom > p {
-    padding-block: 1rem;
-    padding-inline: 1.3rem;
-    text-align: justify;
-    font-size: 1.6rem;
-    color: white;
-    text-transform: uppercase;
-}    
 
 @media(min-width: 500px) {
     /* CITIES */
@@ -360,20 +351,6 @@ footer section .container-bottom > p {
         max-width: 100vw;
         overflow: hidden;
         transition: initial;
-    }
-
-    footer section .container-inside {
-        margin: initial;
-    }
-
-    footer section .container-inside:last-child {
-        display: initial;
-        justify-content: initial;
-        align-items: initial;
-    }
-
-    footer section .container-inside:not(:last-child) {
-        border: initial;
     }
 
     /* NAVIGATION */
@@ -449,7 +426,7 @@ footer section .container-bottom > p {
     }
     
     section.container-cities div.container-inside {
-        min-width: 80%;
+        min-width: 85%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -461,7 +438,7 @@ footer section .container-bottom > p {
         flex-basis: 10.9rem;
         height: 55rem;
         transition: .5s ease;
-        background-size: auto 100%;
+        background-size: cover;
         position: relative;
     }
 
@@ -531,112 +508,54 @@ footer section .container-bottom > p {
     }
 
      /* FOOTER */
-     footer nav {
+     footer {
+        grid-template-rows: initial;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-areas: "box01 box02 box03";
+    }
+
+    footer .box .content {
         width: 100%;
-        height: 6rem;
-        background-color: red;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: .1rem;
+        height: 80%;
+
+        padding-inline: 3.2rem;
     }
 
-    footer section .container-inside > h1 {
-        display: none;
+    footer .box .content ul li:hover {
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[stroke] {
+        stroke: black;
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[fill] {
+        fill: black;
+    }
+
+    footer .box .lineBox01 {
+        border-bottom: initial;
     }
     
-    footer nav .nav-item {
-    max-width: 100%;
-    width: 33.3%;
-    display: flex;
-    justify-content: center;
-    }
-
-    footer nav .nav-item > span,
-    footer .container-bottom > p {
-        padding-inline: 1rem;
-        padding-block: 2rem;
-        font-size: 2rem;
-        color: white;
-        text-transform: uppercase;
-    }
-
-    footer nav .nav-item > span {
-        font-weight: 700;
-    }
-
-    footer > section {
-        flex-direction: row;
-    }
-
-    footer section .container-inside {
-        width: 33.3%;
-        height: auto;
-        justify-content: center;
-        margin-block: 2rem;
-        margin-inline: 1.3rem
-    }
-
-    footer section .container-inside > p {
-        font-weight: 500;    
-    }
-
-    footer section .container-inside > img {
-        width: initial;
-        height: initial;
+    footer .box .lineBox03 {
+        border-top: initial;
     }
     
-    footer section .container-inside:not(:first-child) {
+
+    footer .box .lineBox01 {
+        border-right: 2px solid white;
+    }
+    
+    footer .box .lineBox03 {
         border-left: 2px solid white;
     }
-
-    footer section .container-inside:last-child {
-        display: flex;
-        justify-content: center;
-    }
-
-    footer section .container-inside ul {
-        flex-direction: column;
-        gap: 1.4rem;
-    }
-
-    footer section .container-inside ul li {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    footer section .container-inside ul li i {
-        font-size: 4rem;
-    }
-
-    footer section .container-inside ul li a {
-        display: block;
-        font-size: 2rem;
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    footer section .container-inside ul li a:hover {
-        transition: .3s ease;
-        cursor: pointer;
-        color: rgb(160, 28, 28);
-    }
 }
-@media(min-width: 1280px) {
-    section.container-cities {
-        min-height: 90vh;
-    }
-
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-
+ @media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
         flex-basis: 12.9rem;
         height: 50rem;
     }
-
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
         width: 4rem;
@@ -653,7 +572,18 @@ footer section .container-bottom > p {
     }
 }
 
-@media(min-width: 1440px) {
+/* 
+    section.container-cities {
+        min-height: 90vh;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 80%;
+    }
+    
+ */
+
+/*@media(min-width: 1440px) {
     section.container-cities {
         min-height: 90vh;  
     }
@@ -678,4 +608,4 @@ footer section .container-bottom > p {
     section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
         font-size: 2.2rem;
     }      
-}
+} */
