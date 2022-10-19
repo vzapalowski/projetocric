@@ -161,7 +161,7 @@ nav ul li a.nav-link{
 
 section.container-cities {
     max-width: 100vw;
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +188,7 @@ section.container-cities div.container-inside div.container-city {
 }
 
 section.container-cities div.container-inside div.container-city div.content {
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -212,6 +212,68 @@ section.container-cities div.container-inside div.container-city div.content div
     font-size: 1.6rem;
     font-weight: 600;
     color: white;
+}
+
+section.container-cities div.container-inside div.content-infos {
+    width: 60%;
+    height: 100%;
+    color: white;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.container-cities div.container-inside div.content-infos div.box {
+    width: 75%;
+    height: 75%;
+
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+
+section.container-cities div.container-inside div.content-infos div.box header {
+    width: 100%;
+    min-height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-cities div.container-inside div.content-infos div.box header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+section.container-cities div.container-inside div.content-infos div.box div.content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-cities div.container-inside div.content-infos div.box div.content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section.container-cities div.container-inside div.content-infos div.box div.content ul li {
+    list-style: none;
+
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 /* FOOTER */
@@ -326,6 +388,51 @@ footer .box .lineBox03 {
     }
 }
 
+@media(min-width: 750px) {
+    footer {
+        grid-template-rows: initial;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-areas: "box01 box02 box03";
+    }
+
+    footer .box .content {
+        width: 100%;
+        height: 80%;
+
+        padding-inline: 3.2rem;
+    }
+
+    footer .box .content ul li:hover {
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[stroke] {
+        stroke: black;
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[fill] {
+        fill: black;
+    }
+
+    footer .box .lineBox01 {
+        border-bottom: initial;
+    }
+    
+    footer .box .lineBox03 {
+        border-top: initial;
+    }
+    
+
+    footer .box .lineBox01 {
+        border-right: 2px solid white;
+    }
+    
+    footer .box .lineBox03 {
+        border-left: 2px solid white;
+    }
+}
+
 @media (min-width: 992px){
         /* RESET */
     .navbar{
@@ -435,7 +542,7 @@ footer .box .lineBox03 {
     }
     
     section.container-cities div.container-inside div.container-city {
-        flex-basis: 10.9rem;
+        flex: .1;
         height: 55rem;
         transition: .5s ease;
         background-size: cover;
@@ -491,6 +598,10 @@ footer .box .lineBox03 {
         -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
         box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
     }
+
+    section.container-cities div.container-inside div.container-city:hover .content-infos {
+        display: flex;
+    }
     
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
@@ -508,53 +619,16 @@ footer .box .lineBox03 {
     }
 
      /* FOOTER */
-     footer {
-        grid-template-rows: initial;
-        grid-template-columns: 2fr 3fr 2fr;
-        grid-template-areas: "box01 box02 box03";
-    }
-
-    footer .box .content {
-        width: 100%;
-        height: 80%;
-
-        padding-inline: 3.2rem;
-    }
-
-    footer .box .content ul li:hover {
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[stroke] {
-        stroke: black;
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[fill] {
-        fill: black;
-    }
-
-    footer .box .lineBox01 {
-        border-bottom: initial;
-    }
     
-    footer .box .lineBox03 {
-        border-top: initial;
-    }
-    
-
-    footer .box .lineBox01 {
-        border-right: 2px solid white;
-    }
-    
-    footer .box .lineBox03 {
-        border-left: 2px solid white;
-    }
 }
  @media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
-        flex-basis: 12.9rem;
+        flex: .1;
         height: 50rem;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 95%;
     }
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
