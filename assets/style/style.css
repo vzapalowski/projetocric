@@ -609,3 +609,53 @@ footer .box .lineBox03 {
         font-size: 2.2rem;
     }      
 } */
+
+/* CAROUSEL */
+
+.carousel-inner {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 80vh;
+    opacity: 50%;
+}
+
+.carousel-item p {
+    font-size: 2rem;
+}
+
+.carousel-item h5 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.background1{
+    background: url(./../images/carousel/bike6.jpg);
+    min-height: 70vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+}
+
+.background2{
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 70vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+}
+
+.background3{
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/********************/
