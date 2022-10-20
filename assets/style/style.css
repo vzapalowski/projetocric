@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 /* MAIN */
 
-:root{
+:root {
     --primary-color: #540000;
     --secundary-color: #660D0C;
     --text-color: #fff;
@@ -17,36 +17,36 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
- /* NAVIGATION */
+/* NAVIGATION */
 
- .navbar {
+.navbar {
     background-color: var(--secundary-color);
     height: 5rem;
     max-width: 100vw;
 }
 
-  nav div ul.navbar-nav {
+nav div ul.navbar-nav {
     margin-top: 4rem;
-    gap: 2rem; 
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- nav div ul li a.nav-link {
+nav div ul li a.nav-link {
     font-size: 1.6rem;
     font-weight: 700;
- }
+}
 
- nav ul li:last-child {
+nav ul li:last-child {
     margin-block: 3.8rem;
-} 
+}
 
 nav ul li:nth-child(3) {
     display: none;
-} 
+}
 
-nav ul li a.nav-link{
+nav ul li a.nav-link {
     color: var(--text-color);
 }
 
@@ -65,10 +65,10 @@ nav ul li a.nav-link{
     margin-left: .5rem;
 }
 
-#offcanvasScrolling{
+#offcanvasScrolling {
     max-width: 60vw;
     background-color: var(--primary-color);
-    opacity: 1; 
+    opacity: 1;
     overflow: scroll;
     transition: .5s ease;
 }
@@ -78,7 +78,7 @@ nav ul li a.nav-link{
     background-color: var(--secundary-color);
 }
 
-    /* MAIN IMAGE */
+/* MAIN IMAGE */
 
 .image-main {
     width: 100%;
@@ -88,8 +88,8 @@ nav ul li a.nav-link{
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center; 
-} 
+    justify-content: center;
+}
 
 .back-img {
     background-color: rgba(0, 0, 0, .4);
@@ -101,13 +101,13 @@ nav ul li a.nav-link{
     margin: 2rem;
 }
 
-.back-img > h1,
-.back-img > p {
+.back-img>h1,
+.back-img>p {
     color: var(--text-color);
     padding-inline: 3rem;
 }
 
-.back-img > h1 {
+.back-img>h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 3.2rem;
@@ -117,14 +117,14 @@ nav ul li a.nav-link{
     padding-bottom: 1.5rem;
 }
 
-.back-img > p {
+.back-img>p {
     padding-top: 2rem;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.6rem;
     text-align: justify;
-} 
+}
 
 /* CITIES */
 #arroio-dos-ratos {
@@ -199,7 +199,7 @@ section.container-cities div.container-inside div.container-city div.content {
     padding: .8rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content > img{
+section.container-cities div.container-inside div.container-city div.content>img {
     display: none;
 }
 
@@ -208,7 +208,7 @@ section.container-cities div.container-inside div.container-city div.content img
     height: 3rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+section.container-cities div.container-inside div.container-city div.content div.city-name>span {
     font-size: 1.6rem;
     font-weight: 600;
     color: white;
@@ -226,10 +226,10 @@ footer {
 
     display: grid;
     grid-template-rows: 1fr 1fr .5fr;
-    grid-template-areas: 
-    "box01"
-    "box02"
-    "box03";
+    grid-template-areas:
+        "box01"
+        "box02"
+        "box03";
 }
 
 footer .box {
@@ -263,16 +263,16 @@ footer .box .content {
     padding: 1rem .5rem;
 }
 
-footer .box .content > span {
+footer .box .content>span {
     font-size: 1.6rem;
     text-align: justify;
 }
 
-footer .box .content > img {
+footer .box .content>img {
     padding: 1rem;
 }
 
-footer .box .content > ul {
+footer .box .content>ul {
     display: flex;
     gap: 1.6rem;
 }
@@ -303,7 +303,113 @@ footer .box .lineBox03 {
     border-top: 2px solid white;
 }
 
+@media(max-width: 385px) {
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .carousel-item h5 {
+        display: none;
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+}
+
+@media(min-width: 386px) {
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+}
+
 @media(min-width: 500px) {
+
     /* CITIES */
     section.container-cities div.container-inside div.container-city div.content {
         flex-direction: row;
@@ -312,31 +418,80 @@ footer .box .lineBox03 {
         padding: 1rem;
     }
 
-    section.container-cities div.container-inside div.container-city div.content > img{
+    section.container-cities div.container-inside div.container-city div.content>img {
         display: flex;
     }
-    
+
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
         width: 4rem;
         height: 4rem;
     }
-    
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name>span {
         font-size: 1.8rem;
+    }
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
     }
 }
 
-@media (min-width: 992px){
-        /* RESET */
-    .navbar{
+@media (min-width: 992px) {
+
+    /* RESET */
+    .navbar {
         height: initial;
         width: initial;
     }
 
     nav div ul.navbar-nav,
     nav div ul li,
-    nav div ul li a    
-    {
+    nav div ul li a {
         height: initial;
         width: initial;
         font-size: initial;
@@ -345,9 +500,9 @@ footer .box .lineBox03 {
         padding: initial;
         overflow: initial;
         gap: initial;
-    } 
+    }
 
-    #offcanvasScrolling{
+    #offcanvasScrolling {
         max-width: 100vw;
         overflow: hidden;
         transition: initial;
@@ -370,7 +525,7 @@ footer .box .lineBox03 {
     nav div ul li:nth-child(4),
     nav div ul li:nth-child(5) {
         width: 13.7rem;
-        height: 3.8rem; 
+        height: 3.8rem;
         border-radius: 2rem;
         text-align: center;
     }
@@ -394,27 +549,27 @@ footer .box .lineBox03 {
     nav div ul li:nth-child(1) a.nav-link:hover,
     nav div ul li:nth-child(2) a.nav-link:hover,
     nav div ul li:nth-child(4) a.nav-link:hover,
-    nav div ul li:nth-child(5) a.nav-link:hover{
+    nav div ul li:nth-child(5) a.nav-link:hover {
         border-radius: 2rem;
         background-color: var(--primary-color);
         color: var(--color-hover);
         text-align: center;
         transition: .4s;
-    } 
+    }
 
     /* IMAGE MAIN */
     .image-main {
         height: 75vh;
-    } 
+    }
 
-     .back-img > h1 {
+    .back-img>h1 {
         font-size: 9.6rem;
         line-height: 9.6rem;
         padding-top: 6rem;
         padding-bottom: 1.5rem;
     }
 
-    .back-img > p {
+    .back-img>p {
         font-size: 3.2rem;
         line-height: 3.2rem;
         padding-bottom: 8.5rem
@@ -422,9 +577,9 @@ footer .box .lineBox03 {
 
     /* CITIES */
     section.container-cities {
-        min-height: 95vh;  
+        min-height: 95vh;
     }
-    
+
     section.container-cities div.container-inside {
         min-width: 85%;
         display: flex;
@@ -433,7 +588,7 @@ footer .box .lineBox03 {
         flex-direction: row;
         gap: .3rem;
     }
-    
+
     section.container-cities div.container-inside div.container-city {
         flex-basis: 10.9rem;
         height: 55rem;
@@ -454,15 +609,15 @@ footer .box .lineBox03 {
         flex-direction: column;
         padding-block: .5rem;
         padding-inline: 1rem;
-    }  
-    
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name>span {
         font-size: 1.6rem;
         font-weight: 500;
         transition: .3s ease;
     }
 
-    section.container-cities div.container-inside div.container-city div.content > a {
+    section.container-cities div.container-inside div.container-city div.content>a {
         position: absolute;
         bottom: 2%;
     }
@@ -488,16 +643,16 @@ footer .box .lineBox03 {
         flex-grow: 1;
         height: 60rem;
         z-index: 2;
-        -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
-        box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
+        -webkit-box-shadow: 0px 0px 21px 10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 21px 10px rgba(0, 0, 0, 0.38);
     }
-    
+
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
         transform-origin: left;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name>span {
         font-size: 2rem;
         font-weight: 600;
     }
@@ -507,8 +662,8 @@ footer .box .lineBox03 {
         height: 4rem;
     }
 
-     /* FOOTER */
-     footer {
+    /* FOOTER */
+    footer {
         grid-template-rows: initial;
         grid-template-columns: 2fr 3fr 2fr;
         grid-template-areas: "box01 box02 box03";
@@ -537,21 +692,69 @@ footer .box .lineBox03 {
     footer .box .lineBox01 {
         border-bottom: initial;
     }
-    
+
     footer .box .lineBox03 {
         border-top: initial;
     }
-    
+
 
     footer .box .lineBox01 {
         border-right: 2px solid white;
     }
-    
+
     footer .box .lineBox03 {
         border-left: 2px solid white;
     }
+
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 80vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 2rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
- @media(min-width: 1280px) {
+
+@media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
         flex-basis: 12.9rem;
         height: 50rem;
@@ -567,8 +770,55 @@ footer .box .lineBox03 {
         height: 55rem;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name>span {
         font-size: 1.8rem;
+    }
+
+    .carousel-inner {
+        max-width: 200vw;
+        max-height: 231vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 80vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 2rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
     }
 }
 
@@ -583,79 +833,9 @@ footer .box .lineBox03 {
     
  */
 
-/*@media(min-width: 1440px) {
-    section.container-cities {
-        min-height: 90vh;  
-    }
-    
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
 
-    section.container-cities div.container-inside div.container-city {
-        height: 60rem;
-    }
-
-    section.container-cities div.container-inside div.container-city:hover {
-        flex-grow: 1;
-        height: 65rem;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
-        font-size: 2rem;
-    }
-
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
-        font-size: 2.2rem;
-    }      
-} */
 
 /* CAROUSEL */
 
-.carousel-inner {
-    max-width: 100vw;
-    max-height: 100vh;
-}
 
-.carousel-item img {
-    max-width: 100%;
-    max-height: 80vh;
-    opacity: 50%;
-}
-
-.carousel-item p {
-    font-size: 2rem;
-}
-
-.carousel-item h5 {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
-
-.background1{
-    background: url(./../images/carousel/bike6.jpg);
-    min-height: 70vh;
-    background-position: bottom;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-}
-
-.background2{
-    background: url(./../images/carousel/bike4.jpg);
-    min-height: 70vh;
-    background-position: bottom;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-}
-
-.background3{
-    background: url(./../images/carousel/bike5.jpg);
-    min-height: 70vh;
-    width: 100%;
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /********************/
