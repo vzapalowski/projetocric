@@ -188,7 +188,7 @@ section.container-cities div.container-inside div.container-city {
 }
 
 section.container-cities div.container-inside div.container-city div.content {
-    width: 40%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -199,7 +199,11 @@ section.container-cities div.container-inside div.container-city div.content {
     padding: .8rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content > img{
+section.container-cities div.container-inside div.container-city div.content-img {
+    display: none;
+}
+
+section.container-cities div.container-inside div.container-city div.content-infos {
     display: none;
 }
 
@@ -214,9 +218,34 @@ section.container-cities div.container-inside div.container-city div.content div
     color: white;
 }
 
-section.container-cities div.container-inside div.content-infos {
-    width: 60%;
+/* section.container-cities div.container-inside div.container-city div.content-img {
+    width: 50%;
     height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-cities div.container-inside div.container-city div.content-img div.img {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 25%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-cities div.container-inside div.container-city div.content-img div.img p {
+    font-size: 2.4rem;
+    
+}
+
+section.container-cities div.container-inside div.content-infos {
+    width: 30%;
+    height: 100%;
+
     color: white;
 
     display: none;
@@ -226,17 +255,22 @@ section.container-cities div.container-inside div.content-infos {
 }
 
 section.container-cities div.container-inside div.content-infos div.box {
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
+
+    background-color: blue;
 
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    justify-content: space-between;   
     flex-direction: column;
 }
 
 section.container-cities div.container-inside div.content-infos div.box header {
     width: 100%;
     min-height: 4rem;
+
+    margin-top: 1.4rem;
 
     display: flex;
     justify-content: center;
@@ -274,7 +308,7 @@ section.container-cities div.container-inside div.content-infos div.box div.cont
 
     font-size: 2rem;
     font-weight: 400;
-}
+} */
 
 /* FOOTER */
 
@@ -550,6 +584,7 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content {
+        width: 20%;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -599,10 +634,101 @@ footer .box .lineBox03 {
         box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
     }
 
-    section.container-cities div.container-inside div.container-city:hover .content-infos {
+    section.container-cities div.container-inside div.container-city:hover div.content {
+        justify-content: center;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content a {
+        display: none;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img {
+        width: 50%;
+        height: 100%;
+
+        transition: .5s ease;
+
+        display: none;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img {
+        width: 75%;
+        height: 60%;
+
+        background-color: rgb(255, 255, 255, 25%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img p {
+        font-size: 3.2rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos {
+        width: 30%;
+        height: 100%;
+
+        transition: .5s ease;
+
+        display: none;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding-block: 1rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos h1 {
+        font-size: 2rem;
+        font-weight: bold;
+
+        color: white;
+
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos p {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 0%;
+
+        color: white;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos ul {
+        margin: auto 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1.6rem;
+
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos ul li {
+        list-style: none;
+
+        font-size: 2rem;
+        color: white;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content-img{
         display: flex;
     }
-    
+
+    section.container-cities div.container-inside div.container-city:hover div.content-infos {
+        display: flex;
+    }
+    /*
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
         transform-origin: left;
@@ -616,9 +742,8 @@ footer .box .lineBox03 {
     section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
         width: 4rem;
         height: 4rem;
-    }
+    } */
 
-     /* FOOTER */
     
 }
  @media(min-width: 1280px) {
@@ -646,40 +771,26 @@ footer .box .lineBox03 {
     }
 }
 
-/* 
-    section.container-cities {
-        min-height: 90vh;
-    }
-
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-    
- */
-
-/*@media(min-width: 1440px) {
-    section.container-cities {
-        min-height: 90vh;  
-    }
-    
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-
+@media(min-width: 1440px) {
     section.container-cities div.container-inside div.container-city {
-        height: 60rem;
+        flex: .1;
+        height: 65rem;
     }
 
     section.container-cities div.container-inside div.container-city:hover {
         flex-grow: 1;
-        height: 65rem;
+        height: 70rem;
     }
 
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+    section.container-cities div.container-inside div.content-infos div.box header h1 {
+        font-size: 3.2rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
         font-size: 2rem;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
-        font-size: 2.2rem;
-    }      
-} */
+    section.container-cities div.container-inside div.content-infos div.box div.content ul li {
+        font-size: 2.4rem;
+    }
+}
