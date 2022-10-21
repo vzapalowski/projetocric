@@ -817,25 +817,8 @@ footer .box .lineBox03 {
         min-height: 70vh;
         width: 100%;
         display: flex;
-        /* background-repeat: no-repeat; */
         background-size: cover;
     }
 }
-
-/* 
-    section.container-cities {
-        min-height: 90vh;
-    }
-
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-    
- */
-
-
-
-/* CAROUSEL */
-
 
 /********************/
