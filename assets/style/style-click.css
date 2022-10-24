@@ -728,3 +728,8 @@ footer .box .lineBox03 {
 }
 
 /******************/
+
+#map {
+  width: 250px;
+  height: 250px;
+}
