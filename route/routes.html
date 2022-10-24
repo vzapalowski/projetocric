@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style-route.css" />
+    <script src="Polyline.encoded.js"></script>
+  </head>
+  <body>
+    <section>
+      <div id="map"></div>
+      <div id="map02"></div>
+      <div id="map03"></div>
+    </section>
+
+    <!-- <div id="map"></div> -->
+
+    <script src="route-2.0.js"></script>
+    <script>
+      var rota1 = new Rota(
+        [
+          // ROTA SÃO JERÔNIMO - INCOMPLETA -> FALTANDO TRAJETO
+          "https://www.strava.com/api/v3/routes/3007668662019916668?access_token=",
+          "https://www.strava.com/api/v3/routes/3007668506003092348?access_token=",
+          "https://www.strava.com/api/v3/routes/3007667833274213244?access_token=",
+          //   "https://www.strava.com/api/v3/routes/3004404626219827088?access_token=",
+          //   "https://www.strava.com/api/v3/routes/3007668506003092348?access_token=",
+          //   "https://www.strava.com/api/v3/routes/3007668662019916668?access_token=",
+        ],
+        "map"
+      )
+      rota1.reAuthorize()
+
+      /*  var rota2 = new Rota(
+            [
+            "https://www.strava.com/api/v3/routes/3007667833274213244?access_token=",
+            "https://www.strava.com/api/v3/routes/3007667420057044860?access_token="
+            ],        
+            "map02"
+        );
+        rota2.reAuthorize();  
+
+        var rota3 = new Rota(
+            [
+            "https://www.strava.com/api/v3/routes/3007668224216829820?access_token=",
+            "https://www.strava.com/api/v3/routes/3007667005175419772?access_token="
+            ],
+            "map03"
+        ) */
+      rota3.reAuthorize()
+    </script>
+  </body>
+</html>
