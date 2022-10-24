@@ -128,40 +128,40 @@ nav ul li a.nav-link{
 
 /* CITIES */
 #arroio-dos-ratos {
-    background-image: url(../images/images-cities/01.jpg);
+    background-image: url(../images/images-cities/arroio-dos-ratos.jpg);
 }
 
 #barao-do-triunfo {
-    background-image: url(../images/images-cities/02.jpg);
+    background-image: url(../images/images-cities/barao-do-triunfo.jpg);
 }
 
 #butia {
-    background-image: url(../images/images-cities/03.jpg);
+    background-image: url(../images/images-cities/butia.jpg);
 }
 
 #charqueadas {
-    background-image: url(../images/images-cities/04.jpg);
+    background-image: url(../images/images-cities/charqueadas.jpg);
 }
 
 #general-camara {
-    background-image: url(../images/images-cities/05.jpg);
+    background-image: url(../images/images-cities/general-camara.jpg);
 }
 
 #minas-do-leao {
-    background-image: url(../images/images-cities/06.jpg);
+    background-image: url(../images/images-cities/minas-do-leao.jpg);
 }
 
 #sao-jeronimo {
-    background-image: url(../images/images-cities/07.jpg);
+    background-image: url(../images/images-cities/sao-jeronimo.jpg);
 }
 
 #triunfo {
-    background-image: url(../images/images-cities/08.jpg);
+    background-image: url(../images/images-cities/triunfo.jpg);
 }
 
 section.container-cities {
     max-width: 100vw;
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +199,11 @@ section.container-cities div.container-inside div.container-city div.content {
     padding: .8rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content > img{
+section.container-cities div.container-inside div.container-city div.content-img {
+    display: none;
+}
+
+section.container-cities div.container-inside div.container-city div.content-infos {
     display: none;
 }
 
@@ -215,7 +219,6 @@ section.container-cities div.container-inside div.container-city div.content div
 }
 
 /* FOOTER */
-
 footer {
     max-width: 100vw;
     height: auto;
@@ -323,6 +326,51 @@ footer .box .lineBox03 {
     
     section.container-cities div.container-inside div.container-city div.content div.city-name > span {
         font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 750px) {
+    footer {
+        grid-template-rows: initial;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-areas: "box01 box02 box03";
+    }
+
+    footer .box .content {
+        width: 100%;
+        height: 80%;
+
+        padding-inline: 3.2rem;
+    }
+
+    footer .box .content ul li:hover {
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[stroke] {
+        stroke: black;
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover path[fill] {
+        fill: black;
+    }
+
+    footer .box .lineBox01 {
+        border-bottom: initial;
+    }
+    
+    footer .box .lineBox03 {
+        border-top: initial;
+    }
+    
+
+    footer .box .lineBox01 {
+        border-right: 2px solid white;
+    }
+    
+    footer .box .lineBox03 {
+        border-left: 2px solid white;
     }
 }
 
@@ -435,7 +483,7 @@ footer .box .lineBox03 {
     }
     
     section.container-cities div.container-inside div.container-city {
-        flex-basis: 10.9rem;
+        flex: .1;
         height: 55rem;
         transition: .5s ease;
         background-size: cover;
@@ -443,6 +491,7 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content {
+        width: 20%;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -491,6 +540,106 @@ footer .box .lineBox03 {
         -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
         box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
     }
+
+    section.container-cities div.container-inside div.container-city:hover div.content {
+        justify-content: center;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content a {
+        display: none;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img {
+        width: 50%;
+        height: 100%;
+
+        transition: 1s ease;
+
+        display: none;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img {
+        width: 75%;
+        height: 60%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img > img {
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img p {
+        font-size: 3.2rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos {
+        width: 30%;
+        height: 100%;
+
+        transition: .5s ease;
+
+        display: none;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding-block: 1rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos h1 {
+        font-size: 2rem;
+        font-weight: bold;
+
+        color: white;
+
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos p {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 0%;
+
+        color: white;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos ul {
+        margin: auto 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1.6rem;
+
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos ul li {
+        list-style: none;
+
+        font-size: 2rem;
+        color: white;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content-img{
+        display: flex;
+    }
+
+    section.container-cities div.container-inside div.container-city:hover div.content-infos {
+        display: flex;
+    }
     
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
@@ -507,54 +656,16 @@ footer .box .lineBox03 {
         height: 4rem;
     }
 
-     /* FOOTER */
-     footer {
-        grid-template-rows: initial;
-        grid-template-columns: 2fr 3fr 2fr;
-        grid-template-areas: "box01 box02 box03";
-    }
-
-    footer .box .content {
-        width: 100%;
-        height: 80%;
-
-        padding-inline: 3.2rem;
-    }
-
-    footer .box .content ul li:hover {
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[stroke] {
-        stroke: black;
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[fill] {
-        fill: black;
-    }
-
-    footer .box .lineBox01 {
-        border-bottom: initial;
-    }
     
-    footer .box .lineBox03 {
-        border-top: initial;
-    }
-    
-
-    footer .box .lineBox01 {
-        border-right: 2px solid white;
-    }
-    
-    footer .box .lineBox03 {
-        border-left: 2px solid white;
-    }
 }
  @media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
-        flex-basis: 12.9rem;
+        flex: .1;
         height: 50rem;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 95%;
     }
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
@@ -572,40 +683,26 @@ footer .box .lineBox03 {
     }
 }
 
-/* 
-    section.container-cities {
-        min-height: 90vh;
-    }
-
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-    
- */
-
-/*@media(min-width: 1440px) {
-    section.container-cities {
-        min-height: 90vh;  
-    }
-    
-    section.container-cities div.container-inside {
-        min-width: 80%;
-    }
-
+@media(min-width: 1440px) {
     section.container-cities div.container-inside div.container-city {
-        height: 60rem;
+        flex: .1;
+        height: 65rem;
     }
 
     section.container-cities div.container-inside div.container-city:hover {
         flex-grow: 1;
-        height: 65rem;
+        height: 70rem;
     }
 
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+    section.container-cities div.container-inside div.content-infos div.box header h1 {
+        font-size: 3.2rem;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
         font-size: 2rem;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
-        font-size: 2.2rem;
-    }      
-} */
+    section.container-cities div.container-inside div.content-infos div.box div.content ul li {
+        font-size: 2.4rem;
+    }
+}
