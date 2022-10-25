@@ -16,7 +16,8 @@ class Rota {
 
   getActivites(res) {
     let map = L.map(this.map).setView([-29.932, -51.71], 12)
-    console.log(this.map)
+    // console.log(this.map)
+    console.log(L)
     let links = this.getRoute(res)
     console.log(links)
     for (var i = 0; i < links.length; i++) {
