@@ -311,6 +311,11 @@ body > .container {
   background-color: var(--white);
 }
 
+#map {
+  width: 550px;
+  height: 350px;
+}
+
 .gridlayout > div:nth-child(2) {
   display: flex;
   align-items: center;
@@ -696,11 +701,21 @@ footer .box .lineBox03 {
     display: flex;
     background-size: cover;
   }
+
+  #map {
+    width: 450px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 1024px) {
   html {
     font-size: 75%;
+  }
+
+  #map {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -712,6 +727,11 @@ footer .box .lineBox03 {
   /* .carrousel-inner h5 {
     font-size: 8rem;
   } */
+
+  #map {
+    width: 200px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 515px) {
@@ -719,17 +739,22 @@ footer .box .lineBox03 {
     border-left: none;
     border-top: solid thin var(--gray);
   }
+
+  #map {
+    width: 350px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 425px) {
   html {
     font-size: 35%;
   }
+
+  #map {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 /******************/
-
-#map {
-  width: 250px;
-  height: 250px;
-}
