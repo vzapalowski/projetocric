@@ -31,8 +31,6 @@
   --text-size: 1.5rem;
 }
 
-/* MAIN */
-
 :root {
   --primary-color: #540000;
   --secundary-color: #660d0c;
@@ -130,9 +128,7 @@ nav ul li a.nav-link {
   }
 
   .carousel-item h5 {
-    /* display: none; */
     font-size: 2rem;
-    /* padding-bottom: 0.5rem; */
   }
 
   .background1 {
@@ -158,7 +154,6 @@ nav ul li a.nav-link {
     min-height: 50vh;
     width: 100%;
     display: flex;
-    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }
@@ -209,7 +204,6 @@ nav ul li a.nav-link {
     min-height: 50vh;
     width: 100%;
     display: flex;
-    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }
@@ -259,7 +253,6 @@ nav ul li a.nav-link {
     min-height: 50vh;
     width: 100%;
     display: flex;
-    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 }
@@ -267,18 +260,6 @@ nav ul li a.nav-link {
 /* BODY */
 
 /* CONTAINER */
-
-/* .carousel {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70rem;
-  background-color: var(--gray);
-  font-size: var(--title);
-  color: var(--text-color);
-} */
 
 body {
   max-width: 100%;
@@ -723,10 +704,6 @@ footer .box .lineBox03 {
   html {
     font-size: 50%;
   }
-
-  /* .carrousel-inner h5 {
-    font-size: 8rem;
-  } */
 
   #map {
     width: 200px;
