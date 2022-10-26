@@ -101,7 +101,6 @@ section.image-main div.back-img {
     
     display: flex;
     flex-direction: column;
-
     justify-content: space-evenly;    
 }
 
@@ -125,6 +124,39 @@ section.image-main div.back-img p {
     text-align: justify;
 
     padding-bottom: 1rem;
+}
+
+/* MAP */
+section.container-map {
+    max-width: 100vw;
+    height: 60vh;
+
+    margin-top: 2rem;
+}
+
+section.container-map div.title {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container-map div.title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    
+    padding-inline: .5rem;
+}
+
+section.container-map div.container-content {
+    width: 100%;
+    height: 80%;
+
+    background-color: blue;
 }
 
 /* CITIES */
@@ -216,7 +248,7 @@ section.container-cities div.container-inside div.container-city div.content img
 section.container-cities div.container-inside div.container-city div.content div.city-name > span {
     font-size: 1.6rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);
 }
 
 /* FOOTER */
@@ -346,6 +378,23 @@ footer .box .lineBox03 {
     section.image-main div.back-img p {
         font-size: 2.4rem;
     }
+
+    section.container-map {
+        height: 75vh;
+    }
+
+    section.container-map div.title {
+        height: 10%;
+    }
+
+    section.container-map div.title h1 {
+        font-size: 2.4rem;
+    }
+
+    section.container-map div.container-content {
+        height: 90%;
+    }
+
     footer {
         grid-template-rows: initial;
         grid-template-columns: 2fr 3fr 2fr;
@@ -474,6 +523,9 @@ footer .box .lineBox03 {
     section.image-main div.back-img p {
         font-size: 2.4rem;
     }
+
+    /* MAP */
+
 
     /* CITIES */
     section.container-cities {
