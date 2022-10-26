@@ -79,52 +79,53 @@ nav ul li a.nav-link{
 }
 
     /* MAIN IMAGE */
-
-.image-main {
-    width: 100%;
-    min-height: 50vh;
+section.image-main {
+    max-width: 100vw;
+    height: 75vh;
     background: url(./../images/section-image/main-section-image.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center; 
 } 
 
-.back-img {
+section.image-main div.back-img {
     background-color: rgba(0, 0, 0, .4);
-    width: 80%;
-    min-height: 40vh;
-    border-radius: 2rem;
+
+    width: 90%;
+    height: 90%;
+
+    border-radius: 10px;
+    
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+
+    justify-content: space-evenly;    
 }
 
-.back-img > h1,
-.back-img > p {
+section.image-main div.back-img h1,
+section.image-main div.back-img p {
     color: var(--text-color);
-    padding-inline: 3rem;
+
+    padding-inline: .5rem;
 }
 
-.back-img > h1 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.2rem;
-    line-height: 3.2rem;
+section.image-main div.back-img h1 {
+    font-size: 2rem;
     font-weight: 600;
-    padding-top: 3rem;
-    padding-bottom: 1.5rem;
+
+    padding-top: 1rem;
 }
 
-.back-img > p {
-    padding-top: 2rem;
-    font-style: normal;
-    font-weight: 500;
+section.image-main div.back-img p {
     font-size: 1.6rem;
-    line-height: 1.6rem;
+
     text-align: justify;
-} 
+
+    padding-bottom: 1rem;
+}
 
 /* CITIES */
 #arroio-dos-ratos {
@@ -307,6 +308,14 @@ footer .box .lineBox03 {
 }
 
 @media(min-width: 500px) {
+    section.image-main div.back-img h1 {
+        font-size: 2.4rem;
+    }
+
+    section.image-main div.back-img p {
+        font-size: 2rem;
+    }
+
     /* CITIES */
     section.container-cities div.container-inside div.container-city div.content {
         flex-direction: row;
@@ -330,6 +339,13 @@ footer .box .lineBox03 {
 }
 
 @media(min-width: 750px) {
+    section.image-main div.back-img h1 {
+        font-size: 3.2rem;
+    }
+
+    section.image-main div.back-img p {
+        font-size: 2.4rem;
+    }
     footer {
         grid-template-rows: initial;
         grid-template-columns: 2fr 3fr 2fr;
@@ -450,22 +466,13 @@ footer .box .lineBox03 {
         transition: .4s;
     } 
 
-    /* IMAGE MAIN */
-    .image-main {
-        height: 75vh;
-    } 
-
-     .back-img > h1 {
-        font-size: 9.6rem;
-        line-height: 9.6rem;
-        padding-top: 6rem;
-        padding-bottom: 1.5rem;
+   /* IMAGE MAIN */
+   section.image-main div.back-img h1 {
+    font-size: 4rem;
     }
 
-    .back-img > p {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-        padding-bottom: 8.5rem
+    section.image-main div.back-img p {
+        font-size: 2.4rem;
     }
 
     /* CITIES */
@@ -623,7 +630,6 @@ footer .box .lineBox03 {
         flex-direction: column;
 
         gap: 1.6rem;
-
     }
 
     section.container-cities div.container-inside div.container-city div.content-infos ul li {
