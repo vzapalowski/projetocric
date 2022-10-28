@@ -14,7 +14,6 @@
     --text-color-black: #000;
     --color-hover: rgb(180, 173, 173);
     font-size: 62.5%;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
  /* NAVIGATION */
@@ -236,6 +235,10 @@ section.container-cities div.container-inside div.container-city div.content {
     gap: .3rem;
 
     padding: .8rem;
+}
+
+section.container-cities div.container-inside div.container-city div.content img {
+    display: none;   
 }
 
 section.container-cities div.container-inside div.container-city div.content-img {
