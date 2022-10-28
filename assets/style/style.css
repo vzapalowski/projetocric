@@ -329,11 +329,11 @@ footer .box .content ul li svg {
     height: 4.5rem;
 }
 
-footer .box .content ul li path[stroke*="black"] {
+footer .box .content ul li a svg path[stroke*="black"] {
     stroke: white;
 }
 
-footer .box .content ul li path[fill*="black"] {
+footer .box .content ul li a svg path[fill*="black"] {
     fill: white;
 }
 
@@ -412,19 +412,6 @@ footer .box .lineBox03 {
         height: 80%;
 
         padding-inline: 3.2rem;
-    }
-
-    footer .box .content ul li:hover {
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[stroke] {
-        stroke: black;
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover path[fill] {
-        fill: black;
     }
 
     footer .box .lineBox01 {
@@ -684,8 +671,17 @@ footer .box .lineBox03 {
 
         color: white;
     }
+    
+    section.container-cities div.container-inside div.container-city div.content a svg {
+        width: 4rem;
+        height: 4rem;
+    }
 
-    section.container-cities div.container-inside div.container-city div.content-infos a  {
+    section.container-cities div.container-inside div.container-city div.content-infos a svg  {
+        width: 4.5rem;
+        height: 4.5rem;
+
+        transition: .5s;
     }
 
     section.container-cities div.container-inside div.container-city div.content-infos ul {
@@ -724,13 +720,24 @@ footer .box .lineBox03 {
         font-weight: 600;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
-        width: 4rem;
-        height: 4rem;
+    section.container-cities div.container-inside div.container-city div.content-infos a:hover svg path{
+        stroke: var(--color-hover);
     }
 
-    
+    footer .box .content ul li:hover {
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover a svg path[stroke] {
+        stroke: var(--color-hover);
+        cursor: pointer;
+    }
+
+    footer .box .content ul li:hover a svg path[fill] {
+        fill: var(--color-hover);
+    }
 }
+
  @media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
         flex: .1;
