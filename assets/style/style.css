@@ -155,8 +155,14 @@ section.container-map div.title h1 {
 section.container-map div.container-content {
     width: 100%;
     height: 80%;
+/* 
+    background-image: url(../images/map-route/image-route.jpeg);
+    background-size: cover; */
+}
 
-    background-color: blue;
+section.container-map div.container-content img {
+    width: 100%;
+    height: 100%;
 }
 
 /* CITIES */
@@ -380,7 +386,7 @@ footer .box .lineBox03 {
     }
 
     section.container-map {
-        height: 75vh;
+        height: 85vh;
     }
 
     section.container-map div.title {
@@ -625,8 +631,8 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img {
-        width: 75%;
-        height: 50%;
+        width: 90%; /* 75 */
+        height: 60%; /* 50 */
 
         display: flex;
         justify-content: center;
@@ -677,6 +683,9 @@ footer .box .lineBox03 {
         bottom: 0%;
 
         color: white;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-infos a  {
     }
 
     section.container-cities div.container-inside div.container-city div.content-infos ul {
