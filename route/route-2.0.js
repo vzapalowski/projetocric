@@ -38,7 +38,7 @@ class Rota {
           console.log(coordinates)
 
           L.polyline(coordinates, {
-            color: "green",
+            color: "blue",
             weight: 5,
             opacity: 0.7,
             lineJoin: "round",

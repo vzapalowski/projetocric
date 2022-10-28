@@ -525,6 +525,7 @@ footer section .container-bottom > p {
         font-weight: 600;
     }
 
+<<<<<<< refs/remotes/origin/rota
     section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
         width: 4rem;
         height: 4rem;
@@ -535,12 +536,39 @@ footer section .container-bottom > p {
         width: 100%;
         height: 6rem;
         background-color: red;
+=======
+    section.container-cities div.container-inside div.container-city div.content-img {
+        width: 50%;
+        height: 100%;
+
+        transition: 1s ease;
+
+        background-color: rgb(0, 0, 0, .4);
+
+        -webkit-box-shadow: 5px 5px 15px -20px rgba(255,255,255,1);
+        -moz-box-shadow: 5px 5px 15px -20px rgba(255,255,255,1);
+        box-shadow: 5px 5px 15px -20px rgba(255,255,255,1);
+
+        z-index: 1;
+
+        display: none;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.container-cities div.container-inside div.container-city div.content-img div.img {
+        width: 75%;
+        height: 50%;
+
+>>>>>>> local
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: .1rem;
     }
 
+<<<<<<< refs/remotes/origin/rota
     footer section .container-inside > h1 {
         display: none;
     }
@@ -550,6 +578,14 @@ footer section .container-bottom > p {
     width: 33.3%;
     display: flex;
     justify-content: center;
+=======
+    section.container-cities div.container-inside div.container-city div.content-img div.img > img {
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+
+        border-radius: 10px;
+>>>>>>> local
     }
 
     footer nav .nav-item > span,
@@ -565,8 +601,16 @@ footer section .container-bottom > p {
         font-weight: 700;
     }
 
+<<<<<<< refs/remotes/origin/rota
     footer > section {
         flex-direction: row;
+=======
+    section.container-cities div.container-inside div.container-city div.content-infos h1 {
+        font-size: 2rem;
+        font-weight: bold;
+
+        color: white;
+>>>>>>> local
     }
 
     footer section .container-inside {
