@@ -1,51 +1,143 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+    /* background-color: black !important; */
+}
+/* FOOTER */
+footer {
+    max-width: 100vw;
+    height: auto;
+    background-color: red;
+  
+    color: white;
+    font-size: 2rem;
+  
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "box01"
+      "box02"
+      "box03";
+  }
+  
+  footer .box {
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .box01 {
+    grid-area: box01;
+  }
+  
+  footer .box02 {
+    grid-area: box02;
+  }
+  
+  footer .box03 {
+    grid-area: box03;
+  }
+  
+  footer .box .content {
+    width: 80%;
+    height: 80%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    padding: 1rem 0.5rem;
+  }
+  
+  footer .box .content > span {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  
+  footer .box .content > img {
+    padding: 1rem;
+  }
+  
+  footer .box .content > ul {
+    display: flex;
+    gap: 1.6rem;
+  }
+  
+  footer .box .content ul li {
+    list-style: none;
+    transition: 0.5s;
+  }
+  
+  footer .box .content ul li svg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  
+  footer .box .content ul li path[stroke*="black"] {
+    stroke: white;
+  }
+  
+  footer .box .content ul li path[fill*="black"] {
+    fill: white;
+  }
+  
+  footer .box .lineBox01 {
+    border-bottom: 2px solid white;
+  }
+  
+  footer .box .lineBox03 {
+    border-top: 2px solid white;
+  }
+  
 /* MAIN */
 
-:root{
+:root {
     --primary-color: #540000;
     --secundary-color: #660D0C;
     --text-color: #fff;
     --text-color-black: #000;
     --color-hover: rgb(180, 173, 173);
     font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
- /* NAVIGATION */
+/* NAVIGATION */
 
- .navbar {
+.navbar {
     background-color: var(--secundary-color);
     height: 5rem;
     max-width: 100vw;
 }
 
-  nav div ul.navbar-nav {
+nav div ul.navbar-nav {
     margin-top: 4rem;
-    gap: 2rem; 
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- nav div ul li a.nav-link {
+nav div ul li a.nav-link {
     font-size: 1.6rem;
     font-weight: 700;
- }
+}
 
- nav ul li:last-child {
+nav ul li:last-child {
     margin-block: 3.8rem;
-} 
+}
 
 nav ul li:nth-child(3) {
     display: none;
-} 
+}
 
-nav ul li a.nav-link{
+nav ul li a.nav-link {
     color: var(--text-color);
 }
 
@@ -64,10 +156,10 @@ nav ul li a.nav-link{
     margin-left: .5rem;
 }
 
-#offcanvasScrolling{
+#offcanvasScrolling {
     max-width: 60vw;
     background-color: var(--primary-color);
-    opacity: 1; 
+    opacity: 1;
     overflow: scroll;
     transition: .5s ease;
 }
@@ -77,137 +169,90 @@ nav ul li a.nav-link{
     background-color: var(--secundary-color);
 }
 
-    /* MAIN IMAGE */
-section.image-main {
-    max-width: 100vw;
-    height: 75vh;
+/* MAIN IMAGE */
+
+.image-main {
+    width: 100%;
+    min-height: 50vh;
     background: url(./../images/section-image/main-section-image.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
-    justify-content: center; 
-} 
+    justify-content: center;
+}
 
-section.image-main div.back-img {
+.back-img {
     background-color: rgba(0, 0, 0, .4);
-
-    width: 90%;
-    height: 90%;
-
-    border-radius: 10px;
-    
+    width: 80%;
+    min-height: 40vh;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;    
+    margin: 2rem;
 }
 
-section.image-main div.back-img h1,
-section.image-main div.back-img p {
+.back-img>h1,
+.back-img>p {
     color: var(--text-color);
-
-    padding-inline: .5rem;
+    padding-inline: 3rem;
 }
 
-section.image-main div.back-img h1 {
-    font-size: 2rem;
+.back-img>h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
     font-weight: 600;
-
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
-section.image-main div.back-img p {
+.back-img>p {
+    padding-top: 2rem;
+    font-style: normal;
+    font-weight: 500;
     font-size: 1.6rem;
-
+    line-height: 1.6rem;
     text-align: justify;
-
-    padding-bottom: 1rem;
-}
-
-/* MAP */
-section.container-map {
-    max-width: 100vw;
-    height: 60vh;
-
-    margin-top: 2rem;
-}
-
-section.container-map div.title {
-    width: 100%;
-    height: 20%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.container-map div.title h1 {
-    font-size: 2rem;
-    font-weight: 600;
-
-    text-transform: uppercase;
-    
-    padding-inline: .5rem;
-}
-
-section.container-map div.container-content {
-    width: 100%;
-    height: 80%;
-
-    display: flex;
-    justify-content: center;
-
-    overflow: auto;
-
-/* 
-    background-image: url(../images/map-route/image-route.jpeg);
-    background-size: cover; */
-}
-
-section.container-map div.container-content img {
-    width: auto;
-    height: auto;
-
-    transform: scale(1.5);
 }
 
 /* CITIES */
 #arroio-dos-ratos {
-    background-image: url(../images/images-cities/arroio-dos-ratos.jpg);
+    background-image: url(../images/images-cities/01.jpg);
 }
 
 #barao-do-triunfo {
-    background-image: url(../images/images-cities/barao-do-triunfo.jpg);
+    background-image: url(../images/images-cities/02.jpg);
 }
 
 #butia {
-    background-image: url(../images/images-cities/butia.jpg);
+    background-image: url(../images/images-cities/03.jpg);
 }
 
 #charqueadas {
-    background-image: url(../images/images-cities/charqueadas.jpg);
+    background-image: url(../images/images-cities/04.jpg);
 }
 
 #general-camara {
-    background-image: url(../images/images-cities/general-camara.jpg);
+    background-image: url(../images/images-cities/05.jpg);
 }
 
 #minas-do-leao {
-    background-image: url(../images/images-cities/minas-do-leao.jpg);
+    background-image: url(../images/images-cities/06.jpg);
 }
 
 #sao-jeronimo {
-    background-image: url(../images/images-cities/sao-jeronimo.jpg);
+    background-image: url(../images/images-cities/07.jpg);
 }
 
 #triunfo {
-    background-image: url(../images/images-cities/triunfo.jpg);
+    background-image: url(../images/images-cities/08.jpg);
 }
 
 section.container-cities {
     max-width: 100vw;
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,15 +290,7 @@ section.container-cities div.container-inside div.container-city div.content {
     padding: .8rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content img {
-    display: none;   
-}
-
-section.container-cities div.container-inside div.container-city div.content-img {
-    display: none;
-}
-
-section.container-cities div.container-inside div.container-city div.content-infos {
+section.container-cities div.container-inside div.container-city div.content>img {
     display: none;
 }
 
@@ -262,108 +299,118 @@ section.container-cities div.container-inside div.container-city div.content img
     height: 3rem;
 }
 
-section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+section.container-cities div.container-inside div.container-city div.content div.city-name>span {
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--text-color);
-}
-
-/* FOOTER */
-footer {
-    max-width: 100vw;
-    height: auto;
-    background-color: red;
-
     color: white;
-    font-size: 2rem;
-
-    display: grid;
-    grid-template-rows: 1fr 1fr .5fr;
-    grid-template-areas: 
-    "box01"
-    "box02"
-    "box03";
 }
 
-footer .box {
-    min-height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media(max-width: 385px) {
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
+    }
+
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .carousel-item h5 {
+        display: none;
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
 }
 
-footer .box01 {
-    grid-area: box01;
-}
+@media(min-width: 386px) {
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
 
-footer .box02 {
-    grid-area: box02;
-}
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
+    }
 
-footer .box03 {
-    grid-area: box03;
-}
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
+    }
 
-footer .box .content {
-    width: 80%;
-    height: 80%;
+    .carousel-item h5 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
 
-    padding: 1rem .5rem;
-}
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
 
-footer .box .content > span {
-    font-size: 1.6rem;
-    text-align: justify;
-}
-
-footer .box .content > img {
-    padding: 1rem;
-}
-
-footer .box .content > ul {
-    display: flex;
-    gap: 1.6rem;
-}
-
-footer .box .content ul li {
-    list-style: none;
-    transition: .5s;
-}
-
-footer .box .content ul li svg {
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-footer .box .content ul li a svg path[stroke*="black"] {
-    stroke: white;
-}
-
-footer .box .content ul li a svg path[fill*="black"] {
-    fill: white;
-}
-
-footer .box .lineBox01 {
-    border-bottom: 2px solid white;
-}
-
-footer .box .lineBox03 {
-    border-top: 2px solid white;
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
 }
 
 @media(min-width: 500px) {
-    section.image-main div.back-img h1 {
-        font-size: 2.4rem;
-    }
-
-    section.image-main div.back-img p {
-        font-size: 2rem;
-    }
 
     /* CITIES */
     section.container-cities div.container-inside div.container-city div.content {
@@ -373,87 +420,80 @@ footer .box .lineBox03 {
         padding: 1rem;
     }
 
-    section.container-cities div.container-inside div.container-city div.content > img{
+    section.container-cities div.container-inside div.container-city div.content>img {
         display: flex;
     }
-    
+
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
         width: 4rem;
         height: 4rem;
     }
-    
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name>span {
         font-size: 1.8rem;
     }
-}
-
-@media(min-width: 750px) {
-    section.image-main div.back-img h1 {
-        font-size: 3.2rem;
+    
+    /* CAROUSEL */
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 50vh;
     }
 
-    section.image-main div.back-img p {
-        font-size: 2.4rem;
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh;
+        opacity: 50%;
     }
 
-    section.container-map {
-        height: 85vh;
+    .carousel-item p {
+        font-size: 1.3rem;
+        display: block;
     }
 
-    section.container-map div.title {
-        height: 10%;
+    .carousel-item h5 {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
     }
 
-    section.container-map div.title h1 {
-        font-size: 2.4rem;
-    }
-
-    section.container-map div.container-content {
-        height: 90%;
-    }
-
-    footer {
-        grid-template-rows: initial;
-        grid-template-columns: 2fr 3fr 2fr;
-        grid-template-areas: "box01 box02 box03";
-    }
-
-    footer .box .content {
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
         width: 100%;
-        height: 80%;
-
-        padding-inline: 3.2rem;
+        display: flex;
+        background-size: cover;
     }
 
-    footer .box .lineBox01 {
-        border-bottom: initial;
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
     }
-    
-    footer .box .lineBox03 {
-        border-top: initial;
-    }
-    
 
-    footer .box .lineBox01 {
-        border-right: 2px solid white;
-    }
-    
-    footer .box .lineBox03 {
-        border-left: 2px solid white;
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
     }
 }
 
-@media (min-width: 992px){
-        /* RESET */
-    .navbar{
+@media (min-width: 992px) {
+
+    /* RESET */
+    .navbar {
         height: initial;
         width: initial;
     }
 
     nav div ul.navbar-nav,
     nav div ul li,
-    nav div ul li a    
-    {
+    nav div ul li a {
         height: initial;
         width: initial;
         font-size: initial;
@@ -462,9 +502,9 @@ footer .box .lineBox03 {
         padding: initial;
         overflow: initial;
         gap: initial;
-    } 
+    }
 
-    #offcanvasScrolling{
+    #offcanvasScrolling {
         max-width: 100vw;
         overflow: hidden;
         transition: initial;
@@ -487,7 +527,7 @@ footer .box .lineBox03 {
     nav div ul li:nth-child(4),
     nav div ul li:nth-child(5) {
         width: 13.7rem;
-        height: 3.8rem; 
+        height: 3.8rem;
         border-radius: 2rem;
         text-align: center;
     }
@@ -511,37 +551,37 @@ footer .box .lineBox03 {
     nav div ul li:nth-child(1) a.nav-link:hover,
     nav div ul li:nth-child(2) a.nav-link:hover,
     nav div ul li:nth-child(4) a.nav-link:hover,
-    nav div ul li:nth-child(5) a.nav-link:hover{
+    nav div ul li:nth-child(5) a.nav-link:hover {
         border-radius: 2rem;
         background-color: var(--primary-color);
         color: var(--color-hover);
         text-align: center;
         transition: .4s;
-    } 
-
-   /* IMAGE MAIN */
-   section.image-main div.back-img h1 {
-    font-size: 4rem;
     }
 
-    section.image-main div.back-img p {
-        font-size: 2.4rem;
+    /* IMAGE MAIN */
+    .image-main {
+        height: 75vh;
     }
 
-    /* MAP */
+    .back-img>h1 {
+        font-size: 9.6rem;
+        line-height: 9.6rem;
+        padding-top: 6rem;
+        padding-bottom: 1.5rem;
+    }
 
-    section.container-map div.container-content img {
-        max-width: 100%;
-        max-height: 100%;
-
-        transform: initial;
+    .back-img>p {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        padding-bottom: 8.5rem
     }
 
     /* CITIES */
     section.container-cities {
-        min-height: 95vh;  
+        min-height: 95vh;
     }
-    
+
     section.container-cities div.container-inside {
         min-width: 85%;
         display: flex;
@@ -550,9 +590,9 @@ footer .box .lineBox03 {
         flex-direction: row;
         gap: .3rem;
     }
-    
+
     section.container-cities div.container-inside div.container-city {
-        flex: .1;
+        flex-basis: 10.9rem;
         height: 55rem;
         transition: .5s ease;
         background-size: cover;
@@ -560,7 +600,6 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content {
-        width: 20%;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -572,15 +611,15 @@ footer .box .lineBox03 {
         flex-direction: column;
         padding-block: .5rem;
         padding-inline: 1rem;
-    }  
-    
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span{
+    }
+
+    section.container-cities div.container-inside div.container-city div.content div.city-name>span {
         font-size: 1.6rem;
         font-weight: 500;
         transition: .3s ease;
     }
 
-    section.container-cities div.container-inside div.container-city div.content > a {
+    section.container-cities div.container-inside div.container-city div.content>a {
         position: absolute;
         bottom: 2%;
     }
@@ -606,163 +645,121 @@ footer .box .lineBox03 {
         flex-grow: 1;
         height: 60rem;
         z-index: 2;
-        -webkit-box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38); 
-        box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.38);
+        -webkit-box-shadow: 0px 0px 21px 10px rgba(0, 0, 0, 0.38);
+        box-shadow: 0px 0px 21px 10px rgba(0, 0, 0, 0.38);
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content {
-        justify-content: center;
-    }
-
-    section.container-cities div.container-inside div.container-city:hover div.content a {
-        display: none;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-img {
-        width: 50%;
-        height: 100%;
-
-        background-color: rgb(0, 0, 0, .4);
-
-        z-index: 2;
-
-        transition: 1s ease;
-
-        display: none;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-img div.img {
-        width: 90%; /* 75 */
-        height: 60%; /* 50 */
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-img div.img > img {
-        width: 100%;
-        height: 100%;
-
-        border-radius: 10px;
-        opacity: .8;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-img div.img p {
-        font-size: 3.2rem;
-        color: white;
-        font-weight: 600;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos {
-        width: 30%;
-        height: 100%;
-
-        transition: .5s ease;
-
-        display: none;
-
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-        padding-block: 1rem;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos h1 {
-        font-size: 2rem;
-        font-weight: bold;
-
-        color: white;
-
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos p {
-        font-size: 2rem;
-        position: absolute;
-        bottom: 0%;
-
-        color: white;
-    }
-    
-    section.container-cities div.container-inside div.container-city div.content a svg {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos a svg  {
-        width: 4.5rem;
-        height: 4.5rem;
-
-        transition: .5s;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos ul {
-        margin: auto 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        gap: 1.6rem;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content-infos ul li {
-        list-style: none;
-
-        font-size: 2rem;
-        color: white;
-    }
-
-    section.container-cities div.container-inside div.container-city:hover div.content-img{
-        display: flex;
-    }
-
-    section.container-cities div.container-inside div.container-city:hover div.content-infos {
-        display: flex;
-    }
-    
     section.container-cities div.container-inside div.container-city:hover::before {
         transform: scaleX(1);
         transform-origin: left;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name>span {
         font-size: 2rem;
         font-weight: 600;
     }
 
-    section.container-cities div.container-inside div.container-city div.content-infos a:hover svg path{
-        stroke: var(--color-hover);
+    section.container-cities div.container-inside div.container-city:hover div.content img.img-logo {
+        width: 4rem;
+        height: 4rem;
     }
 
-    footer .box .content ul li:hover {
-        cursor: pointer;
+   /* FOOTER MEDIA QUERY */
+
+  footer {
+    grid-template-rows: initial;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: "box01 box02 box03";
+  }
+
+  footer .box .content {
+    width: 100%;
+    height: 80%;
+
+    padding-inline: 3.2rem;
+  }
+
+  footer .box .content ul li:hover {
+    cursor: pointer;
+  }
+
+  footer .box .content ul li:hover path[stroke] {
+    stroke: black;
+    cursor: pointer;
+  }
+
+  footer .box .content ul li:hover path[fill] {
+    fill: black;
+  }
+
+  footer .box .lineBox01 {
+    border-bottom: initial;
+  }
+
+  footer .box .lineBox03 {
+    border-top: initial;
+  }
+
+  footer .box .lineBox01 {
+    border-right: 2px solid white;
+  }
+
+  footer .box .lineBox03 {
+    border-left: 2px solid white;
+  }
+
+    .carousel-inner {
+        max-width: 100vw;
+        max-height: 100vh;
     }
 
-    footer .box .content ul li:hover a svg path[stroke] {
-        stroke: var(--color-hover);
-        cursor: pointer;
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 80vh;
+        opacity: 50%;
     }
 
-    footer .box .content ul li:hover a svg path[fill] {
-        fill: var(--color-hover);
+    .carousel-item p {
+        font-size: 2rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
- @media(min-width: 1280px) {
+@media(min-width: 1280px) {
     section.container-cities div.container-inside div.container-city {
-        flex: .1;
+        flex-basis: 12.9rem;
         height: 50rem;
-    }
-
-    section.container-cities div.container-inside {
-        min-width: 95%;
     }
 
     section.container-cities div.container-inside div.container-city div.content img.img-logo {
@@ -775,31 +772,72 @@ footer .box .lineBox03 {
         height: 55rem;
     }
 
-    section.container-cities div.container-inside div.container-city:hover div.content div.city-name > span{
+    section.container-cities div.container-inside div.container-city:hover div.content div.city-name>span {
         font-size: 1.8rem;
     }
-}
 
-@media(min-width: 1440px) {
-    section.container-cities div.container-inside div.container-city {
-        flex: .1;
-        height: 65rem;
+    .carousel-inner {
+        max-width: 200vw;
+        max-height: 231vh;
     }
 
-    section.container-cities div.container-inside div.container-city:hover {
-        flex-grow: 1;
-        height: 70rem;
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 80vh;
+        opacity: 50%;
     }
 
-    section.container-cities div.container-inside div.content-infos div.box header h1 {
-        font-size: 3.2rem;
-    }
-
-    section.container-cities div.container-inside div.container-city div.content div.city-name > span {
+    .carousel-item p {
         font-size: 2rem;
     }
 
-    section.container-cities div.container-inside div.content-infos div.box div.content ul li {
-        font-size: 2.4rem;
+    .carousel-item h5 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .background1 {
+        background: url(./../images/carousel/bike6.jpg);
+        min-height: 50vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background2 {
+        background: url(./../images/carousel/bike4.jpg);
+        min-height: 70vh;
+        background-position: bottom;
+        width: 100%;
+        display: flex;
+        background-size: cover;
+    }
+
+    .background3 {
+        background: url(./../images/carousel/bike5.jpg);
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
     }
 }
+
+/* 
+    section.container-cities {
+        min-height: 90vh;
+    }
+
+    section.container-cities div.container-inside {
+        min-width: 80%;
+    }
+    
+ */
+
+
+
+/* CAROUSEL */
+
+
+/********************/
