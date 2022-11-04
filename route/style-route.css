@@ -1,11 +1,3 @@
-body {
-    background-color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 section {
     max-width: 100vw;
     display: flex;
@@ -18,6 +10,6 @@ section {
 #map,
 #map02,
 #map03 { 
-    width: 100vw;
-    height: 90vh;
+    height: 500px; 
+    width: 500px;
 }

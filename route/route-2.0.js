@@ -1,52 +1,117 @@
 const auth_link = "https://www.strava.com/oauth/token"
-let vetor = []
+let vetor = [];
+let arrayRoutes = [];
 
 class Rota {
-  constructor(link, map) {
-    this.link = link
-    this.map = map
+  constructor(map) {
+    this.map = map;
   }
 
-  getRoute(res) {
-    for (var i = 0; i < this.link.length; i++) {
-      vetor.push(this.link[i] + `${res.access_token}`)
+  verifyRoute() {
+    this.getRoutes() == null ? this.reAuthorize() : this.setRoutesOnMap();
+  }
+
+  getRoutes() {
+    return JSON.parse(localStorage.getItem("routes"));
+  }
+
+  idsRoutes(){
+    let idRoutes = [
+      "3007668662019916668",
+      "3007668506003092348",
+      "3007667420057044860",
+      "3007668224216829820",
+      "3007668046252207866",
+      "3007667833274213244",
+    ];
+    return idRoutes;
+  }
+
+  setLinkRoute(res) {
+    let idRoutes = this.idsRoutes();
+    for(let rota of idRoutes) {
+      vetor.push(`https://www.strava.com/api/v3/routes/${rota}?access_token=${res.access_token}`);
     }
-    return vetor
+    return vetor;
+  }
+
+  setRoutes(element) {
+    arrayRoutes.push(element)
+    window.localStorage.setItem("routes", JSON.stringify(arrayRoutes))
   }
 
   getActivites(res) {
+    let links = this.setLinkRoute(res);
+    
+    for (let link of links) {
+      console.log(`LINK - ${link}`)
+
+        fetch(link)
+       .then((res) => res.json())
+       .then((data) => {
+        this.setRoutes(data)
+
+      })
+    }
+    this.setRoutesOnMap();
+  }
+
+  setRoutesOnMap(){
+    let routes = this.getRoutes();
     let map = L.map(this.map).setView([-29.932, -51.71], 12)
-    console.log(this.map)
-    let links = this.getRoute(res)
-    console.log(links)
-    for (var i = 0; i < links.length; i++) {
-      console.log(links[i])
 
-      fetch(links[i])
-        .then((res) => res.json())
-        .then(function (data) {
-          console.log(data)
-
-          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    for(let route of routes) {
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           }).addTo(map)
-          console.log(data.map.summary_polyline)
+          console.log(route.map.summary_polyline)
           var coordinates = L.Polyline.fromEncoded(
-            data.map.summary_polyline
+            route.map.summary_polyline
           ).getLatLngs()
           console.log(coordinates)
+          console.log(route.id_str)
 
           L.polyline(coordinates, {
             color: "blue",
             weight: 5,
             opacity: 0.7,
             lineJoin: "round",
-          }).addTo(map)
-        })
+          }).addTo(map)  
     }
-    vetor.length = 0
   }
+
+  /* getActivitesAntigo(res) {
+    let map = L.map(this.map).setView([-29.932, -51.71], 12)
+    let links = this.setLinkRoute(res)
+    console.log(links) 
+
+   for(let link of links) {
+    fetch(link)
+    .then((res) => res.json())
+    .then((data) => {
+
+     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+         attribution:
+           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+       }).addTo(map)
+       var coordinates = L.Polyline.fromEncoded(
+         data.map.summary_polyline
+       ).getLatLngs()
+       console.log(coordinates)
+       console.log(data.id_str)
+
+       L.polyline(coordinates, {
+         color: "blue",
+         weight: 5,
+         opacity: 0.7,
+         lineJoin: "round",
+       }).addTo(map)  
+
+    })
+   }
+    vetor.length = 0
+  } */
 
   reAuthorize() {
     fetch(auth_link, {

@@ -27,40 +27,12 @@
       <div id="map03"></div>
     </section>
 
-    <!-- <div id="map"></div> -->
-
     <script src="route-2.0.js"></script>
     <script>
       var rota1 = new Rota(
-        [
-          "https://www.strava.com/api/v3/routes/3007668662019916668?access_token=",
-          "https://www.strava.com/api/v3/routes/3007668506003092348?access_token=",
-          "https://www.strava.com/api/v3/routes/3007668046252207866?access_token=",
-          "https://www.strava.com/api/v3/routes/3007667833274213244?access_token=",
-          "https://www.strava.com/api/v3/routes/3007667420057044860?access_token=",
-          "https://www.strava.com/api/v3/routes/3007666728743696122?access_token="
-        ],
         "map"
-      )
-      rota1.reAuthorize()
-
-      /*  var rota2 = new Rota(
-            [
-            "https://www.strava.com/api/v3/routes/3007667833274213244?access_token=",
-            "https://www.strava.com/api/v3/routes/3007667420057044860?access_token="
-            ],        
-            "map02"
-        );
-        rota2.reAuthorize();  
-
-        var rota3 = new Rota(
-            [
-            "https://www.strava.com/api/v3/routes/3007668224216829820?access_token=",
-            "https://www.strava.com/api/v3/routes/3007667005175419772?access_token="
-            ],
-            "map03"
-        ) */
-      rota3.reAuthorize()
-    </script>
+      );
+      rota1.verifyRoute();
+    </script> 
   </body>
 </html>
