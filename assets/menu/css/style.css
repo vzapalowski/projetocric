@@ -144,7 +144,7 @@ a:hover {
 
 .site-navbar .site-navigation .site-menu>li {
   display: inline-block;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
 }
 
 .site-navbar{
@@ -152,7 +152,7 @@ a:hover {
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
   text-decoration: none !important;
@@ -537,7 +537,7 @@ a:hover {
 
 .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li {
   display: inline-block;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li:last-child {
@@ -553,7 +553,7 @@ a:hover {
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a {
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   color: rgba(255, 255, 255, 0.6);
   font-size: 15px;
 }
