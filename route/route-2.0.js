@@ -61,6 +61,9 @@ class Rota {
   }
 
   setRoutesOnMap(){
+
+    /* VERIFICAR ATUALIZAÇÃO DO MAPA */
+
     if(this.getRoutes == null) {
       this.verify();
       return;
