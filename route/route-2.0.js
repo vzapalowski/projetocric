@@ -1,24 +1,31 @@
 const auth_link = "https://www.strava.com/oauth/token"
-let arrayRoutes = [];
 
 class Rota {
+  getRoutes = Storage.getRoutes();
+
   constructor(map) {
     this.map = map;
   }
 
   verify() {
-    window.localStorage.removeItem("routes")
-    this.getUserRoutes() == null ? this.reAuthorize() 
+    this.getRoutes == null ? this.reAuthorize() 
+    : !this.verifyRoutes() || !this.verifyIds() ? this.newRoutes()
     : this.setRoutesOnMap();
   }
 
+  newRoutes() {
+    Storage.removeRoutes();
+
+    this.reAuthorize();
+  }
+
   verifyRoutes() {
-    return this.getUserRoutes().length == this.idsRoutes().length;
+    return this.getRoutes.length == this.idsRoutes().length;
   }
 
   getIdsUserRoute() {
     let arrIdsUser = [];
-    for(let e of this.getUserRoutes()) {
+    for(let e of this.getRoutes) {
       arrIdsUser.push(e.id_str);
     }
     return arrIdsUser;
@@ -36,11 +43,11 @@ class Rota {
   idsRoutes(){
     const idRoutes = [
       "3007668662019916668",
-      "3007668506003092348",
-      /*"3007667420057044860",
-      "3007668224216829820",
+      "3007667420057044860",
+      /*"3007668506003092348",
+      /*"3007668224216829820",
       "3007668046252207866",
-      "3007667833274213244", */
+      "3007667833274213244",  */
     ];
     return idRoutes;
   }
@@ -53,27 +60,15 @@ class Rota {
     return arrLinksRoutes;
   }
 
-  getUserRoutes() {
-    return JSON.parse(localStorage.getItem("routes"));
-  }
-
-  setRoutes(element) {
-    arrayRoutes.push(element);
-    window.localStorage.setItem("routes", JSON.stringify(arrayRoutes));
-  }
-
   setRoutesOnMap(){
-    let routes = this.getUserRoutes();
-    console.log(routes)
-    if(routes == null) {
+    if(this.getRoutes == null) {
       this.verify();
       return;
     }
-    console.log(routes)
 
     let map = L.map(this.map).setView([-29.932, -51.71], 12)
 
-    for(let route of routes) {
+    for(let route of this.getRoutes) {
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -98,16 +93,21 @@ class Rota {
   }
 
   getActivites(res) {
+    let arrayRoutes = [];
     let links = this.setLinkRoute(res);
-    
+    console.log(links.length)
+
     for (let link of links) {
         fetch(link)
        .then((res) => res.json())
-       .then((data) => {
-        this.setRoutes(data)
-      })
+       .then((data) => {arrayRoutes.push(data); Storage.setRoutes(arrayRoutes)})
+
+       arrayRoutes.length = 0;
     }
-    this.setRoutesOnMap()
+
+    console.log(arrayRoutes)
+
+    this.setRoutesOnMap();
   }
 
   reAuthorize() {
