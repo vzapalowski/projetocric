@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
-    </style>
-    <script
-      src="https://kit.fontawesome.com/d97d3ca1f3.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-      crossorigin=""
-    ></script>
-    <script src="route/Polyline.encoded.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style/style-index.css" />
 
-    <title>Rota - CRIC</title>
-  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+  </style>
+
+  <script src="https://kit.fontawesome.com/d97d3ca1f3.js" crossorigin="anonymous"></script>
+
+  <link
+  rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin="" 
+  />
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script src="route/Polyline.encoded.js"></script>
+
+  <script src="https://kit.fontawesome.com/d97d3ca1f3.js" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/menu/fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="./assets/menu/css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/menu/css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/menu/css/style.css">
+  <title>Rota - CRIC</title>
+  
+</head>
 
 <body>
-    
-  <nav class="navbar navbar-expand-lg" id="navigation">
+
+  <!-- <nav class="navbar navbar-expand-lg" id="navigation">
       <div class="container-fluid">
         <span
           class="navbar-toggler text-color main-text icon-menu"
@@ -169,13 +181,70 @@
           </div>
         </div>
       </div>
-  </nav>
+  </nav> -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div> <!-- .site-mobile-menu -->
+
+  <div class="site-navbar site-navbar-target js-sticky-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2">>
+          <h1 class="my-0 site-logo"><a href="index.html">CRIC</a></h1>
+        </div>
+        <div class="col-10">
+          <nav class="site-navigation text-right" role="navigation">
+            <div class="container">
+              <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
+                  class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+              <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+
+                <li class="active">
+                  <a href="#" class="nav-link">Sobre</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-link">Manual</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-link">Municípios</a>
+                </li>
+
+                <li>
+                  <a href="#" class="nav-link">Contato</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/menu/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/menu/js/popper.min.js"></script>
+  <script src="assets/menu/js/bootstrap.min.js"></script>
+  <script src="assets/menu/js/jquery.sticky.js"></script>
+  <script src="assets/menu/js/main.js"></script>
+
 
   <section class="image-main">
-      <div class="back-img">
-        <h1>Rota CRIC</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, vel placeat architecto illo aspernatur praesentium quaerat laborum optio nobis eum ipsum neque animi soluta corporis? Quae, itaque asperiores. At quasi dolore odit, dolorum accusamus eum ducimus quod dolorem inventore aut, ea cupiditate hic fugit nobis tempora omnis iure sunt placeat sapiente! Adipisci, fugit at reiciendis eveniet assumenda non ut soluta.</p>
-      </div>
+    <div class="back-img">
+      <h1>Rota CRIC</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, vel placeat architecto illo aspernatur
+        praesentium quaerat laborum optio nobis eum ipsum neque animi soluta corporis? Quae, itaque asperiores. At quasi
+        dolore odit, dolorum accusamus eum ducimus quod dolorem inventore aut, ea cupiditate hic fugit nobis tempora
+        omnis iure sunt placeat sapiente! Adipisci, fugit at reiciendis eveniet assumenda non ut soluta.</p>
+    </div>
   </section>
 
   <section class="container-map">
@@ -189,571 +258,552 @@
 
   <section class="container-cities">
     <div class="container-inside">
-        <div class="container-city" id="arroio-dos-ratos">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>A</span>
-              <span>R</span>
-              <span>R</span>
-              <span>O</span>
-              <span>I</span>
-              <span>O</span>
-              <span>-</span>
-              <span>D</span>
-              <span>O</span>
-              <span>S</span>
-              <span>-</span>
-              <span>R</span>
-              <span>A</span>
-              <span>T</span>
-              <span>O</span>
-              <span>S</span>
-            </div>
-    
-            <a href="#">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
+      <div class="container-city" id="arroio-dos-ratos">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>A</span>
+            <span>R</span>
+            <span>R</span>
+            <span>O</span>
+            <span>I</span>
+            <span>O</span>
+            <span>-</span>
+            <span>D</span>
+            <span>O</span>
+            <span>S</span>
+            <span>-</span>
+            <span>R</span>
+            <span>A</span>
+            <span>T</span>
+            <span>O</span>
+            <span>S</span>
           </div>
 
-          <div class="content-img">
-            <div class="img">
-              <img src="assets/images/images-cities/image-rota.jpeg" alt="">
-            </div>
-          </div>
-
-          <div class="content-infos">
-
-              <ul>
-                <li>Info01</li>
-                <li>Info02</li>
-                <li>Info03</li>
-                <li>Info04</li>
-                <li>Info05</li>
-              </ul>
-
-              <p>Saiba mais
-                <a href="#">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                    <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                                
-                </a>
-              </p>
-          </div>
-        </div>
-
-        <div class="container-city" id="barao-do-triunfo">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>B</span>
-              <span>A</span>
-              <span>R</span>
-              <span>Ã</span>
-              <span>O</span>
-              <span>-</span>
-              <span>D</span>
-              <span>O</span>
-              <span>-</span>
-              <span>T</span>
-              <span>R</span>
-              <span>I</span>
-              <span>U</span>
-              <span>N</span>
-              <span>F</span>
-              <span>O</span>
-            </div>
-    
-            <a href="#">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-          </div>
-
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
-          </div>
-
-          <div class="content-infos">
-
-              <ul>
-                <li>Info01</li>
-                <li>Info02</li>
-                <li>Info03</li>
-                <li>Info04</li>
-                <li>Info05</li>
-              </ul>
-
-              <p>Saiba mais
-                <a href="#">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                    <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-              </p>
-          </div>
-        </div>
-
-        <div class="container-city" id="butia">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>B</span>
-              <span>U</span>
-              <span>T</span>
-              <span>I</span>
-              <span>A</span>
-            </div>
-    
           <a href="#">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-          </div>
-
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
-      </div>
-
-      <div class="content-infos">
-
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
-
-        <p>Saiba mais
-          <a href="#">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </a>
-        </p>
-      </div>
-
         </div>
 
-        <div class="container-city" id="charqueadas">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>C</span>
-              <span>H</span>
-              <span>A</span>
-              <span>R</span>
-              <span>Q</span>
-              <span>U</span>
-              <span>E</span>
-              <span>A</span>
-              <span>D</span>
-              <span>A</span>
-              <span>S</span>
-            </div>
-    
+        <div class="content-img">
+          <div class="img">
+            <img src="assets/images/images-cities/image-rota.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
             </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container-city" id="barao-do-triunfo">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>B</span>
+            <span>A</span>
+            <span>R</span>
+            <span>Ã</span>
+            <span>O</span>
+            <span>-</span>
+            <span>D</span>
+            <span>O</span>
+            <span>-</span>
+            <span>T</span>
+            <span>R</span>
+            <span>I</span>
+            <span>U</span>
+            <span>N</span>
+            <span>F</span>
+            <span>O</span>
           </div>
-          
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
-      </div>
 
-      <div class="content-infos">
-
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
-
-        <p>Saiba mais
-            <a href="#">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-        </p>
-      </div>
         </div>
 
-        <div class="container-city" id="general-camara">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>G</span>
-              <span>E</span>
-              <span>N</span>
-              <span>E</span>
-              <span>R</span>
-              <span>A</span>
-              <span>L</span>
-              <span>-</span>
-              <span>C</span>
-              <span>Â</span>
-              <span>M</span>
-              <span>A</span>
-              <span>R</span>
-              <span>A</span>
-            </div>
-    
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container-city" id="butia">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>B</span>
+            <span>U</span>
+            <span>T</span>
+            <span>I</span>
+            <span>A</span>
           </div>
 
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
-      </div>
-
-      <div class="content-infos">
-
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
-
-        <p>Saiba mais
           <a href="#">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-        </p>
-      </div>
         </div>
 
-        <div class="container-city" id="minas-do-leao">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>M</span>
-              <span>I</span>
-              <span>N</span>
-              <span>A</span>
-              <span>S</span>
-              <span>-</span>
-              <span>D</span>
-              <span>O</span>
-              <span>-</span>
-              <span>L</span>
-              <span>E</span>
-              <span>Ã</span>
-              <span>O</span>
-            </div>
-    
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
-          </div>
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
-      </div>
-
-      <div class="content-infos">
-
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
-
-        <p>Saiba mais
-          <a href="#">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </a>
-        </p>
-      </div>
+          </p>
         </div>
 
-        <div class="container-city" id="sao-jeronimo">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>S</span>
-              <span>Ã</span>
-              <span>O</span>
-              <span>-</span>
-              <span>J</span>
-              <span>E</span>
-              <span>R</span>
-              <span>Ô</span>
-              <span>N</span>
-              <span>I</span>
-              <span>M</span>
-              <span>O</span>
-            </div>
-    
+      </div>
+
+      <div class="container-city" id="charqueadas">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>C</span>
+            <span>H</span>
+            <span>A</span>
+            <span>R</span>
+            <span>Q</span>
+            <span>U</span>
+            <span>E</span>
+            <span>A</span>
+            <span>D</span>
+            <span>A</span>
+            <span>S</span>
+          </div>
+
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
-          </div>
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
+          </p>
+        </div>
       </div>
 
-      <div class="content-infos">
+      <div class="container-city" id="general-camara">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
 
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
+          <div class="city-name">
+            <span>G</span>
+            <span>E</span>
+            <span>N</span>
+            <span>E</span>
+            <span>R</span>
+            <span>A</span>
+            <span>L</span>
+            <span>-</span>
+            <span>C</span>
+            <span>Â</span>
+            <span>M</span>
+            <span>A</span>
+            <span>R</span>
+            <span>A</span>
+          </div>
 
-        <p>Saiba mais
           <a href="#">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-        </p>
-      </div>
         </div>
-        
-        <div class="container-city" id="triunfo">
-          <div class="content">
-            <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
-    
-            <div class="city-name">
-              <span>T</span>
-              <span>R</span>
-              <span>I</span>
-              <span>U</span>
-              <span>N</span>
-              <span>F</span>
-              <span>O</span>
-            </div>
-    
+
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>          
-          </div>
-          <div class="content-img">
-            <div class="img">
-              <p>IMAGEM</p>
-            </div>
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </p>
+        </div>
       </div>
 
-      <div class="content-infos">
+      <div class="container-city" id="minas-do-leao">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
 
-        <ul>
-          <li>Info01</li>
-          <li>Info02</li>
-          <li>Info03</li>
-          <li>Info04</li>
-          <li>Info05</li>
-        </ul>
+          <div class="city-name">
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>A</span>
+            <span>S</span>
+            <span>-</span>
+            <span>D</span>
+            <span>O</span>
+            <span>-</span>
+            <span>L</span>
+            <span>E</span>
+            <span>Ã</span>
+            <span>O</span>
+          </div>
 
-        <p>Saiba mais
           <a href="#">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </a>
-        </p>
-      </div>
         </div>
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container-city" id="sao-jeronimo">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>S</span>
+            <span>Ã</span>
+            <span>O</span>
+            <span>-</span>
+            <span>J</span>
+            <span>E</span>
+            <span>R</span>
+            <span>Ô</span>
+            <span>N</span>
+            <span>I</span>
+            <span>M</span>
+            <span>O</span>
+          </div>
+
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container-city" id="triunfo">
+        <div class="content">
+          <img src="./assets/images/images-cities/bike-cities-icon.png" alt="Ícone de uma bicicleta" class="img-logo">
+
+          <div class="city-name">
+            <span>T</span>
+            <span>R</span>
+            <span>I</span>
+            <span>U</span>
+            <span>N</span>
+            <span>F</span>
+            <span>O</span>
+          </div>
+
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+              <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="content-img">
+          <div class="img">
+            <p>IMAGEM</p>
+          </div>
+        </div>
+
+        <div class="content-infos">
+
+          <ul>
+            <li>Info01</li>
+            <li>Info02</li>
+            <li>Info03</li>
+            <li>Info04</li>
+            <li>Info05</li>
+          </ul>
+
+          <p>Saiba mais
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                  stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                <path d="M11 16H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 11V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-      <div class="box01 box">
-        <div class="content lineBox01">
-          <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae
-            sequi similique consequuntur repellendus? Dolorem iste earum
-            necessitatibus hic exercitationem illo nihil suscipit error
-            voluptatum.</span
-          >
-        </div>
+    <div class="box01 box">
+      <div class="content lineBox01">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae
+          sequi similique consequuntur repellendus? Dolorem iste earum
+          necessitatibus hic exercitationem illo nihil suscipit error
+          voluptatum.</span>
       </div>
-      <div class="box02 box">
-        <div class="content">
-          <img src="assets/images/footer/logo.png" alt="" />
-        </div>
+    </div>
+    <div class="box02 box">
+      <div class="content">
+        <img src="assets/images/footer/logo.png" alt="" />
       </div>
-      <div class="box03 box">
-        <div class="content lineBox03">
-          <ul>
-            <li>
-              <a href="#">
-                <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+    </div>
+    <div class="box03 box">
+      <div class="content lineBox03">
+        <ul>
+          <li>
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path
                   d="M21 11H19C18.6056 10.9983 18.2147 11.0748 17.85 11.225C17.4853 11.3752 17.1539 11.5961 16.875 11.875C16.5961 12.1539 16.3752 12.4853 16.225 12.85C16.0748 13.2147 15.9983 13.6056 16 14V28"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 18H20"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 18H20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              </a>
-            </li>
+            </a>
+          </li>
 
-            <li>
-              <a href="#">
-                <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+          <li>
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                />
+                  stroke="black" stroke-width="2" stroke-miterlimit="10" />
                 <path
                   d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path
                   d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
-                  fill="black"
-                />
+                  fill="black" />
               </svg>
-              </a>
-            </li>
+            </a>
+          </li>
 
-            <li>
-              <a href="#">
-                <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+          <li>
+            <a href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M28 7L16 18L4 7"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28 7L16 18L4 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- <script src="./../assets/js/main.js"></script> -->
-  </body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- <script src="./../assets/js/main.js"></script> -->
+</body>
+
 </html>

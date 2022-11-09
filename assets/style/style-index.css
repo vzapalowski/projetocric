@@ -78,6 +78,8 @@ nav ul li a.nav-link{
 }
 
     /* MAIN IMAGE */
+
+    
 section.image-main {
     max-width: 100vw;
     height: 75vh;
@@ -356,7 +358,7 @@ footer .box .lineBox03 {
     border-top: 2px solid white;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 576px) {
     section.image-main div.back-img h1 {
         font-size: 2.4rem;
     }
@@ -387,7 +389,7 @@ footer .box .lineBox03 {
     }
 }
 
-@media(min-width: 750px) {
+@media(min-width: 768px) {
     section.image-main div.back-img h1 {
         font-size: 3.2rem;
     }
@@ -741,21 +743,9 @@ footer .box .lineBox03 {
         stroke: var(--color-hover);
     }
 
-    footer .box .content ul li:hover {
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover a svg path[stroke] {
-        stroke: var(--color-hover);
-        cursor: pointer;
-    }
-
-    footer .box .content ul li:hover a svg path[fill] {
-        fill: var(--color-hover);
-    }
 }
 
- @media(min-width: 1280px) {
+ @media(min-width: 1200px) {
     section.container-cities div.container-inside div.container-city {
         flex: .1;
         height: 50rem;
