@@ -1,3 +1,127 @@
-body {
-  background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #540000;
+  --secundary-color: #660d0c;
+  --text-color: #fff;
+  --text-color-black: #000;
+  --color-hover: rgb(180, 173, 173);
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 320px) {
+  .container {
+  }
+
+  .rule1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .img-rule1 {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/security-rules/Icon\ Trash.svg);
+    /* padding-block: 1rem; */
+  }
+
+  .text-rule1 {
+    margin-block: 1rem;
+    font-size: medium;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  hr {
+    margin-top: 1rem;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #b70000;
+  }
+
+  /***********************************/
+
+  .rule2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .img-rule2 {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/security-rules/Icon\ Security.svg);
+    background-repeat: no-repeat;
+    /* padding-block: 1rem; */
+  }
+
+  .text-rule2 {
+    margin-block: 1rem;
+    font-size: medium;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /***********************************/
+
+  .rule3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .img-rule3 {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/security-rules/Icon\ Time.svg);
+    background-repeat: no-repeat;
+    /* padding-block: 1rem; */
+  }
+
+  .text-rule3 {
+    margin-block: 1rem;
+    font-size: medium;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /***********************************/
+
+  .rule4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .img-rule4 {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/security-rules/Icon\ Weather.svg);
+    background-repeat: no-repeat;
+    /* padding-block: 1rem; */
+  }
+
+  .text-rule4 {
+    margin-block: 1rem;
+    font-size: medium;
+    max-width: 300px;
+    text-align: center;
+  }
 }
