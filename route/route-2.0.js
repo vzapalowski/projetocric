@@ -1,5 +1,5 @@
 const auth_link = "https://www.strava.com/oauth/token"
-
+let arrayRoutes = []
 class Rota {
   getRoutes = Storage.getRoutes();
 
@@ -8,8 +8,8 @@ class Rota {
   }
 
   verify() {
-    this.getRoutes == null ? this.reAuthorize() 
-    : !this.verifyRoutes() || !this.verifyIds() ? this.newRoutes()
+    Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
+    : !Verify.verifyIdRoutes(this.idsRoutes(), this.getIdsUserRoute()) ? this.reAuthorize()
     : this.setRoutesOnMap();
   }
 
@@ -62,16 +62,14 @@ class Rota {
 
   setRoutesOnMap(){
 
-    /* VERIFICAR ATUALIZAÇÃO DO MAPA */
-
     if(this.getRoutes == null) {
-      this.verify();
+      this.reAuthorize()
       return;
     }
 
     let map = L.map(this.map).setView([-29.932, -51.71], 12)
 
-    for(let route of this.getRoutes) {
+    for(let route of Storage.getRoutes()) {
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -92,23 +90,24 @@ class Rota {
             opacity: 0.7,
             lineJoin: "round",
           }).addTo(map)  
-    }
+    } 
+  }
+
+  setRoutes(route) {
+    arrayRoutes.push(route)
+    Storage.setRoutes(arrayRoutes)
   }
 
   getActivites(res) {
-    let arrayRoutes = [];
+    /* let arrayRoutes = []; */
     let links = this.setLinkRoute(res);
     console.log(links.length)
 
     for (let link of links) {
         fetch(link)
        .then((res) => res.json())
-       .then((data) => {arrayRoutes.push(data); Storage.setRoutes(arrayRoutes)})
-
-       arrayRoutes.length = 0;
+       .then((data) => {this.setRoutes(data)})
     }
-
-    console.log(arrayRoutes)
 
     this.setRoutesOnMap();
   }
