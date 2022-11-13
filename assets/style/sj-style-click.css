@@ -731,34 +731,32 @@ footer .box .lineBox03 {
   #map {
     width: 300px;
     height: 150px;
-
   }
-  
 }
-.background4{
-    background: url(./../images/carousel/bike6.jpg);
-    min-height: 55vh;
-    background-position: bottom;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-  }
-  
-  .background5{
-    background: url(./../images/carousel/bike4.jpg);
-    min-height: 55vh;
-    background-position: bottom;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-  }
+.background4 {
+  background: url(./../images/carousel/bike6.jpg);
+  min-height: 55vh;
+  background-position: bottom;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+}
 
-  .background6{
-    background: url(./../images/carousel/bike5.jpg);
-    min-height: 55vh;
-    background-position: bottom;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-  }
+.background5 {
+  background: url(./../images/carousel/bike4.jpg);
+  min-height: 55vh;
+  background-position: bottom;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+}
+
+.background6 {
+  background: url(./../images/carousel/sj-img/1445814919.jpg);
+  min-height: 55vh;
+  background-position: bottom;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+}
 /******************/
