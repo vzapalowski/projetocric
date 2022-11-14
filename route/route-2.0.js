@@ -1,5 +1,5 @@
-const auth_link = "https://www.strava.com/oauth/token"
-let arrayRoutes = []
+const auth_link = "https://www.strava.com/oauth/token";
+let arrayRoutes = [];
 class Rota {
   getRoutes = Storage.getRoutes();
 
@@ -8,10 +8,10 @@ class Rota {
   }
 
   verify() {
-     Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize() : this.setTeste()
-    /* Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
+    // Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize() : this.setRoutesOnMap()
+    Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
     : !Verify.verifyIdRoutes(this.idsRoutes(), this.getIdsUserRoute()) ? this.reAuthorize()
-    : this.setRoutesOnMap(); */
+    : this.setRoutesOnMap();
   }
 
   newRoutes() {
@@ -45,7 +45,7 @@ class Rota {
     const idRoutes = [
       "3007668662019916668",
       "3007667420057044860",
-      /*"3007668506003092348",
+      "3007668506003092348",
       /*"3007668224216829820",
       "3007668046252207866",
       "3007667833274213244",  */
@@ -61,13 +61,7 @@ class Rota {
     return arrLinksRoutes;
   }
 
- /*  setRoutesOnMap(){
-
-    if(this.getRoutes == null) {
-      this.reAuthorize()
-      return;
-    }
-
+ setRoutesOnMap(){
     let map = L.map(this.map).setView([-29.932, -51.71], 12)
 
     for(let route of Storage.getRoutes()) {
@@ -92,33 +86,28 @@ class Rota {
             lineJoin: "round",
           }).addTo(map)  
     } 
-  } */
+  } 
 
-  setTeste() {
-    this.getRoutes == null ? this.verify() : console.log(this.getRoutes)
-    // console.log(this.getRoutes)
+  setRoutes() {
+    Storage.setRoutes(arrayRoutes);
   }
 
-  setRoutes(route) {
-    arrayRoutes.push(route)
-    Storage.setRoutes(arrayRoutes)
-  }
-
-  getActivites(res) {
-    /* let arrayRoutes = []; */
+  async getActivites(res) {
     let links = this.setLinkRoute(res);
     console.log(links.length)
 
     for (let link of links) {
-        fetch(link)
+        arrayRoutes.push(await fetch(link)
        .then((res) => res.json())
-       .then((data) => {this.setRoutes(data)})
+        );
     }
 
-    /* console.log(this.getRoutes) */
-    this.setTeste()
+    this.setRoutes();
+  }
 
-    /* this.setRoutesOnMap(); */
+  async controler(res) {
+    await this.getActivites(res);
+    this.setRoutesOnMap()
   }
 
   reAuthorize() {
@@ -141,7 +130,7 @@ class Rota {
       }),
     })
       .then((res) => res.json())
-      .then((res) => this.getActivites(res))
+      .then((res) => this.controler(res))
   }
 }
 
