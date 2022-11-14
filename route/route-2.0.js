@@ -8,9 +8,10 @@ class Rota {
   }
 
   verify() {
-    Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
+     Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize() : this.setTeste()
+    /* Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
     : !Verify.verifyIdRoutes(this.idsRoutes(), this.getIdsUserRoute()) ? this.reAuthorize()
-    : this.setRoutesOnMap();
+    : this.setRoutesOnMap(); */
   }
 
   newRoutes() {
@@ -60,7 +61,7 @@ class Rota {
     return arrLinksRoutes;
   }
 
-  setRoutesOnMap(){
+ /*  setRoutesOnMap(){
 
     if(this.getRoutes == null) {
       this.reAuthorize()
@@ -91,6 +92,11 @@ class Rota {
             lineJoin: "round",
           }).addTo(map)  
     } 
+  } */
+
+  setTeste() {
+    this.getRoutes == null ? this.verify() : console.log(this.getRoutes)
+    // console.log(this.getRoutes)
   }
 
   setRoutes(route) {
@@ -109,7 +115,10 @@ class Rota {
        .then((data) => {this.setRoutes(data)})
     }
 
-    this.setRoutesOnMap();
+    /* console.log(this.getRoutes) */
+    this.setTeste()
+
+    /* this.setRoutesOnMap(); */
   }
 
   reAuthorize() {
