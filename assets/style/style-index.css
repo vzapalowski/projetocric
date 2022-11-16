@@ -133,6 +133,7 @@ section.container-map {
     height: 60vh;
 
     margin-top: 2rem;
+
 }
 
 section.container-map div.title {
@@ -160,7 +161,6 @@ section.container-map div.container-content {
     display: flex;
     justify-content: center;
 
-    overflow: auto;
 
 /* 
     background-image: url(../images/map-route/image-route.jpeg);
@@ -792,12 +792,4 @@ footer .box .lineBox03 {
     section.container-cities div.container-inside div.content-infos div.box div.content ul li {
         font-size: 2.4rem;
     }
-}
-
-#map,
-#map02,
-#map03 {
-    width: 500px;
-    height: 500px;
-    display: block;
 }
