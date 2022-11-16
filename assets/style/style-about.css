@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* MAIN */
+
+:root {
+  --primary-color: #540000;
+  --secundary-color: #660d0c;
+  --tercery-color: #4de66e;
+  --text-color: #fff;
+  --text-color-black: #000;
+  --medium-black: rgba(0, 0, 0, 0.6);
+  --color-hover: rgb(180, 173, 173);
+  font-size: 62.5%;
+
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(127, 127, 127);
+  --red: rgb(255, 0, 0);
+  --dark-red: rgb(127, 0, 0);
+  --white-red: rgb(255, 105, 105);
+  --name: 10rem;
+  --title: 4rem;
+  --title-size: 2rem;
+  --text-size: 1.5rem;
+}
+
