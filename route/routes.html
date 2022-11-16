@@ -31,10 +31,21 @@
     <script src="Storage.js"></script>
     <script src="Verify.js"></script>
     <script>
-      var rota1 = new Rota(
-        "map02"
+      var rotas = new Rota(
+        [
+          {
+            map: 'map',
+            routes: ["3007668662019916668","3007668224216829820","3007667420057044860"]
+          },
+          {
+            map: 'map02',
+            routes: ["3007667420057044860",
+            "3007668506003092348"]
+          }
+        ]
       );
-      rota1.verify();
+      
+      rotas.verify()
     </script> 
   </body>
 </html>

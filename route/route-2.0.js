@@ -3,15 +3,14 @@ let arrayRoutes = [];
 class Rota {
   getRoutes = Storage.getRoutes();
 
-  constructor(map) {
-    this.map = map;
+  constructor(data) {
+    this.data = data
   }
 
   verify() {
-    // Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize() : this.setRoutesOnMap()
     Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
     : !Verify.verifyIdRoutes(this.idsRoutes(), this.getIdsUserRoute()) ? this.reAuthorize()
-    : this.setRoutesOnMap();
+    : this.setRoutesOnMap()
   }
 
   newRoutes() {
@@ -46,8 +45,8 @@ class Rota {
       "3007668662019916668",
       "3007667420057044860",
       "3007668506003092348",
-      /*"3007668224216829820",
-      "3007668046252207866",
+      "3007668224216829820",
+      /*"3007668046252207866",
       "3007667833274213244",  */
     ];
     return idRoutes;
@@ -61,31 +60,43 @@ class Rota {
     return arrLinksRoutes;
   }
 
- setRoutesOnMap(){
-    let map = L.map(this.map).setView([-29.932, -51.71], 12)
-
+  getRoute() {
+    let arrayRoutes = []
     for(let route of Storage.getRoutes()) {
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          }).addTo(map)
+      arrayRoutes.push(route);
+    }
+    return arrayRoutes;
+  }
 
-          console.log(route.map.summary_polyline)
-          
-          var coordinates = L.Polyline.fromEncoded(
-            route.map.summary_polyline
-          ).getLatLngs()
-
-          console.log(coordinates)
-          console.log(route.id_str) 
-
-          L.polyline(coordinates, {
-            color: "blue",
-            weight: 5,
-            opacity: 0.7,
-            lineJoin: "round",
-          }).addTo(map)  
-    } 
+ setRoutesOnMap(){
+  let idRoutes = this.getRoute()
+  for(let e of this.data){
+    let id = e.routes
+    let map = L.map(e.map).setView([-29.932, -51.71], 12);
+      for(let element of id) {
+        let route = idRoutes.find( route => route.id_str === element)
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                  attribution:
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                }).addTo(map)
+    
+              // console.log(route.map.summary_polyline)
+    
+                var coordinates = L.Polyline.fromEncoded(
+                  route.map.summary_polyline
+                ).getLatLngs();
+    
+                // console.log(coordinates)
+                // console.log(route.id_str) 
+    
+                L.polyline(coordinates, {
+                  color: "blue",
+                  weight: 5,
+                  opacity: 0.7,
+                  lineJoin: "round",
+                }).addTo(map);
+      }
+    }
   } 
 
   setRoutes() {
@@ -108,6 +119,7 @@ class Rota {
   async controler(res) {
     await this.getActivites(res);
     this.setRoutesOnMap()
+
   }
 
   reAuthorize() {
