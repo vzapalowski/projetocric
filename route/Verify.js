@@ -13,5 +13,3 @@ class Verify {
           return true;
     }  
 }
-
-

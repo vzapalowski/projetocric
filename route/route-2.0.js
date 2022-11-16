@@ -1,14 +1,13 @@
 const auth_link = "https://www.strava.com/oauth/token";
 let arrayRoutes = [];
 class Rota {
-  getRoutes = Storage.getRoutes();
 
   constructor(data) {
-    this.data = data
+    this.data = data;
   }
 
   verify() {
-    Verify.verifyExistsRoutes(this.getRoutes) ? this.reAuthorize()
+    Verify.verifyExistsRoutes(this.getRoutes()) ? this.reAuthorize()
     : !Verify.verifyIdRoutes(this.idsRoutes(), this.getIdsUserRoute()) ? this.reAuthorize()
     : this.setRoutesOnMap()
   }
@@ -20,12 +19,12 @@ class Rota {
   }
 
   verifyRoutes() {
-    return this.getRoutes.length == this.idsRoutes().length;
+    return this.getRoutes().length == this.idsRoutes().length;
   }
 
   getIdsUserRoute() {
     let arrIdsUser = [];
-    for(let e of this.getRoutes) {
+    for(let e of this.getRoutes()) {
       arrIdsUser.push(e.id_str);
     }
     return arrIdsUser;
@@ -46,8 +45,8 @@ class Rota {
       "3007667420057044860",
       "3007668506003092348",
       "3007668224216829820",
-      /*"3007668046252207866",
-      "3007667833274213244",  */
+      "3007668046252207866",
+      "3007667833274213244"
     ];
     return idRoutes;
   }
@@ -60,16 +59,12 @@ class Rota {
     return arrLinksRoutes;
   }
 
-  getRoute() {
-    let arrayRoutes = []
-    for(let route of Storage.getRoutes()) {
-      arrayRoutes.push(route);
-    }
-    return arrayRoutes;
+  getRoutes() {
+   return Storage.getRoutes();
   }
 
  setRoutesOnMap(){
-  let idRoutes = this.getRoute()
+  let idRoutes = this.getRoutes()
   for(let e of this.data){
     let id = e.routes
     let map = L.map(e.map).setView([-29.932, -51.71], 12);
@@ -96,8 +91,8 @@ class Rota {
                   lineJoin: "round",
                 }).addTo(map);
       }
-    }
-  } 
+  }
+} 
 
   setRoutes() {
     Storage.setRoutes(arrayRoutes);
