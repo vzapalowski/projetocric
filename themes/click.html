@@ -59,10 +59,6 @@
     ></script>
 
     <script
-      src="../route/Polyline.encoded.js"
-    ></script>
-
-    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
@@ -77,6 +73,9 @@
     <script src="../assets/menu/js/jquery.sticky.js"></script>
 
     <script src="../assets/menu/js/main.js"></script>
+
+    <script src="../assets/js/Polyline.encoded.js"></script>
+
 
     <title>Informações</title>
 
@@ -201,7 +200,8 @@
         <!-- grid -->
         <div>
           <section>
-            <!-- <div id="map"></div> -->
+            <div id="map">
+            </div>
           </section>
           <!-- <span> Mapa </span> -->
         </div>
@@ -209,12 +209,11 @@
         <div>
           <span> dados da rota</span>
           <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem.</li>
+            <li>Quilometragem total: 29Km</li>
+            <li>Elevação total: 218m</li>
+            <li>Tipo de Percurso: Estrada</li>
+            <li>Grau de dificuldade: 50-60%</li>
+            <li>Cidades interligadas: Charqueadas, Triunfo e General Câmara</li>
           </ul>
         </div>
         <!---------->
@@ -332,21 +331,27 @@
       </div>
     </footer>
 
-    <script src="../route/Polyline.encoded.js"></script>
+    <script src="../assets/js/route-2.0.js"></script>
+    <script src="../assets/js/Storage.js"></script>
+    <script src="../assets/js/Verify.js"></script>
 
-    <script src="../route/route-2.0.js"></script>
+   <!--  <script>
+      var rotas = new Rota(
+        {
+              map: "map",
+              routes: [
+              "3007668662019916668",
+              "3007667420057044860",
+              "3007668506003092348",
+              "3007668224216829820",
+              "3007668046252207866",
+              "3007667833274213244"
+              ]
+            }
+      )
+      rotas.verify();
+    </script> -->
 
-    <script>
-      // var rotasj = new Rota(
-      //   [
-      //     // ROTA SÃO JERÔNIMO - INCOMPLETA -> FALTANDO TRAJETO
-      //     "https://www.strava.com/api/v3/routes/3020316606475828986?access_token=", // CH => SJ
-      //     "https://www.strava.com/api/v3/routes/3020314526429464714?access_token=", // GC => SJ
-      //     "https://www.strava.com/api/v3/routes/3020314847676206760?access_token=", // TF => SJ
-      //   ],
-      //   "map" .
-      // )
-      // rotasj.reAuthorize()
-    </script>
+
   </body>
 </html>

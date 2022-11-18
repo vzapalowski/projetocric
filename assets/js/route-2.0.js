@@ -65,6 +65,7 @@ class Rota {
 
  setRoutesOnMap(){
   let idRoutes = this.getRoutes()
+  console.log(this.data)
   for(let e of this.data){
     let id = e.routes
     let map = L.map(e.map).setView([-29.932, -51.71], 12);
