@@ -86,9 +86,9 @@ class Rota {
                 // console.log(route.id_str) 
     
                 L.polyline(coordinates, {
-                  color: "blue",
-                  weight: 5,
-                  opacity: 0.7,
+                  color: "red",
+                  weight: 4,
+                  opacity: 1,
                   lineJoin: "round",
                 }).addTo(map);
       }
