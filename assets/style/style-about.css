@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 * {
   margin: 0;
@@ -29,5 +29,78 @@
   --title: 4rem;
   --title-size: 2rem;
   --text-size: 1.5rem;
+}
+
+@media(max-width: 320px) {
+
+  .container-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+  }
+
+  .logo-about {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/content-about/Icon-About.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .about-text-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text-description {
+    max-width: 90%;
+    text-align: justify;
+    /* font-weight: bold; */
+    font-size: 1rem;
+  }
+
+  .img-partners {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .img-corede {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../images/content-about/COREDE-LOGO\ 1.png);
+    background-repeat: no-repeat;
+  }
+
+  .img-cities {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../images/content-about/cities.png);
+    background-repeat: no-repeat;
+  }
+  
+  .img-if {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/content-about/logo-if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: #0000;
+  }
+
 }
 
