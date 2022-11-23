@@ -63,10 +63,24 @@ class Rota {
    return Storage.getRoutes();
   }
 
+  setMarks() {
+    let marks = [
+      ["map", "LOCAL1", -29.96136, -51.62225],
+      ["map", "LOCAL2", -29.96383, -51.63643]
+    ]
+
+    return marks;
+  }
+
+
+
  setRoutesOnMap(){
   let idRoutes = this.getRoutes()
   for(let e of this.data){
     let id = e.routes
+    // console.log(id)
+    let marks = e.marks;
+    // console.log(marks)
     let map = L.map(e.map).setView([-29.932, -51.71], 12);
       for(let element of id) {
         let route = idRoutes.find( route => route.id_str === element)
@@ -90,6 +104,45 @@ class Rota {
                   opacity: 0.7,
                   lineJoin: "round",
                 }).addTo(map);
+
+
+
+                // Mark.markMap(map)
+
+                // var iconteste = L.icon ({iconUrl: 'Coffee.png'})
+
+                
+
+                // var locations = [
+                //   ["LOCAL1", -29.96136, -51.62225],
+                //   ["LOCAL2", -29.96383, -51.63643]
+                // ]
+
+                // for(var i = 0; i < locations.length; i++) {
+                //  L.marker([locations[i][1], locations[i][2]],
+                //   {
+                //     iconSize: [100, 100]
+                //     // icon: iconteste
+                //   })
+                //   .bindPopup(locations[i][0])
+                //   .addTo(map);
+                // }
+
+                // L.marker(,
+                  // {
+                    // title: "Testando rota",
+                  // }).addTo(map).bindPopup("<h1> Marker </h1> <p>This is a marker on map</p>")
+
+
+
+                // L.marker([-29.96383, -51.63643]).addTo(map)
+      }
+
+      for(var i = 0; i < marks.length; i++) {
+        Mark.markMap(map, marks[1], marks[2], marks[0])
+        // L.marker(marks[1], marks[2]).bindPopup(marks[0]).addTo(map)
+        // console.log(marks[1], marks[2], marks[0])
+        // console.log(`${marks[1] - marks[2] - marks[0]}`)
       }
   }
 } 

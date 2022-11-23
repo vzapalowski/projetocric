@@ -30,19 +30,22 @@
     <script src="route-2.0.js"></script>
     <script src="Storage.js"></script>
     <script src="Verify.js"></script>
+    <script src="pointsMap/Mark.js"></script>r
     <script>
       var rotas = new Rota(
         [
           {
             map: 'map',
-            routes: ["3007668662019916668","3007668224216829820","3007667420057044860"]
+            routes: ["3007668662019916668","3007668224216829820","3007667420057044860"],
+            marks: ["LOCAL1", -29.95887, -51.69044]
           },
           {
             map: 'map02',
             routes: [
               "3007667420057044860",
               "3007668506003092348"
-            ]
+            ],
+            marks: ["LOCAL2", -29.96383, -51.63643]
           },
           {
             map: "map03",
@@ -53,6 +56,9 @@
             "3007668224216829820",
             "3007668046252207866",
             "3007667833274213244"
+            ],
+            marks: [
+            "LOCAL3", -29.96136, -51.62225
             ]
           }
         ]
@@ -60,5 +66,10 @@
       
       rotas.verify()
     </script> 
+
+    <!-- <script>
+      var mark = new Mark("map02")
+      mark.markMap()
+    </script> -->
   </body>
 </html>
