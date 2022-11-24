@@ -31,7 +31,34 @@
   --text-size: 1.5rem;
 }
 
+/* DESKTOP */
+
+@media(min-width: 1025px) {
+
+}
+
+/* LAPTOP */
+
+@media(max-width: 1024px) {
+
+}
+
+/* TABLET */
+
+@media(max-width: 768px) {
+  
+}
+
+/* MOBILE - L */
+
 @media(max-width: 425px) {
+  
+
+}
+
+/* MOBILE S */
+
+@media(max-width: 320px) {
 
   .container-about {
     width: 100%;
@@ -46,6 +73,7 @@
     width: 10rem;
     height: 10rem;
     background-image: url(../images/content-about/icon-about.svg);
+    background-size: 3rem;
     background-color: var(--primary-color);
     border-radius: 10rem;
     background-repeat: no-repeat;
