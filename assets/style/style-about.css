@@ -31,7 +31,7 @@
   --text-size: 1.5rem;
 }
 
-@media(max-width: 320px) {
+@media(max-width: 425px) {
 
   .container-about {
     width: 100%;
@@ -45,9 +45,12 @@
   .logo-about {
     width: 10rem;
     height: 10rem;
-    background-image: url(../images/content-about/Icon-About.png);
+    background-image: url(../images/content-about/icon-about.svg);
+    background-color: var(--primary-color);
+    border-radius: 10rem;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 1rem;
   }
 
   .about-text-title {
