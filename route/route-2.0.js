@@ -63,27 +63,15 @@ class Rota {
    return Storage.getRoutes();
   }
 
-  setMarks() {
-    let marks = [
-      ["map", "LOCAL1", -29.96136, -51.62225],
-      ["map", "LOCAL2", -29.96383, -51.63643]
-    ]
+  setRoutesOnMap(){
+    let idRoutes = this.getRoutes()
+    for(let e of this.data) {
+      let map = L.map(e.map).setView([-29.932, -51.71], 12);
+      let id = e.routes;
+      let coords = e.marks
 
-    return marks;
-  }
-
-
-
- setRoutesOnMap(){
-  let idRoutes = this.getRoutes()
-  for(let e of this.data){
-    let id = e.routes
-    // console.log(id)
-    let marks = e.marks;
-    // console.log(marks)
-    let map = L.map(e.map).setView([-29.932, -51.71], 12);
       for(let element of id) {
-        let route = idRoutes.find( route => route.id_str === element)
+        let route = idRoutes.find(route => route.id_str === element)
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                   attribution:
                     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -103,49 +91,17 @@ class Rota {
                   weight: 5,
                   opacity: 0.7,
                   lineJoin: "round",
-                }).addTo(map);
-
-
-
-                // Mark.markMap(map)
-
-                // var iconteste = L.icon ({iconUrl: 'Coffee.png'})
-
+                }).addTo(map); 
                 
-
-                // var locations = [
-                //   ["LOCAL1", -29.96136, -51.62225],
-                //   ["LOCAL2", -29.96383, -51.63643]
-                // ]
-
-                // for(var i = 0; i < locations.length; i++) {
-                //  L.marker([locations[i][1], locations[i][2]],
-                //   {
-                //     iconSize: [100, 100]
-                //     // icon: iconteste
-                //   })
-                //   .bindPopup(locations[i][0])
-                //   .addTo(map);
-                // }
-
-                // L.marker(,
-                  // {
-                    // title: "Testando rota",
-                  // }).addTo(map).bindPopup("<h1> Marker </h1> <p>This is a marker on map</p>")
-
-
-
-                // L.marker([-29.96383, -51.63643]).addTo(map)
       }
 
-      for(var i = 0; i < marks.length; i++) {
-        Mark.markMap(map, marks[1], marks[2], marks[0])
-        // L.marker(marks[1], marks[2]).bindPopup(marks[0]).addTo(map)
-        // console.log(marks[1], marks[2], marks[0])
-        // console.log(`${marks[1] - marks[2] - marks[0]}`)
+      for(let e of coords) {
+        L.marker([e.lat, e.lng],{icon: e.icon})
+        .bindPopup(e.message)
+        .addTo(map)
       }
-  }
-} 
+    }
+  } 
 
   setRoutes() {
     Storage.setRoutes(arrayRoutes);
@@ -178,11 +134,6 @@ class Rota {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        /* client_id: '32172',
-                client_secret: 'c9dac208d0c515b6e8915afb92ffbccfb1630f71',
-                refresh_token: 'f6a3dd6e1e2dad06db03fe04ec88485fc4fa79c8',
-                grant_type: 'refresh_token' */
-
         client_id: "93689",
         client_secret: "05d5dd63dabb33ba2514308b74256983c3edb146",
         refresh_token: "e162d2a39fe9b35a1c4f1df5bda5157bcfbfd6ea",
@@ -193,40 +144,3 @@ class Rota {
       .then((res) => this.controler(res))
   }
 }
-
-
-
-
-
-
-  /* getActivitesAntigo(res) {
-    let map = L.map(this.map).setView([-29.932, -51.71], 12)
-    let links = this.setLinkRoute(res)
-    console.log(links) 
-
-   for(let link of links) {
-    fetch(link)
-    .then((res) => res.json())
-    .then((data) => {
-
-     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-         attribution:
-           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-       }).addTo(map)
-       var coordinates = L.Polyline.fromEncoded(
-         data.map.summary_polyline
-       ).getLatLngs()
-       console.log(coordinates)
-       console.log(data.id_str)
-
-       L.polyline(coordinates, {
-         color: "blue",
-         weight: 5,
-         opacity: 0.7,
-         lineJoin: "round",
-       }).addTo(map)  
-
-    })
-   }
-    vetor.length = 0
-  } */
