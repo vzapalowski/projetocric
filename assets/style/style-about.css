@@ -33,7 +33,6 @@
 }
 
 /* DESKTOP */
-<<<<<<< HEAD
 @media(min-width:1025px) {
   .divisor {
     width: 1px;
@@ -41,35 +40,6 @@
     border: 0;
     border-left: 1px solid #369831;
   }
-=======
-
-@media(min-width: 1025px) {
-
-}
-
-/* LAPTOP */
-
-@media(max-width: 1024px) {
-
-}
-
-/* TABLET */
-
-@media(max-width: 768px) {
-  
-}
-
-/* MOBILE - L */
-
-@media(max-width: 425px) {
-  
-
-}
-
-/* MOBILE S */
-
-@media(max-width: 320px) {
->>>>>>> dfb882490c58332fbf52e24677ad8f76fb36451d
 
   .divisor-mobile {
     display: none;
@@ -255,12 +225,6 @@
     width: 14rem;
     height: 14rem;
     background-image: url(../images/content-about/icon-about.svg);
-<<<<<<< HEAD
-=======
-    background-size: 3rem;
-    background-color: var(--primary-color);
-    border-radius: 10rem;
->>>>>>> dfb882490c58332fbf52e24677ad8f76fb36451d
     background-repeat: no-repeat;
     background-position: center;
     background-size: 4rem;
