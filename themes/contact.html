@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+    </style>
+
+    <link 
+    href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" 
+    rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./../assets/contact/fonts/icomoon/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../assets/contact/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="./../assets/contact/css/style.css">
+
+    <link rel="stylesheet" href="./../assets/style/style-contact.css">
+
+    <link
+    rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" 
+    >
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""
+  ></script>
+
+    <script 
+    src="https://kit.fontawesome.com/d97d3ca1f3.js" 
+    crossorigin="anonymous"
+  ></script>
+
+    <title>Contato</title>
+</head>
+<body>
+    
+    <div class="content">
+    
+        <div class="container">
+          <div class="row align-items-stretch justify-content-center no-gutters">
+            <div class="col-md-7">
+              <div class="form h-100 contact-wrap p-5">
+                <h3 class="text-center">Entre em contato</h3>
+                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Nome</label>
+                      <input type="text" class="form-control" name="name" id="name" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Email</label>
+                      <input type="email" class="form-control" name="email" id="email"  placeholder="">
+                    </div>
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="budget" class="col-form-label">Assunto</label>
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="">
+                    </div>
+                  </div>
+    
+                  <div class="row mb-5">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="message" class="col-form-label">Mensagem</label>
+                      <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder=""></textarea>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-5 form-group text-center">
+                      <input type="reset" value="Enviar" class="btn btn-block btn-primary rounded-0 py-2 px-4">
+                      <span class="submitting"></span>
+                    </div>
+                  </div>
+                </form>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+
+      <footer>
+        <div class="box01 box">
+          <div class="content lineBox01">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae
+              sequi similique consequuntur repellendus? Dolorem iste earum
+              necessitatibus hic exercitationem illo nihil suscipit error
+              voluptatum.</span>
+          </div>
+        </div>
+        <div class="box02 box">
+          <div class="content">
+            <img src="../assets/images/footer/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="box03 box">
+          <div class="content lineBox03">
+            <ul>
+              <li>
+                <a href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M21 11H19C18.6056 10.9983 18.2147 11.0748 17.85 11.225C17.4853 11.3752 17.1539 11.5961 16.875 11.875C16.5961 12.1539 16.3752 12.4853 16.225 12.85C16.0748 13.2147 15.9983 13.6056 16 14V28"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 18H20" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                      stroke="black" stroke-width="2" stroke-miterlimit="10" />
+                    <path
+                      d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M28 7L16 18L4 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+
+        
+        <!-- <div id="map"></div>
+        <div id="map02"></div>
+        <div id="map03"></div> -->
+    
+        
+      </footer>
+    <!-- <script src="../assets/contact/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/contact/js/popper.min.js"></script>
+    <script src="../assets/contact/js/bootstrap.min.js"></script> -->
+</body>
+</html>

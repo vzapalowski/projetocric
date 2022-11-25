@@ -2,12 +2,12 @@ body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #fff;
   /* height: 200vh; */
-  position: relative;
+  /* position: relative; */
 }
 
 body:before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
@@ -69,7 +69,7 @@ a:hover {
 .site-navbar-wrap {
   border-radius: 0px ;
   position: absolute;
-  z-index: 99;
+  z-index: 4;
   width: 100%;
   left: 0;
 }

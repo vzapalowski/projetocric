@@ -131,7 +131,7 @@ section.image-main div.back-img p {
 section.container-map {
     max-width: 100vw;
     height: 60vh;
-
+    position: sticky;
     margin-top: 2rem;
 
 }
@@ -155,12 +155,13 @@ section.container-map div.title h1 {
 }
 
 section.container-map div.container-content {
-    width: 100%;
+    margin: 0 auto;
+    width: 75%;
     height: 80%;
-
+    pointer-events:none;
     display: flex;
     justify-content: center;
-
+    z-index: 2000;
 
 /* 
     background-image: url(../images/map-route/image-route.jpeg);
