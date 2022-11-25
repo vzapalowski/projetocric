@@ -13,6 +13,7 @@
   --primary-color: #540000;
   --secundary-color: #660d0c;
   --tercery-color: #4de66e;
+  --green-if: #369831;
   --text-color: #fff;
   --text-color-black: #000;
   --medium-black: rgba(0, 0, 0, 0.6);
@@ -31,79 +32,415 @@
   --text-size: 1.5rem;
 }
 
-@media(max-width: 425px) {
+/* DESKTOP */
+@media(min-width:1025px) {
+  .divisor {
+    width: 1px;
+    height: 16rem;
+    border: 0;
+    border-left: 1px solid #369831;
+  }
 
-  .container-about {
-    width: 100%;
+  .divisor-mobile {
+    display: none;
+  }
+
+  .section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    gap: 3rem;
+    /* padding-block: 1rem; */
+  }
+
+  .logo-about {
+    width: 16rem;
+    height: 16rem;
+    background-image: url(../images/content-about/icon-about.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4rem;
+    background-color: var(--green-if);
+    border-radius: 10rem;
+  }
+
+  .text-section-right {
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  /***********************************/
+
+  .section-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    gap: 3rem;
+  }
+
+  .img-corede {
+    /* margin-bottom: 3rem; */
+    width: 14rem;
+    height: 14rem;
+    background-image: url(../images/content-about/corede2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 3.5rem; */
+  }
+
+  .text-section-left {
+    /* margin-block: 1rem; */
+    font-size: 1.6rem;
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  /***********************************/
+
+  .logo-if {
+    margin-bottom: 1rem;
+    width: 16rem;
+    height: 16rem;
+    background-image: url(../images/content-about/if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10rem;
+  }
+}
+
+/* LAPTOP */
+@media(max-width: 1024px) {
+  .divisor {
+    width: 1px;
+    height: 16rem;
+    border: 0;
+    border-left: 1px solid #369831;
+  }
+
+  .divisor-mobile {
+    display: none;
+  }
+
+  .section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    gap: 3rem;
+    /* padding-block: 1rem; */
+  }
+
+  .logo-about {
+    width: 16rem;
+    height: 16rem;
+    background-image: url(../images/content-about/icon-about.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4rem;
+    background-color: var(--green-if);
+    border-radius: 10rem;
+  }
+
+  .text-section-right {
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  /***********************************/
+
+  .section-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    gap: 3rem;
+  }
+
+  .img-corede {
+    /* margin-bottom: 3rem; */
+    width: 14rem;
+    height: 14rem;
+    background-image: url(../images/content-about/corede2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 3.5rem; */
+  }
+
+  .text-section-left {
+    /* margin-block: 1rem; */
+    font-size: 1.6rem;
+    max-width: 60%;
+    text-align: justify;
+  }
+
+  /***********************************/
+
+  .logo-if {
+    margin-bottom: 1rem;
+    width: 16rem;
+    height: 16rem;
+    background-image: url(../images/content-about/if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10rem;
+  }
+}
+
+/* TABLET */
+@media(max-width: 768px) {
+  .divisor {
+    display: none;
+  }
+
+  .divisor-mobile {
+    margin-block: 1rem;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #369831;
+  }
+
+  .section-left {
+    margin-block: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block: 2rem;
   }
 
   .logo-about {
-    width: 10rem;
-    height: 10rem;
+    width: 14rem;
+    height: 14rem;
     background-image: url(../images/content-about/icon-about.svg);
-    background-color: var(--primary-color);
-    border-radius: 10rem;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 1rem;
+    background-size: 4rem;
+    background-color: var(--green-if);
+    border-radius: 10rem;
   }
 
-  .about-text-title {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+  .text-section-right {
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center;
   }
 
-  .about-text-description {
-    max-width: 90%;
-    text-align: justify;
-    /* font-weight: bold; */
-    font-size: 1rem;
-  }
+  /***********************************/
 
-  .img-partners {
+  .section-right {
     margin-block: 2rem;
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .img-corede {
-    width: 9rem;
-    height: 9rem;
-    background-image: url(../images/content-about/COREDE-LOGO\ 1.png);
-    background-repeat: no-repeat;
-  }
-
-  .img-cities {
-    width: 9rem;
-    height: 9rem;
-    background-image: url(../images/content-about/cities.png);
-    background-repeat: no-repeat;
-  }
-  
-  .img-if {
-    width: 10rem;
-    height: 10rem;
-    background-image: url(../images/content-about/logo-if.png);
+    margin-bottom: 3rem;
+    width: 12rem;
+    height: 12rem;
+    background-image: url(../images/content-about/corede2.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    /* background-size: 3.5rem; */
   }
 
-  a {
-    text-decoration: underline;
-    color: #000000;
-    font-weight: bold;
+  .text-section-left {
+    /* margin-block: 1rem; */
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center
   }
 
-  a:visited {
-    color: #0000;
-  }
+  /***********************************/
 
+  .logo-if {
+    margin-bottom: 1rem;
+    width: 14rem;
+    height: 14rem;
+    background-image: url(../images/content-about/if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10rem;
+  }
 }
 
+/* MOBILE L */
+@media(max-width: 425px) {
+  .divisor {
+    display: none;
+  }
+
+  .divisor-mobile {
+    margin-block: 1rem;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #369831;
+  }
+
+  .section-left {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-block: 1rem; */
+  }
+
+  .logo-about {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../images/content-about/icon-about.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.5rem;
+    background-color: var(--green-if);
+    border-radius: 10rem;
+  }
+
+  .text-section-right {
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  /***********************************/
+
+  .section-right {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-corede {
+    margin-bottom: 3rem;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/content-about/corede2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 3.5rem; */
+  }
+
+  .text-section-left {
+    /* margin-block: 1rem; */
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center
+  }
+
+  /***********************************/
+
+  .logo-if {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/content-about/if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10rem;
+  }
+}
+
+/* MOBILE S */
+@media(max-width: 320px) {
+  .divisor {
+    display: none;
+  }
+
+  .divisor-mobile {
+    margin-block: 1rem;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #369831;
+  }
+
+  .section-left {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-block: 1rem; */
+  }
+
+  .logo-about {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../images/content-about/icon-about.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.5rem;
+    background-color: var(--green-if);
+    border-radius: 10rem;
+  }
+
+  .text-section-right {
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  /***********************************/
+
+  .section-right {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-corede {
+    margin-bottom: 3rem;
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../images/content-about/corede2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 3.5rem; */
+  }
+
+  .text-section-left {
+    /* margin-block: 1rem; */
+    font-size: 1.6rem;
+    max-width: 80%;
+    text-align: center
+  }
+
+  /***********************************/
+
+  .logo-if {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/content-about/if.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10rem;
+  }
+}
