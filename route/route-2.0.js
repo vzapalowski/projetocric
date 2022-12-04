@@ -1,7 +1,6 @@
 const auth_link = "https://www.strava.com/oauth/token";
 let arrayRoutes = [];
 class Rota {
-
   constructor(data) {
     this.data = data;
   }
@@ -96,8 +95,17 @@ class Rota {
       }
 
       for(let e of coords) {
-        L.marker([e.lat, e.lng],{icon: e.icon})
-        .bindPopup(e.message)
+        let newIcon = new L.Icon({
+          iconUrl: e.icon,
+          iconSize: [30, 40],
+          iconAnchor: [5, 30],
+          popupAnchor: [10, -20]
+        })
+        L.marker([e.lat, e.lng],{icon: newIcon})
+        .bindPopup("<h1>OI</h1> <p>Testando</p> <img src='iconsMarkers/repair.svg'/>", {
+          minWidth: 100,
+          keepInView: true
+        })
         .addTo(map)
       }
     }

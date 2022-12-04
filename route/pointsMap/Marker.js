@@ -1,8 +1,19 @@
-class Mark {
+class Marker {
+    
+    static iconsMarkers = {
+        food: "iconsMarkers/restaurant.svg",
+        gas_station: "iconsMarkers/gas_station.svg",
+        repair: "iconsMarkers/repair.svg",
+        hotel: "iconsMarkers/hotel.svg",
+        hospital: "iconsMarkers/hospital.svg",
+        tourist_spots: "iconsMarkers/tourist_spots.svg"
+    }
 
-    static iconteste = L.icon ({
+    static iconteste = "iconsMarkers/hotel.svg";
+
+    static iconDefault = L.icon ({
         iconUrl: "Coffee.png"
-      })
+    });
 
         constructor(map, data) {
             this.map = map;
