@@ -47,20 +47,6 @@ const dataRoutes = [
       "3007668224216829820",
       "3007668046252207866",
       "3007667833274213244"
-      ],
-      marks: [
-        {
-          message: "LOCAL04",
-          lat: -29.96136,
-          lng: -51.62225,
-          icon: markerIcons.hotel
-        },
-        {
-            message: "LOCAL01",
-            lat: -29.95887,
-            lng: -51.69044,
-            icon: markerIcons.repair
-          }
       ]
     }
   ]

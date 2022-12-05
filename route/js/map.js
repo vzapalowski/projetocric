@@ -1,5 +1,4 @@
 const setRoutesOnMap = (dataRoutes) => {
-
     dataRoutes.forEach(e => {
         let map = L.map(e.map).setView([-29.932, -51.71], 12);
         const idRoutesUser = e.routes;
@@ -25,6 +24,7 @@ const setRoutesOnMap = (dataRoutes) => {
                 }).addTo(map); 
         });
 
+        if(markerCoords != undefined) {
         markerCoords.forEach(e => {
             const newIcon = new L.Icon({
                 iconUrl: e.icon,
@@ -40,7 +40,9 @@ const setRoutesOnMap = (dataRoutes) => {
             })
             .addTo(map)
         });
+    }
     });
+    
 }
 
 const getMaps = (dataRoutes) => {
