@@ -4,16 +4,20 @@ const dataRoutes = [
       routes: ["3007668662019916668","3007668224216829820","3007667420057044860"],
       marks: [
         {
-          message: "LOCAL01",
           lat: -29.95887,
           lng: -51.69044,
-          icon: markerIcons.food
+          icon: markerIcons.food,
+          title: "LOCAL01",
+          description: "Descrição local01",
+          image: 'restaurant.jpg'
         },
         {
-          message: "LOCAL02",
           lat: -29.96383,
           lng: -51.63643,
-          icon: markerIcons.gas_station
+          icon: markerIcons.gas_station,
+          title: "LOCAL02",
+          description: "Descrição local02",
+          image: './restaurant.jpg'
         }
       ]
     },
@@ -25,16 +29,20 @@ const dataRoutes = [
       ],
       marks: [
         {
-          message: "LOCAL03",
           lat: -29.96383,
           lng: -51.63643,
-          icon: markerIcons.hospital
+          icon: markerIcons.hospital,
+          title: "LOCAL03",
+          description: "Descrição local03",
+          image: './restaurant.jpg'
         },
         {
-          message: "LOCAL01",
           lat: -29.95887,
           lng: -51.69044,
-          icon: markerIcons.repair
+          icon: markerIcons.repair,
+          title: "LOCAL04",
+          description: "Descrição local04",
+          image: './restaurant.jpg'
         }
       ]
     },
@@ -46,7 +54,12 @@ const dataRoutes = [
       "3007668506003092348",
       "3007668224216829820",
       "3007668046252207866",
-      "3007667833274213244"
+      "3007667833274213244",
+      "3024729101863555016",
+      "3024728961245899346",
+      "3024728289614917202",
+      "3024728126930025042",
+      "3024727868187306952"
       ]
     }
   ]

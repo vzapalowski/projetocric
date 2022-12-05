@@ -10,7 +10,7 @@ const setRoutesOnMap = (dataRoutes) => {
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                   attribution:
                     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                }).addTo(map)
+                }).addTo(map);
     
                 var coordinates = L.Polyline.fromEncoded(
                   route.map.summary_polyline
@@ -34,15 +34,28 @@ const setRoutesOnMap = (dataRoutes) => {
             })
 
             L.marker([e.lat, e.lng],{icon: newIcon})
-            .bindPopup("<h1>OI</h1> <p>Testando</p> <img src='iconsMarkers/repair.svg'/>", {
-            minWidth: 100,
-            keepInView: true
+            .bindPopup(`${bindPopupTitle(e.title)} ${bindPopupDescription(e.description)} ${bindPopupImage(e.image)}`, 
+            {
+            maxWidth: 250,
+            keepInView: true,
+            className: "testingPopup"
             })
             .addTo(map)
         });
     }
     });
-    
+}
+
+const bindPopupTitle = (title) => {
+    return `<h1>${title}</h1>`;
+}
+
+const bindPopupDescription = (description) => {
+    return `<p>${description}</p>`;
+}
+
+const bindPopupImage = (image) => {
+    return `<img src=${image}>`;
 }
 
 const getMaps = (dataRoutes) => {
