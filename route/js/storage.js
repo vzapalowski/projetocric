@@ -1,19 +1,14 @@
 const KEY_LOCALSTORAGE = 'routes';
-class Storage {
-
-    constructor() {}
-
-    static setRoutes(routes){
+const setRoutes = (routes) => {
         window.localStorage.setItem(KEY_LOCALSTORAGE, JSON.stringify(routes));
         return true;
     }
 
-    static getRoutes() {
-        return JSON.parse(window.localStorage.getItem(KEY_LOCALSTORAGE));
-    }
+const getRoutes = () => {
+    return JSON.parse(window.localStorage.getItem(KEY_LOCALSTORAGE));
+}
 
-    static removeRoutes() {
+const removeRoutes = () => {
         window.localStorage.removeItem(KEY_LOCALSTORAGE);
         return true;
-    }
 }
