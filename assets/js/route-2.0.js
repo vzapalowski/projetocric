@@ -68,9 +68,10 @@ class Rota {
   console.log(this.data)
   for(let e of this.data){
     let id = e.routes
-    let map = L.map(e.map).setView([-29.932, -51.71], 12);
+    let map = L.map(e.map , {scrollWheelZoom: false}).setView([-29.932, -51.71], 12);
       for(let element of id) {
         let route = idRoutes.find( route => route.id_str === element)
+        
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                   attribution:
                     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -81,7 +82,7 @@ class Rota {
                 var coordinates = L.Polyline.fromEncoded(
                   route.map.summary_polyline
                 ).getLatLngs();
-    
+                
                 // console.log(coordinates)
                 // console.log(route.id_str) 
     
