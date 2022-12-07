@@ -158,7 +158,8 @@ section.container-map div.container-content {
     margin: 0 auto;
     width: 75%;
     height: 80%;
-    pointer-events:none;
+    /* pointer-events:; */
+    
     display: flex;
     justify-content: center;
     z-index: 2000;
