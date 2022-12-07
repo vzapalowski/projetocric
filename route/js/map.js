@@ -1,6 +1,6 @@
 const setRoutesOnMap = (dataRoutes) => {
     dataRoutes.forEach(e => {
-        let map = L.map(e.map).setView([-29.932, -51.71], 12);
+        let map = L.map(e.map, {scrollWheelZoom: false}).setView([-29.932, -51.71], 12);
         const idRoutesUser = e.routes;
         const markerCoords = e.marks;
 
@@ -9,7 +9,7 @@ const setRoutesOnMap = (dataRoutes) => {
 
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                   attribution:
-                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong>ROTACRIC</strong>',
                 }).addTo(map);
     
                 var coordinates = L.Polyline.fromEncoded(
@@ -34,9 +34,9 @@ const setRoutesOnMap = (dataRoutes) => {
             })
 
             L.marker([e.lat, e.lng],{icon: newIcon})
-            .bindPopup(`${bindPopupTitle(e.title)} ${bindPopupDescription(e.description)} ${bindPopupImage(e.image)}`, 
+            .bindPopup(` ${bindPopupTitle(e.title)} ${bindPopupImage(e.image)} ${bindPopupDescription(e.description)}`, 
             {
-            maxWidth: 250,
+            maxWidth: 150,
             keepInView: true,
             className: "testingPopup"
             })
