@@ -46,8 +46,8 @@
   }
 
   .img-rule1 {
-    width: 16rem;
-    height: 16rem;
+    width: 14rem;
+    height: 14rem;
     background-image: url(../images/security-svg/trash.svg);
     background-repeat: no-repeat;
     background-position: center;
