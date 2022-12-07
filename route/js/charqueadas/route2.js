@@ -8,7 +8,7 @@ const dataRoutes = [
           lng: -51.62773814677592,
           icon: markerIcons.hotel,
           name: "BG Hotel e Restaurante",
-          image: './../photosMarkers/bg_hotel_e_restaurante.jpeg',
+          image: './../photosMarkers/charqueadas/bg_hotel_e_restaurante.jpeg',
           address: "Av Dr José Athanásio - 293, Centro",
           openingHours: "11h às 15h",
           phone: "(51) 3658-1720"
@@ -18,7 +18,7 @@ const dataRoutes = [
           lng: -51.62571347302185,
           icon: markerIcons.hotel,
           name: "Hotel Ouro Verde",
-          image: './../photosMarkers/hotel_ouro_verde.jpeg',
+          image: './../photosMarkers/charqueadas/hotel_ouro_verde.jpeg',
           address: "Av. Bento Gonçalves, 740 - Centro",
           openingHours: "08h às 00:00h",
           phone: "(51) 3658-1111"
@@ -28,7 +28,7 @@ const dataRoutes = [
             lng: -51.62507423540608,
             icon: markerIcons.hotel,
             name: "Hotel Atlanta",
-            image: './../photosMarkers/hotel_atlanta.jpg',
+            image: './../photosMarkers/charqueadas/hotel_atlanta.jpg',
             address: "Av. Bento Gonçalves, 691 - Centro",
             openingHours: "8h às 00:00h",
             phone: "(51) 3658-7773"
@@ -38,7 +38,7 @@ const dataRoutes = [
             lng: -51.62413805721184,
             icon: markerIcons.shopping,
             name: "Supermercados Macropan",
-            image: './../photosMarkers/supermercados_macropan.jpg',
+            image: './../photosMarkers/charqueadas/supermercados_macropan.jpg',
             address: "Av. Primeiro de Maio, 660 - Centro",
             openingHours: "08:30h às 20:00h",
             phone: "(51) 3658-2992"
@@ -48,7 +48,7 @@ const dataRoutes = [
             lng: -51.6236841204011,
             icon: markerIcons.phamacy,
             name: "Farmácias Agafarma",
-            image: './../photosMarkers/farmacias_agafarma.jpeg',
+            image: './../photosMarkers/charqueadas/farmacias_agafarma.jpeg',
             address: "Av. Primeiro de Maio, 1000 - Centro",
             openingHours: "8h às 20h",
             phone: "(51) 98595-3976"
@@ -58,7 +58,7 @@ const dataRoutes = [
             lng: -51.62376324155656,
             icon: markerIcons.food,
             name: "Empório Pasteis",
-            image: './../photosMarkers/emporio_pasteis.jpeg',
+            image: './../photosMarkers/charqueadas/emporio_pasteis.jpeg',
             address: "Av. Getúlio Vargas, 36",
             openingHours: "17:30h às 00:30h",
             phone: "(51) 98458-2942"
@@ -68,7 +68,7 @@ const dataRoutes = [
             lng: -51.62267933000616,
             icon: markerIcons.food,
             name: "Camarote Food & Music",
-            image: './../photosMarkers/camarote_food_music.jpeg',
+            image: './../photosMarkers/charqueadas/camarote_food_music.jpeg',
             address: "Av. Getúlio Vargas, 54",
             openingHours: "15h às 02:00h",
             phone: "(51) 99606-5551"
@@ -78,7 +78,7 @@ const dataRoutes = [
             lng: -51.622468299681884,
             icon: markerIcons.drink,
             name: "Depósito do Parkão",
-            image: './../photosMarkers/deposito_do_parkao.jpeg',
+            image: './../photosMarkers/charqueadas/deposito_do_parkao.jpeg',
             address: "Av. Getúlio Vargas, 110 - Centro",
             openingHours: "9h às 02:30h",
             phone: "(51) 996805930"
@@ -88,7 +88,7 @@ const dataRoutes = [
             lng: -51.62250016495766,
             icon: markerIcons.drink,
             name: "Depósito do Quadrado",
-            image: './../photosMarkers/deposito_do_quadrado.jpeg',
+            image: './../photosMarkers/charqueadas/deposito_do_quadrado.jpeg',
             address: "Av. Getúlio Vargas, 138 - Centro",
             openingHours: "10h às 05:00h",
             phone: "(51) 981587736"
@@ -98,7 +98,7 @@ const dataRoutes = [
             lng: -51.627666595256656,
             icon: markerIcons.repair,
             name: "Gastão Borracharia",
-            image: './../photosMarkers/gastao_borracharia.jpeg',
+            image: './../photosMarkers/charqueadas/gastao_borracharia.jpeg',
             address: "R. Agice José Ramos, 49 - Centro",
             openingHours: "8h às 20:00h",
             phone: "Não possui telefone para contato!"
@@ -108,7 +108,7 @@ const dataRoutes = [
             lng: -51.628719609123024,
             icon: markerIcons.food,
             name: "Manu's Bar",
-            image: './../photosMarkers/manus_bar.png',
+            image: './../photosMarkers/charqueadas/manus_bar.png',
             address: "RS-401, 1003 - Centro",
             openingHours: "10h às 00:00h",
             phone: "(51) 3080-1029"
@@ -118,7 +118,7 @@ const dataRoutes = [
             lng: -51.62817761663346,
             icon: markerIcons.shopping,
             name: "Desco Atacado",
-            image: './../photosMarkers/desco_atacado.jpeg',
+            image: './../photosMarkers/charqueadas/desco_atacado.jpeg',
             address: "Rua Silmar Berbigier, 11",
             openingHours: "8h às 21h",
             phone: "(51) 3658-3538"
@@ -128,7 +128,7 @@ const dataRoutes = [
             lng: -51.62917599334668,
             icon: markerIcons.repair,
             name: "Pneumax",
-            image: './../photosMarkers/pneumax.jpeg',
+            image: './../photosMarkers/charqueadas/pneumax.jpeg',
             address: "R. Orvalino Prates Dornelles, 947",
             openingHours: "07:30h às 18:30h",
             phone: "(51) 3658-6272"
@@ -138,7 +138,7 @@ const dataRoutes = [
             lng: -51.623017683027776,
             icon: markerIcons.food,
             name: "Duzeca Pizzaria",
-            image: './../photosMarkers/duzeca_pizzaria.jpeg',
+            image: './../photosMarkers/charqueadas/duzeca_pizzaria.jpeg',
             address: "Av. Getúlio Vargas, 24 - Centro",
             openingHours: "19h às 23h",
             phone: "(51) 3080-2121"
@@ -148,7 +148,7 @@ const dataRoutes = [
             lng: -51.62870001821727,
             icon: markerIcons.food,
             name: "Padaria Yung",
-            image: './../photosMarkers/padaria_yung.jpeg',
+            image: './../photosMarkers/charqueadas/padaria_yung.jpeg',
             address: "Av. Silmar Berbigier, 101 - Sul America",
             openingHours: "8h às 20h",
             phone: "(51) 3658-4593"
@@ -158,7 +158,7 @@ const dataRoutes = [
             lng: -51.628932049954464,
             icon: markerIcons.food,
             name: "Parada Obrigatória",
-            image: './../photosMarkers/parada_obrigatoria.jpeg',
+            image: './../photosMarkers/charqueadas/parada_obrigatoria.jpeg',
             address: "R. Silmar Berbiguer, 695 - Sul America",
             openingHours: "10h às 22h",
             phone: "(51) 98612-9103"
@@ -168,7 +168,7 @@ const dataRoutes = [
             lng: -51.62392364381867,
             icon: markerIcons.food,
             name: "Frubel o Ponto do Confeiteteiro",
-            image: './../photosMarkers/frubel.jpg',
+            image: './../photosMarkers/charqueadas/frubel.jpg',
             address: "Av. Primeiro de Maio, 864 - Centro",
             openingHours: "9h às 18:30h",
             phone: "(51) 99662-9059"
