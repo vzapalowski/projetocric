@@ -127,7 +127,7 @@
 @media(max-width: 1024px) {
   .divisor {
     width: 1px;
-    height: 16rem;
+    height: 28rem;
     border: 0;
     border-left: 1px solid #369831;
   }
@@ -162,6 +162,7 @@
     font-size: 1.6rem;
     max-width: 60%;
     text-align: justify;
+    line-height: 25px;
   }
 
   /***********************************/
@@ -191,6 +192,7 @@
     font-size: 1.6rem;
     max-width: 60%;
     text-align: justify;
+    line-height: 25px;
   }
 
   /***********************************/
@@ -244,6 +246,7 @@
     font-size: 1.6rem;
     max-width: 80%;
     text-align: center;
+    line-height: 25px;
   }
 
   /***********************************/
@@ -271,7 +274,8 @@
     /* margin-block: 1rem; */
     font-size: 1.6rem;
     max-width: 80%;
-    text-align: center
+    text-align: center;
+    line-height: 25px;
   }
 
   /***********************************/
@@ -326,6 +330,7 @@
     font-size: 1.6rem;
     max-width: 80%;
     text-align: center;
+    line-height: 30px;
   }
 
   /***********************************/
@@ -353,7 +358,8 @@
     /* margin-block: 1rem; */
     font-size: 1.6rem;
     max-width: 80%;
-    text-align: center
+    text-align: center;
+    line-height: 30px;
   }
 
   /***********************************/
