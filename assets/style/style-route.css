@@ -1,0 +1,13 @@
+.markerPopup h1 {
+    font-size: 14px;
+    /* text-align: center; */
+  }
+
+  .markerPopup p {
+    font-size: 12px;
+  }
+
+  .markerPopup img {
+    width: 150px;
+    height: auto;
+  }

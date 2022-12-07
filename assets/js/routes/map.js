@@ -34,11 +34,16 @@ const setRoutesOnMap = (dataRoutes) => {
             })
 
             L.marker([e.lat, e.lng],{icon: newIcon})
-            .bindPopup(` ${bindPopupTitle(e.title)} ${bindPopupImage(e.image)} ${bindPopupDescription(e.description)}`, 
-            {
+            .bindPopup(`
+            ${bindPopupName(e.name)} 
+            ${bindPopupImage(e.image)}
+            ${bindPopupAddress(e.address)}
+            ${bindPopupOpeningHours(e.openingHours)}
+            ${bindPopupPhone(e.phone)}
+            `,{
             maxWidth: 150,
             keepInView: true,
-            className: "testingPopup"
+            className: "markerPopup"
             })
             .addTo(map)
         });
@@ -46,16 +51,24 @@ const setRoutesOnMap = (dataRoutes) => {
     });
 }
 
-const bindPopupTitle = (title) => {
-    return `<h1>${title}</h1>`;
-}
-
-const bindPopupDescription = (description) => {
-    return `<p>${description}</p>`;
+const bindPopupName = (name) => {
+    return `<h1>${name}</h1>`;
 }
 
 const bindPopupImage = (image) => {
     return `<img src=${image}>`;
+}
+
+const bindPopupAddress = (address) => {
+    return `<p>${address}</p>`;
+}
+
+const bindPopupOpeningHours = (hours) => {
+    return `<p>${hours}</p>`;
+}
+
+const bindPopupPhone = (phone) => {
+    return `<p>${phone}</p>`;
 }
 
 const getMaps = (dataRoutes) => {
