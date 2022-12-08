@@ -320,6 +320,7 @@ body > .container {
   font-size: var(--text-size);
 }
 
+
 .container > .slider {
   margin-block: 0.8rem;
   display: flex;
