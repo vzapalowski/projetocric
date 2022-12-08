@@ -1,0 +1,746 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* MAIN */
+
+:root {
+  --primary-color: #540000;
+  --secundary-color: #660d0c;
+  --tercery-color: #4de66e;
+  --text-color: #fff;
+  --text-color-black: #000;
+  --medium-black: rgba(0, 0, 0, 0.6);
+  --color-hover: rgb(180, 173, 173);
+  font-size: 62.5%;
+
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(127, 127, 127);
+  --red: rgb(255, 0, 0);
+  --dark-red: rgb(127, 0, 0);
+  --white-red: rgb(255, 105, 105);
+  --name: 10rem;
+  --title: 4rem;
+  --title-size: 2rem;
+  --text-size: 1.5rem;
+}
+
+:root {
+  --primary-color: #540000;
+  --secundary-color: #660d0c;
+  --tercery-color: #4de66e;
+  --text-color: #fff;
+  --text-color-black: #000;
+  --color-hover: rgb(180, 173, 173);
+  font-size: 62.5%;
+}
+
+.bg-color-primary {
+  background-color: var(--secundary-color);
+}
+
+.bg-color-secundary {
+  background-color: var(--primary-color);
+}
+
+/* NAVIGATION */
+
+.navbar {
+  background-color: var(--secundary-color);
+  height: 5rem;
+  max-width: 100vw;
+}
+
+nav div ul.navbar-nav {
+  margin-top: 4rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div ul li a.nav-link {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+nav ul li:last-child {
+  margin-block: 3.8rem;
+}
+
+nav ul li:nth-child(3) {
+  display: none;
+}
+
+nav ul li a.nav-link {
+  color: var(--text-color);
+}
+
+.icon-menu {
+  border: none;
+}
+
+.icon-menu svg {
+  height: 3.8rem;
+  width: 3.6rem;
+}
+
+.icon-menu svg.icon-close {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.5rem;
+}
+
+#offcanvasScrolling {
+  max-width: 60vw;
+  background-color: var(--primary-color);
+  opacity: 1;
+  overflow: scroll;
+  transition: 0.5s ease;
+}
+
+.offcanvas-header {
+  min-height: 5rem;
+  background-color: var(--secundary-color);
+}
+
+@media (max-width: 385px) {
+  .carousel-inner {
+    max-width: 100vw;
+    max-height: 50vh;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 50%;
+  }
+
+  .carousel-item p {
+    font-size: 1.3rem;
+    display: block;
+  }
+
+  .carousel-item h5 {
+    font-size: 2rem;
+  }
+
+  .background1 {
+    background: url(./../images/carousel/rota1.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background2 {
+    background: url(./../images/carousel/rota2.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 386px) {
+  .carousel-inner {
+    max-width: 100vw;
+    max-height: 50vh;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 50%;
+  }
+
+  .carousel-item p {
+    font-size: 1.3rem;
+    display: block;
+  }
+
+  .carousel-item h5 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .background1 {
+    background: url(./../images/carousel/rota1.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background2 {
+    background: url(./../images/carousel/rota2.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel-inner {
+    max-width: 100vw;
+    max-height: 50vh;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 50vh;
+    opacity: 50%;
+  }
+
+  .carousel-item p {
+    font-size: 1.3rem;
+    display: block;
+  }
+
+  .carousel-item h5 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .background1 {
+    background: url(./../images/carousel/rota1.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background2 {
+    background: url(./../images/carousel/rota2.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+}
+
+/* BODY */
+
+/* CONTAINER */
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: var(--black);
+}
+
+body > .container {
+  /* display: flex; */
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  margin-block: 1rem;
+  padding-bottom: 15px;
+}
+
+.container > .gridlayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: var(--red);
+  height: 40rem;
+  width: 100%;
+}
+
+.gridlayout > div:nth-child(1) {
+  display: flex;
+  font-size: var(--title);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+#map {
+  width: 550px;
+  height: 350px;
+}
+
+.gridlayout > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--black);
+  background-color: var(--white);
+  border-left: solid thin var(--gray);
+}
+
+.gridlayout > div:nth-child(2) > span {
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: var(--title-size);
+}
+
+.gridlayout > div:nth-child(2) > ul {
+  text-align: justify;
+  list-style: none;
+  font-size: var(--text-size);
+}
+
+
+.container > .slider {
+  margin-block: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-red);
+  height: 50rem;
+  font-size: var(--title);
+  color: var(--text-color);
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  max-width: 100vw;
+  height: auto;
+  background-color: var(--primary-color);
+
+  color: white;
+  font-size: 2rem;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  grid-template-areas:
+    "box01"
+    "box02"
+    "box03";
+}
+
+footer .box {
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .box01 {
+  grid-area: box01;
+}
+
+footer .box02 {
+  grid-area: box02;
+}
+
+footer .box03 {
+  grid-area: box03;
+}
+
+footer .box .content {
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1rem 0.5rem;
+}
+
+footer .box .content > span {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+footer .box .content > img {
+  padding: 1rem;
+}
+
+footer .box .content > ul {
+  display: flex;
+  gap: 1.6rem;
+}
+
+footer .box .content ul li {
+  list-style: none;
+  transition: 0.5s;
+}
+
+footer .box .content ul li svg {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+footer .box .content ul li path[stroke*="black"] {
+  stroke: white;
+}
+
+footer .box .content ul li path[fill*="black"] {
+  fill: white;
+}
+
+footer .box .lineBox01 {
+  border-bottom: 2px solid white;
+}
+
+footer .box .lineBox03 {
+  border-top: 2px solid white;
+}
+
+@media (min-width: 992px) {
+  /* RESET */
+  .navbar {
+    height: initial;
+    width: initial;
+  }
+
+  nav div ul.navbar-nav,
+  nav div ul li,
+  nav div ul li a {
+    height: initial;
+    width: initial;
+    font-size: initial;
+    font-weight: initial;
+    margin: initial;
+    padding: initial;
+    overflow: initial;
+    gap: initial;
+  }
+
+  #offcanvasScrolling {
+    max-width: 100vw;
+    overflow: hidden;
+    transition: initial;
+  }
+
+  .group-cities {
+    max-width: initial;
+    height: initial;
+    display: initial;
+    flex-direction: initial;
+    gap: initial;
+    justify-content: initial;
+    margin: initial;
+  }
+
+  .group-cities .group {
+    min-width: initial;
+    min-height: initial;
+    border-radius: initial;
+  }
+
+  .group-cities .group .content-city {
+    width: initial;
+    height: initial;
+    display: initial;
+    justify-content: initial;
+    align-items: initial;
+    padding: initial;
+    margin: initial;
+    border-radius: initial;
+  }
+
+  .group-cities .group .content-city > img {
+    padding: initial;
+  }
+
+  .group-cities .group .content-city > a {
+    padding: initial;
+  }
+
+  .group-cities .group .content-city .name-city {
+    padding: initial;
+  }
+
+  .group-cities .group .content-city .name-city > span {
+    font-style: initial;
+    font-weight: initial;
+    font-size: initial;
+    line-height: initial;
+  }
+
+  /* NAVIGATION */
+
+  .navbar {
+    height: 9rem;
+  }
+
+  nav div ul.navbar-nav {
+    max-height: 9rem;
+    gap: 9rem;
+    padding-inline: 4.7rem;
+  }
+
+  nav div ul li:nth-child(1),
+  nav div ul li:nth-child(2),
+  nav div ul li:nth-child(4),
+  nav div ul li:nth-child(5) {
+    width: 13.7rem;
+    height: 3.8rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+
+  nav ul li:nth-child(3) {
+    display: block;
+  }
+
+  nav ul li a img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  nav div ul li a.nav-link {
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 2rem;
+  }
+
+  /* NAVIGATION HOVER */
+  nav div ul li:nth-child(1) a.nav-link:hover,
+  nav div ul li:nth-child(2) a.nav-link:hover,
+  nav div ul li:nth-child(4) a.nav-link:hover,
+  nav div ul li:nth-child(5) a.nav-link:hover {
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    color: var(--color-hover);
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  /* CAROUSEL */
+
+  .carousel-inner {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 80vh;
+    opacity: 50%;
+  }
+
+  .carousel-item p {
+    font-size: 2rem;
+  }
+
+  .carousel-item h5 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .background1 {
+    background: url(./../images/carousel/rota1.jpeg);
+    min-height: 70vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background2 {
+    background: url(./../images/carousel/rota2.jpeg);
+    min-height: 70vh;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* FOOTER MEDIA QUERY */
+
+  footer {
+    grid-template-rows: initial;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: "box01 box02 box03";
+  }
+
+  footer .box .content {
+    width: 100%;
+    height: 80%;
+
+    padding-inline: 3.2rem;
+  }
+
+  footer .box .content ul li:hover {
+    cursor: pointer;
+  }
+
+  footer .box .content ul li:hover path[stroke] {
+    stroke: black;
+    cursor: pointer;
+  }
+
+  footer .box .content ul li:hover path[fill] {
+    fill: black;
+  }
+
+  footer .box .lineBox01 {
+    border-bottom: initial;
+  }
+
+  footer .box .lineBox03 {
+    border-top: initial;
+  }
+
+  footer .box .lineBox01 {
+    border-right: 2px solid white;
+  }
+
+  footer .box .lineBox03 {
+    border-left: 2px solid white;
+  }
+}
+
+@media (max-width: 1280px) {
+  .carousel-inner {
+    max-width: 200vw;
+    max-height: 231vh;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 80vh;
+    opacity: 50%;
+  }
+
+  .carousel-item p {
+    font-size: 2rem;
+  }
+
+  .carousel-item h5 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+
+  .background1 {
+    background: url(./../images/carousel/rota1.jpeg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background2 {
+    background: url(./../images/carousel/rota2.jpeg);
+    min-height: 50vh;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  #map {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+.position{
+    position: sticky;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+
+  #map {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  #map {
+    width: 200px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 515px) {
+  .gridlayout > div:nth-child(2) {
+    border-left: none;
+    border-top: solid thin var(--gray);
+  }
+
+  #map {
+    width: 350px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 35%;
+  }
+
+  #map {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+/******************/
