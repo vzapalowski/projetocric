@@ -127,20 +127,17 @@ section.image-main div.back-img p {
     padding-bottom: 1rem;
 }
 
-#map {
-    max-width: 100vw;
-    height: 60vh;
-    position: sticky;
-    margin-top: 2rem;
-}
-
 /* MAP */
 section.container-map {
     max-width: 100vw;
     height: 60vh;
     position: sticky;
     margin-top: 2rem;
+}
 
+#map {
+    width: 100%;
+    height: 100%;
 }
 
 section.container-map div.title {
@@ -226,7 +223,8 @@ section.container-cities {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
 }
 
 section.container-cities div.container-inside {
