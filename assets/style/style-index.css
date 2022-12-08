@@ -643,8 +643,8 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img {
-        width: 90%; /* 75 */
-        height: 60%; /* 50 */
+        width: 100%; /* 75 */
+        height: 100%; /* 50 */
 
         display: flex;
         justify-content: center;
@@ -656,8 +656,7 @@ footer .box .lineBox03 {
         width: 100%;
         height: 100%;
 
-        border-radius: 10px;
-        opacity: .8;
+        opacity: 1;
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img p {
