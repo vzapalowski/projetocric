@@ -580,6 +580,8 @@ footer .box .lineBox03 {
         flex-direction: column;
         padding-block: .5rem;
         padding-inline: 1rem;
+
+        
     }  
     
     section.container-cities div.container-inside div.container-city div.content div.city-name > span{
@@ -600,7 +602,7 @@ footer .box .lineBox03 {
 
     section.container-cities div.container-inside div.container-city::before {
         content: "";
-        background-color: rgb(0, 0, 0, 50%);
+        background-color: rgb(0, 0, 0, .4);
         display: block;
         position: absolute;
         inset: 0;
@@ -630,7 +632,7 @@ footer .box .lineBox03 {
         width: 50%;
         height: 100%;
 
-        background-color: rgb(0, 0, 0, .4);
+        background-color: rgb(0, 0, 0, 0);
 
         z-index: 2;
 
@@ -643,8 +645,8 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img {
-        width: 90%; /* 75 */
-        height: 60%; /* 50 */
+        width: 100%; /* 75 */
+        height: 100%; /* 50 */
 
         display: flex;
         justify-content: center;
@@ -653,11 +655,10 @@ footer .box .lineBox03 {
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img > img {
-        width: 100%;
-        height: 100%;
+        width: 98%;
+        min-height: 50%;
 
-        border-radius: 10px;
-        opacity: .8;
+        opacity: 1;
     }
 
     section.container-cities div.container-inside div.container-city div.content-img div.img p {
@@ -679,6 +680,8 @@ footer .box .lineBox03 {
         align-items: center;
 
         padding-block: 1rem;
+
+        background-color: rgb(0, 0, 0, .4);
     }
 
     section.container-cities div.container-inside div.container-city div.content-infos h1 {
