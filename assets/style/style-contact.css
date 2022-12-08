@@ -7,6 +7,15 @@
   font-family: "Josefin Sans", sans-serif;
 }
   
+  .content{
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .sticky-wrapper{
+    position: inherit !important;
+  }
+
   :root{
       --primary-color: #540000;
       --secundary-color: #660D0C;
