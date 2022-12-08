@@ -13,6 +13,7 @@ const dataRoutes = [
       "3024728289614917202",
       "3024728126930025042",
       "3024727868187306952"
-      ]
+      ],
+      view: coordsMapView.saoJeronimo
     }
   ]

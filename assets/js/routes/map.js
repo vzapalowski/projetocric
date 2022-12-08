@@ -1,6 +1,6 @@
 const setRoutesOnMap = (dataRoutes) => {
     dataRoutes.forEach(e => {
-        let map = L.map(e.map, {scrollWheelZoom: false}).setView([-29.932, -51.71], 12);
+        let map = L.map(e.map, {scrollWheelZoom: false}).setView([e.view[0], e.view[1]], 12);
         const idRoutesUser = e.routes;
         const markerCoords = e.marks;
 

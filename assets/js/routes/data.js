@@ -14,6 +14,15 @@ const idRoutes = [
     "3024727868187306952"
 ];
 
+const coordsMapView =
+  {
+    saoJeronimo: [-29.95, -51.73],
+    charqueadas: [-29.95, -51.64],
+    generalCamara: [-29.90, -51.78],
+    valeVerde: [-29.78, -52.20],
+    arroioDosRatos: [-30.09, -51.75]
+  }
+
 function reAuthorize() {
     fetch(auth_link, {
       method: "post",

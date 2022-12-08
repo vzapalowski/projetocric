@@ -2,6 +2,7 @@ const dataRoutes = [
     {
         map: 'map',
         routes: ["3007668224216829820"],
+        view: coordsMapView.valeVerde,
         marks: [
             {
                 lat: -29.887630,
