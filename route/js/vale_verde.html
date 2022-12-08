@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <script src="Polyline.encoded.js"></script>
+
+    <style>
+        section {
+            max-width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }   
+        #map,
+        #map02,
+        #map03 { 
+            height: 500px; 
+            width: 500px;
+        }   
+
+        .testingPopup h1 {
+          font-size: 14px;
+          text-align: center;
+        }
+
+        .testingPopup p {
+          font-size: 12px;
+        }
+
+        .testingPopup img {
+          width: 150px;
+          height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <section>
+        <div id="map"></div>
+        <div id="map02"></div>
+        <div id="map03"></div>
+      </section>
+
+    <script src="storage.js"></script>
+    <script src="verify.js"></script>
+    <script src="data.js"></script>
+    <script src="routes.js"></script>
+    <script src="map.js"></script>
+    <script src="marker.js"></script>
+    <script src="vale_verde/route.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
