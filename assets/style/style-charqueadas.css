@@ -9,6 +9,12 @@
 
 /* MAIN */
 
+  .carousel-inner{
+    /* border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    border-radius: 20px;
+  }
+
 :root {
   --primary-color: #540000;
   --secundary-color: #660d0c;
@@ -264,7 +270,7 @@ nav ul li a.nav-link {
 body {
   max-width: 100%;
   max-height: 100%;
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 body > .container {
@@ -274,7 +280,7 @@ body > .container {
   height: 100%;
   background-color: var(--white);
   margin-block: 1rem;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .container > .gridlayout {

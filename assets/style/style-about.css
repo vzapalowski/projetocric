@@ -32,6 +32,15 @@
   --text-size: 1.5rem;
 }
 
+.conteudo{
+  margin-block: 2rem;
+}
+
+.sticky-wrapper{
+  background-color: rgba(0, 0, 0, 0.767);
+  position: inherit !important;
+}
+
 /* DESKTOP */
 @media(min-width:1025px) {
   /* body {

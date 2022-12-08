@@ -7,6 +7,11 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.sticky-wrapper{
+  background-color: rgba(0, 0, 0, 0.767);
+  position: inherit !important;
+}
+
 :root {
   --primary-color: #540000;
   --secundary-color: #660d0c;
@@ -21,8 +26,8 @@
   border-bottom: 1px solid white;
 } */
 
-.container {
-  margin-block: 2rem;
+.conteudo {
+  margin-block: 1.6rem;
 }
 
 /* DESKTOP */

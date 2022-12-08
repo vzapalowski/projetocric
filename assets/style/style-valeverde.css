@@ -9,6 +9,10 @@
 
 /* MAIN */
 
+  .carousel-inner{
+    border-radius: 20px;
+  }
+
 :root {
   --primary-color: #540000;
   --secundary-color: #660d0c;
@@ -156,6 +160,32 @@ nav ul li a.nav-link {
     display: flex;
     background-size: cover;
   }
+
+  .background4 {
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background5 {
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background6 {
+    background: url(./../images/carousel/bike6.jpg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 386px) {
@@ -201,6 +231,40 @@ nav ul li a.nav-link {
 
   .background3 {
     background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background4 {
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background5 {
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background6 {
+    background: url(./../images/carousel/bike6.jpg);
     min-height: 50vh;
     width: 100%;
     display: flex;
@@ -255,6 +319,40 @@ nav ul li a.nav-link {
     display: flex;
     background-size: cover;
   }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background4 {
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background5 {
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background6 {
+    background: url(./../images/carousel/bike6.jpg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
 }
 
 /* BODY */
@@ -274,7 +372,7 @@ body > .container {
   height: 100%;
   background-color: var(--white);
   margin-block: 1rem;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .container > .gridlayout {
@@ -593,6 +691,40 @@ footer .box .lineBox03 {
     background-size: cover;
   }
 
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background4 {
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background5 {
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background6 {
+    background: url(./../images/carousel/bike6.jpg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
   /* FOOTER MEDIA QUERY */
 
   footer {
@@ -683,6 +815,40 @@ footer .box .lineBox03 {
     min-height: 50vh;
     background-position: center;
     height: 100%;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background3 {
+    background: url(./../images/carousel/rota3.jpeg);
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background4 {
+    background: url(./../images/carousel/bike4.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background5 {
+    background: url(./../images/carousel/bike5.jpg);
+    min-height: 50vh;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+  }
+
+  .background6 {
+    background: url(./../images/carousel/bike6.jpg);
+    min-height: 50vh;
     width: 100%;
     display: flex;
     background-size: cover;
