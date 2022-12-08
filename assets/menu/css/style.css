@@ -152,7 +152,7 @@ a:hover {
   display: inline-block;
   font-weight: 500;
   font-size: 20px !important; 
-  font-weight: bold;
+  /* font-weight: bold; */
   /* text-shadow: 12px 8px 5px black; */
   /* text-shadow: 14px 4px 5px black; */
   /* text-shadow: 4px 4px 2px rgba(0,0,0,0.6); */
