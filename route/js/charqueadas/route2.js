@@ -2,6 +2,7 @@ const dataRoutes = [
     {
       map: 'map',
       routes: ["3007668662019916668","3024727868187306952"],
+      view: coordsMapView.charqueadas,
       marks: [
         {
           lat: -29.957687103462153,
