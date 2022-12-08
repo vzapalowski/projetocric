@@ -63,15 +63,15 @@ const bindPopupImage = (image) => {
 }
 
 const bindPopupAddress = (address) => {
-    return `<p>${address}</p>`;
+    return `<p>Endereço: ${address}</p>`;
 }
 
 const bindPopupOpeningHours = (hours) => {
-    return `<p>${hours}</p>`;
+    return `<p>Horário de atendimento: ${hours}</p>`;
 }
 
 const bindPopupPhone = (phone) => {
-    return `<p>${phone}</p>`;
+    return `<p>Contato: ${phone}</p>`;
 }
 
 const getMaps = (dataRoutes) => {
