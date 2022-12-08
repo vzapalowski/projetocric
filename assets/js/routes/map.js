@@ -56,6 +56,9 @@ const bindPopupName = (name) => {
 }
 
 const bindPopupImage = (image) => {
+    if(image == null) {
+        return `<p>Foto não informada</p>`
+    }
     return `<img src=${image}>`;
 }
 
