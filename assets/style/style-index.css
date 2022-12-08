@@ -190,14 +190,14 @@ section.container-map div.container-content img {
 }
 
 #charqueadas {
-    background-image: url(../images/images-cities/charqueadas.jpg);
+    background-image: url(../images/images-cities/charqueadas-trevo.jpeg);
 }
 
 #general-camara {
     background-image: url(../images/images-cities/general-camara.jpg);
 }
 
-#minas-do-leao {
+#minas-do-leao { 
     background-image: url(../images/images-cities/minas-do-leao.jpg);
 }
 
@@ -207,6 +207,10 @@ section.container-map div.container-content img {
 
 #triunfo {
     background-image: url(../images/images-cities/triunfo.jpg);
+}
+
+#vale-verde {
+    background-image: url(../images/images-cities/vale-verde.jpeg);
 }
 
 section.container-cities {
