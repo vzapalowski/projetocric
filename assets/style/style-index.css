@@ -190,7 +190,7 @@ section.container-map div.container-content img {
 }
 
 #charqueadas {
-    background-image: url(../images/images-cities/charqueadas.jpg);
+    background-image: url(../images/images-cities/charqueadas-trevo.jpeg);
 }
 
 #general-camara {
@@ -207,6 +207,10 @@ section.container-map div.container-content img {
 
 #triunfo {
     background-image: url(../images/images-cities/triunfo.jpg);
+}
+
+#vale-verde {
+    background-image: url(../images/images-cities/vale-verde.jpeg);
 }
 
 section.container-cities {
