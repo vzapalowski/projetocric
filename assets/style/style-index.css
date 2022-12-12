@@ -135,6 +135,7 @@ section.container-map {
     height: 60vh;
     position: sticky;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 #map {
@@ -160,26 +161,50 @@ section.container-map div.title h1 {
     padding-inline: .5rem;
 }
 
-section.container-map div.container-content {
-    margin: 0 auto;
-    width: 75%;
-    height: 80%;
-    /* pointer-events:; */
-    
-    display: flex;
-    justify-content: center;
-    z-index: 2000;
-
-/* 
-    background-image: url(../images/map-route/image-route.jpeg);
-    background-size: cover; */
-}
-
 section.container-map div.container-content img {
     width: auto;
     height: auto;
 
     transform: scale(1.5);
+}
+
+section.container-legend {
+    max-width: 100vw;
+    min-height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 8rem;
+
+    background-color: rgb(250, 245, 248);
+}
+
+section.container-legend div.legend {
+    width: 100%;
+    height: 100%;
+}
+
+section.container-legend div.legend ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+    gap: .5rem;
+}
+
+section.container-legend div.legend ul li {
+    list-style: none;
+}
+
+section.container-legend div.legend ul li img {
+    width: 5rem;
+    height: 5rem;
+}
+
+section.container-legend div.legend ul li span {
+    font-size: 1.6rem;
 }
 
 /* CITIES */
@@ -225,8 +250,7 @@ section.container-cities {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 10rem;
+    margin-block: 2rem;
 }
 
 section.container-cities div.container-inside {
@@ -550,6 +574,20 @@ footer .box .lineBox03 {
         max-height: 100%;
 
         transform: initial;
+    }
+    
+    section.container-legend div.legend ul {
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-around;
+    }
+    
+    section.container-legend div.legend ul li {
+        min-width: 30rem;
+        list-style: none;
+
+        display: flex;
+        align-items: center;
     }
 
     /* CITIES */
